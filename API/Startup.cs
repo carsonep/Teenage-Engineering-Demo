@@ -14,6 +14,8 @@ using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
 using Infrastructure.Data;
 using Core.Interfaces;
+using Infrastructure.Identity;
+using API.Extensions;
 
 namespace API
 {
@@ -40,6 +42,11 @@ namespace API
             });
 
             services.AddDbContext<StoreContext>(x => x.UseSqlite(_config.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<AppIdentityDbContext>(x => {
+                x.UseSqlite(_config.GetConnectionString("IdentityConnection"));
+            });
+
+            services.AddIdentityServices();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
