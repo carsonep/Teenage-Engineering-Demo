@@ -16,6 +16,7 @@ using Infrastructure.Data;
 using Core.Interfaces;
 using Infrastructure.Identity;
 using API.Extensions;
+using Infrastructure.Services;
 
 namespace API
 {
@@ -34,6 +35,7 @@ namespace API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IUnitOfWork, UnitOfWork>(); 
+            services.AddScoped<ITokenService, TokenService>();
             services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));   
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -46,7 +48,7 @@ namespace API
                 x.UseSqlite(_config.GetConnectionString("IdentityConnection"));
             });
 
-            services.AddIdentityServices();
+            services.AddIdentityServices(_config);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -62,7 +64,10 @@ namespace API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
             app.UseStaticFiles();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
