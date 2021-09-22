@@ -72,3 +72,8 @@ C:\Users\Nicklas Peterson\Desktop\Projects\Capstone\API\bin\Debug\net5.0\Microso
 C:\Users\Nicklas Peterson\Desktop\Projects\Capstone\API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\Nicklas Peterson\Desktop\Projects\Capstone\API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Nicklas Peterson\Desktop\Projects\Capstone\API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\Nicklas Peterson\Desktop\Projects\Capstone\API\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Nicklas Peterson\Desktop\Projects\Capstone\API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Nicklas Peterson\Desktop\Projects\Capstone\API\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Nicklas Peterson\Desktop\Projects\Capstone\API\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Nicklas Peterson\Desktop\Projects\Capstone\API\bin\Debug\net5.0\System.IO.Pipelines.dll

@@ -10,7 +10,7 @@ namespace Core.Interfaces
     {
         T GetById(int id);
         IEnumerable<T> Find(ISpecification<T> specification = null);
-
+        Task<T> GetEntityWithSpec(ISpecification<T> spec);
         void Add(T entity);
         void Delete(T entity);
         void Upsert(T entity);

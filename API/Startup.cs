@@ -17,6 +17,7 @@ using Core.Interfaces;
 using Infrastructure.Identity;
 using API.Extensions;
 using Infrastructure.Services;
+using API.Helpers;
 
 namespace API
 {
@@ -34,9 +35,11 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IPhotoService, PhotoService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>(); 
             services.AddScoped<ITokenService, TokenService>();
-            services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));   
+            services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));  
+            services.AddAutoMapper(typeof(MappingProfiles));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

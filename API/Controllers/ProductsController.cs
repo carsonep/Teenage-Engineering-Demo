@@ -2,9 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
+using API.Dtos;
+using AutoMapper;
 using Core.Entities;
 using Core.Interfaces;
 using Core.Specifications;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,8 +19,12 @@ namespace API.Controllers
     public class ProductsController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
-        public ProductsController(IUnitOfWork unitOfWork)
+        private readonly IMapper _mapper;
+        private readonly IPhotoService _photoService;
+        public ProductsController(IUnitOfWork unitOfWork, IMapper mapper, IPhotoService photoService)
         {
+            _photoService = photoService;
+            _mapper = mapper;
             _unitOfWork = unitOfWork;
         }
 
@@ -40,26 +48,16 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Product> CreateProduct([FromForm] Product product)
+        public ActionResult<ProductToReturnDto> CreateProduct(ProductToCreateDto productToCreate)
         {
-            var guid = Guid.NewGuid();
-            var filePath = Path.Combine("wwwroot",guid + ".jpg");
-            if(product.Image != null)
-            {
-                var fileStream = new FileStream(filePath, FileMode.CreateNew);
-                product.Image.CopyTo(fileStream);
-            }
-            product.ImageUrl = filePath.Remove(0,7);
+            var product = _mapper.Map<ProductToCreateDto, Product>(productToCreate);
 
-            if(ModelState.IsValid)
-            {
-                _unitOfWork.Repository<Product>().Add(product);
-                _unitOfWork.Complete();
+            _unitOfWork.Repository<Product>().Add(product);
+            var result = _unitOfWork.Complete();
 
-                return CreatedAtAction("CreatedProduct", new { id = product.Id}, product);
-            }
+            if (result <= 0) return BadRequest();
 
-            return new JsonResult("Something Went wrong, Try Again Later") {StatusCode = 500};;
+            return _mapper.Map<Product, ProductToReturnDto>(product);
         }
 
         [HttpPut("{id}")]
@@ -71,14 +69,14 @@ namespace API.Controllers
             }
             _unitOfWork.Repository<Product>().Upsert(product);
 
-            try 
+            try
             {
                 _unitOfWork.Complete();
 
             }
-            catch(DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException)
             {
-                if(!_unitOfWork.Repository<Product>().Contains(x => x.Id ==id))
+                if (!_unitOfWork.Repository<Product>().Contains(x => x.Id == id))
                 {
                     return NotFound();
                 }
@@ -104,6 +102,37 @@ namespace API.Controllers
             _unitOfWork.Complete();
 
             return product;
+        }
+
+
+        [HttpPut("{id}/photo")]
+        // [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<ProductToReturnDto>> AddProductPhoto(int id, [FromForm] ProductPhotoDto photoDto)
+        {
+            var spec = new ProductsWithProductTypeSpecification(id);
+            var product = await _unitOfWork.Repository<Product>().GetEntityWithSpec(spec);
+
+            if (photoDto.Photo.Length > 0)
+            {
+                var photo = await _photoService.SaveToDiskAsync(photoDto.Photo);
+
+                if (photo != null)
+                {
+                    product.AddPhoto(photo.PictureUrl, photo.FileName);
+
+                    _unitOfWork.Repository<Product>().Upsert(product);
+
+                    var result = _unitOfWork.Complete();
+
+                    if (result <= 0) return BadRequest();
+                }
+                else
+                {
+                    return BadRequest();
+                }
+            }
+
+            return _mapper.Map<Product, ProductToReturnDto>(product);
         }
     }
 }
