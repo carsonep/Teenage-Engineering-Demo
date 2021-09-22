@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2+OUh3wrpf7quhBY+9YyG3jc4lSrnB+DXUOITIddWljWaKxQyRV+NZRAgIUcvLNflSdtptVt4F6TI8zjwKjp6w==",
+  "dgSpecHash": "AwmD1+Q9+xSd8eYzHxg9kTQClRa1LYSDudpPKNRScmi9i3lJLPvQIygzkCb0TugRZDzVEY8sZKyfKGkQvqyuhQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.aspnetcore.identity\\2.2.0\\microsoft.aspnetcore.identity.2.2.0.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\5.0.10\\microsoft.aspnetcore.identity.entityframeworkcore.5.0.10.nupkg.sha512",
+    "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.aspnetcore.staticfiles\\2.2.0\\microsoft.aspnetcore.staticfiles.2.2.0.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.5\\microsoft.data.sqlite.core.5.0.5.nupkg.sha512",

@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Core.Entities;
 using Core.Interfaces;
@@ -38,12 +40,26 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Product> CreateProduct(Product product)
+        public ActionResult<Product> CreateProduct([FromForm] Product product)
         {
-            _unitOfWork.Repository<Product>().Add(product);
-            _unitOfWork.Complete();
+            var guid = Guid.NewGuid();
+            var filePath = Path.Combine("wwwroot",guid + ".jpg");
+            if(product.Image != null)
+            {
+                var fileStream = new FileStream(filePath, FileMode.CreateNew);
+                product.Image.CopyTo(fileStream);
+            }
+            product.ImageUrl = filePath.Remove(0,7);
 
-            return CreatedAtAction("CreatedProduct", new { id = product.Id}, product);
+            if(ModelState.IsValid)
+            {
+                _unitOfWork.Repository<Product>().Add(product);
+                _unitOfWork.Complete();
+
+                return CreatedAtAction("CreatedProduct", new { id = product.Id}, product);
+            }
+
+            return new JsonResult("Something Went wrong, Try Again Later") {StatusCode = 500};;
         }
 
         [HttpPut("{id}")]
