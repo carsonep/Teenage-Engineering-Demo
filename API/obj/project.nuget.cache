@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "H5zHwrMZ+pZ4NpQpLVaYcBsDZlzj7AiBqDKzle6jBZPXHlZ0vPUuIPDfJzo/w6noC5oB8PCOdiFDj2vb6o5y6w==",
+  "dgSpecHash": "zn5wJTXo+jY6H144kbcA5H5sXnt1NwVjyUVHxh44m+YBEajEiFczQVXHg0kzVgftA0MmYL7Nn30yZn8K4PKR2Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\API\\API.csproj",
   "expectedPackageFiles": [
@@ -25,6 +25,8 @@
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.10\\microsoft.aspnetcore.http.features.5.0.10.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.aspnetcore.identity\\2.2.0\\microsoft.aspnetcore.identity.2.2.0.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\5.0.10\\microsoft.aspnetcore.identity.entityframeworkcore.5.0.10.nupkg.sha512",
+    "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.10\\microsoft.aspnetcore.jsonpatch.5.0.10.nupkg.sha512",
+    "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.10\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.10.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.aspnetcore.staticfiles\\2.2.0\\microsoft.aspnetcore.staticfiles.2.2.0.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -63,6 +65,8 @@
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.4\\sqlitepclraw.bundle_e_sqlite3.2.0.4.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
