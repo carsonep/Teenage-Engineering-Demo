@@ -5,10 +5,10 @@ function PostExcerpt({ product }) {
   console.log(product.photos[0].pictureUrl);
   return (
     <div className="m-4">
-      <div className="">
-        <div class="w-full md:w-1/2 md:flex-row lg:w-1/2 lg:flex-row">
+      <div className="w-full">
+        <div className="w-full">
           <div
-            className="justify-center items-center rounded-2xl "
+            className="justify-center w-full items-center rounded-2xl "
             style={{ backgroundColor: "#e5e5e5" }}
           >
             <img
