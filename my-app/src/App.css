@@ -1,39 +1,16 @@
-.App {
-  text-align: center;
-}
+@import url(//db.onlinewebfonts.com/c/1c6eb2519248229e6860a41985bf1827?family=Univers+TE20+Thin);
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+@font-face {
+  font-family: "Univers TE20 Thin";
+  src: url("//db.onlinewebfonts.com/t/1c6eb2519248229e6860a41985bf1827.eot");
+  src: url("//db.onlinewebfonts.com/t/1c6eb2519248229e6860a41985bf1827.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/1c6eb2519248229e6860a41985bf1827.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/1c6eb2519248229e6860a41985bf1827.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/1c6eb2519248229e6860a41985bf1827.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/1c6eb2519248229e6860a41985bf1827.svg#Univers TE20 Thin")
+      format("svg");
 }
