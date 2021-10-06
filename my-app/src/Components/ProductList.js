@@ -33,7 +33,7 @@ function ProductList() {
     <div className="">
       <NavBar />
       <h2>Products</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+      <div className="mx-4 md:mx-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
         {content}
       </div>
     </div>

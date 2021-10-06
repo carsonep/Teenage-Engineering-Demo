@@ -18,14 +18,17 @@ function NavBar() {
   let dt = new Date();
 
   return (
-    <nav className="mr-14 ml-14 mt-1 bg-pink-200">
+    <nav className="mt-2" style={{ padding: "0px 4.6vw" }}>
       <div
-        className="box-content text-l leading-none"
-        style={{ fontFamily: "Univers TE20 Thin", padding: "0px 1.1vw" }}
+        className="box-content leading-none font-normal"
+        style={{ fontFamily: "Univers TE20 Thin" }}
       >
         <div className="flex justify-between flex-nowrap items-start">
-          <div className="ml-2  p-1.25 bg-red-500 pr-24">
-            <h1 className="flex justify-start justify-start text-4xl">
+          <div
+            className=""
+            style={{ margin: "-0.15vw 0px 0.458333vw", paddingRight: "5.5%" }}
+          >
+            <h1 style={{ fontSize: "1.83vw" }}>
               <a className="text-left">
                 teenage <br />
                 engineering
@@ -36,23 +39,26 @@ function NavBar() {
               {dt.getFullYear()} {monthNames[dt.getUTCMonth()]}
             </span>
           </div>
-          <div className="flex flex-1 justify-around bg-red-200">
+          <div className="flex flex-1 justify-around">
             <div className="flex justify-evenly flex-nowrap">
-              <div className="p-1.25">
-                <h2 className="flex justify-start text-4xl mt-1">
+              <div className="">
+                <h2
+                  className="flex justify-start"
+                  style={{ fontSize: "1.83vw" }}
+                >
                   <a>products</a>
                 </h2>
                 <br />
-                <p className="flex justify-start">wireless audio</p>
-                <p className="flex justify-start">synthesizers</p>
-                <p className="flex justify-start">designs</p>
+                <p style={{ fontSize: ".916667vw" }}>wireless audio</p>
+                <p style={{ fontSize: ".916667vw" }}>synthesizers</p>
+                <p style={{ fontSize: ".916667vw" }}>designs</p>
               </div>
             </div>
             <div className="flex pr-4">
               <div className="pr-4">
                 <svg
                   style={{ width: "3.9vw" }}
-                  className="mt-4"
+                  className="mt-2"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="37 9.5 38.5 61.5"
                 >
@@ -76,14 +82,14 @@ function NavBar() {
                   </g>
                 </svg>
               </div>
-              <div className="flex justify-evenly flex-nowrap mr-8">
-                <div className="mt-1">
-                  <h2 className="flex justify-start text-4xl">
+              <div className="flex mr-8">
+                <div>
+                  <h2 style={{ fontSize: "1.83vw" }}>
                     <a>store</a>
                   </h2>
                   <br />
-                  <p className="flex justify-start">view cart</p>
-                  <p className="flex justify-start">checkout</p>
+                  <p style={{ fontSize: ".916667vw" }}>view cart</p>
+                  <p style={{ fontSize: ".916667vw" }}>checkout</p>
                 </div>
               </div>
             </div>
@@ -92,7 +98,7 @@ function NavBar() {
                 <a>
                   <svg
                     style={{ width: "5.2vw" }}
-                    className="mt-4"
+                    className="mt-2"
                     preserveAspectRatio="none"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="24 9 52 62"
@@ -110,13 +116,16 @@ function NavBar() {
               <div>
                 <div className="flex justify-evenly flex-nowrap">
                   <div>
-                    <h2 className="flex justify-start text-4xl">
+                    <h2
+                      className="flex justify-start "
+                      style={{ fontSize: "1.83vw" }}
+                    >
                       <a>now</a>
                     </h2>
                     <br />
-                    <p className="flex justify-start">newsletter</p>
-                    <p className="flex justify-start">instagram</p>
-                    <p className="flex justify-start">ems</p>
+                    <p style={{ fontSize: ".916667vw" }}>newsletter</p>
+                    <p style={{ fontSize: ".916667vw" }}>instagram</p>
+                    <p style={{ fontSize: ".916667vw" }}>ems</p>
                   </div>
                 </div>
               </div>
@@ -125,7 +134,7 @@ function NavBar() {
               <div className="pr-4">
                 <div>
                   <svg
-                    className="pr-2 mt-3"
+                    className="pr-2 mt-2"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="12.5 9.5 63.5 29"
                     style={{ width: "6.8vw" }}
@@ -152,17 +161,17 @@ function NavBar() {
                 </div>
               </div>
               <div>
-                <h2 className="text-4xl">account</h2>
+                <h2 style={{ fontSize: "1.83vw" }}>account</h2>
                 <br />
-                <p>sign in</p>
-                <p>register</p>
+                <p style={{ fontSize: ".916667vw" }}>sign in</p>
+                <p style={{ fontSize: ".916667vw" }}>register</p>
               </div>
             </div>
             <div
-              className="flex items-center tracking-tight bg-red-500"
-              style={{ fontSize: "60%" }}
+              className="flex items-center leading-normal"
+              style={{ fontSize: "55%", width: "12%" }}
             >
-              <span className="flex flex-col">
+              <span className="flex flex-col truncate">
                 <span>代工学は未来の製品と</span>
                 <span>コミュニケーションを生</span>
                 <span>み出すスタジオです。</span>
@@ -176,14 +185,14 @@ function NavBar() {
             </div>{" "}
           </div>
           <div
-            class="bg-red-500"
+            class=""
             style={{ height: "160px", width: "15%", overflow: "visible" }}
           >
             <div
               class=""
               style={{
                 width: "60%",
-                height: "80px",
+                height: "20%",
               }}
             >
               <div class="svg">
