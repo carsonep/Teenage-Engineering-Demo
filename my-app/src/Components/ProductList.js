@@ -6,6 +6,7 @@ import PostExcerpt from "../Components/PostExcerpt";
 
 import { useGetProductsQuery } from "../features/api/apiSlice";
 import NavBar from "./NavBar";
+import ProductCategory from "./ProductCategory";
 
 function ProductList() {
   const {
@@ -32,8 +33,11 @@ function ProductList() {
   return (
     <div className="">
       <NavBar />
-      <h2>Products</h2>
-      <div className="mx-4 md:mx-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+      <ProductCategory />
+      <div
+        style={{ padding: "0px 4.6vw" }}
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+      >
         {content}
       </div>
     </div>

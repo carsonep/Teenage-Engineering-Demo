@@ -8,13 +8,14 @@ function PostExcerpt({ product }) {
       <div className="w-full">
         <div className="w-full">
           <div
-            className="flex justify-center w-full items-center rounded-2xl md:rounded-lg md:h-full"
-            style={{ backgroundColor: "#e5e5e5", height: "25%" }}
+            className="flex justify-center rounded-2xl md:rounded-sm "
+            style={{ backgroundColor: "#e5e5e5" }}
           >
             <img
               src={`https://localhost:5001/${product.photos[0].pictureUrl}`}
               alt=""
-              className="rounded-t-lg md:w-1/2"
+              className="object-scale-down rounded-t-lg md:w-1/2"
+              style={{ minHeight: "27.5vw" }}
             />
           </div>
           <div class="ml-2 mr-2 flex justify-between">
