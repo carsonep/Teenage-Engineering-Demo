@@ -1,5 +1,6 @@
 import React from "react";
 import JapaneseSvg from "./JapaneseSvg";
+import "./styleComponents/NavBar.css";
 
 function NavBar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -20,20 +21,23 @@ function NavBar() {
   let dt = new Date();
 
   return (
-    <nav className="md:mt-2" style={{ padding: "0px 4.6vw" }}>
+    <nav
+      className="md:mt-2 w-full fixed lg:relative bg-red-500"
+      style={{ padding: "0px 4.6vw" }}
+    >
       <div
-        className="box-content tracking-wide  leading-none font-normal"
+        className="tracking-wide lg:relative leading-none font-normal"
         style={{ fontFamily: "Univers TE20 Thin" }}
       >
-        <div className="flex justify-between flex-nowrap items-start">
+        <div className="flex justify-start lg:justify-between relative flex-nowrap items-start">
           <button
-            className="cursor-pointer text-xl block lg:hidden outline-none focus:outline-none"
+            className="cursor-pointer mr-12 fixed text-xl block lg:hidden outline-none focus:outline-none"
             type="button"
             onClick={() => setNavbarOpen(!navbarOpen)}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-8 w-8"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -48,45 +52,46 @@ function NavBar() {
           </button>
           <div
             className={
-              "lg:flex flex-grow items-center" +
-              (navbarOpen ? " flex" : " hidden")
+              "lg:flex py-8 lg:py-0 flex-col lg:flex-row flex-grow lg:items-center" +
+              (navbarOpen
+                ? " flex h-screen text-white text-4xl leading-tight"
+                : " hidden")
             }
-            id="example-navbar-danger"
           >
             <div
               style={{ margin: "-0.15vw 0px 0.458333vw", paddingRight: "5.3%" }}
             >
-              <h1 style={{ fontSize: "1.83vw" }}>
+              <h1>
                 <a className="text-left">
                   teenage <br />
                   engineering
                 </a>
               </h1>
               <br />
-              <span className="text-left">
+              <span className="text-left" style={{ fontSize: ".916667vw" }}>
                 {dt.getFullYear()} {monthNames[dt.getUTCMonth()]}
               </span>
             </div>
-            <div className="flex flex-1 justify-around">
-              <div className="flex justify-evenly flex-nowrap">
+            <div className="flex lg:py-0 flex-col lg:flex-row align-left flex-1 lg:justify-around">
+              <div className="flex lg:justify-evenly flex-nowrap">
                 <div className="mr-1">
                   <h2
                     className="flex justify-start"
-                    style={{ fontSize: "1.83vw", paddingRight: "10px" }}
+                    style={{ paddingRight: "10px" }}
                   >
                     <a>products</a>
                   </h2>
                   <br />
-                  <p style={{ fontSize: ".916667vw" }}>wireless audio</p>
-                  <p style={{ fontSize: ".916667vw" }}>synthesizers</p>
-                  <p style={{ fontSize: ".916667vw" }}>designs</p>
+                  <p>wireless audio</p>
+                  <p>synthesizers</p>
+                  <p>designs</p>
                 </div>
               </div>
-              <div className="flex pr-4">
-                <div className="pr-4">
+              <div className="flex pr-4 lg:py-0">
+                <div className="lg:pr-4">
                   <svg
                     style={{ width: "3.9vw" }}
-                    className="mt-2"
+                    className="mt-2 hidden lg:block"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="37 9.5 38.5 61.5"
                   >
@@ -110,23 +115,23 @@ function NavBar() {
                     </g>
                   </svg>
                 </div>
-                <div className="flex mr-8">
+                <div className="flex mr-8 lg:py-0">
                   <div>
-                    <h2 style={{ fontSize: "1.83vw" }}>
+                    <h2>
                       <a>store</a>
                     </h2>
                     <br />
-                    <p style={{ fontSize: ".916667vw" }}>view cart</p>
-                    <p style={{ fontSize: ".916667vw" }}>checkout</p>
+                    <p>view cart</p>
+                    <p>checkout</p>
                   </div>
                 </div>
               </div>
-              <div className="flex">
-                <div className="pr-4">
+              <div className="flex ">
+                <div className="lg:pr-4">
                   <a>
                     <svg
                       style={{ width: "5.2vw" }}
-                      className="mt-2"
+                      className="mt-2 hidden lg:block"
                       preserveAspectRatio="none"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="24 9 52 62"
@@ -142,27 +147,24 @@ function NavBar() {
                   </a>
                 </div>
                 <div>
-                  <div className="flex justify-evenly flex-nowrap">
-                    <div>
-                      <h2
-                        className="flex justify-start "
-                        style={{ fontSize: "1.83vw" }}
-                      >
+                  <div className="justify-evenly flex-nowrap ">
+                    <div className="">
+                      <h2 className="flex justify-start ">
                         <a>now</a>
                       </h2>
                       <br />
-                      <p style={{ fontSize: ".916667vw" }}>newsletter</p>
-                      <p style={{ fontSize: ".916667vw" }}>instagram</p>
-                      <p style={{ fontSize: ".916667vw" }}>ems</p>
+                      <p>newsletter</p>
+                      <p>instagram</p>
+                      <p>ems</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="flex" style={{ marginRight: "2%" }}>
-                <div className="pr-4">
+              <div className="flex lg:py-0" style={{ marginRight: "2%" }}>
+                <div className="lg:pr-4">
                   <div>
                     <svg
-                      className="pr-2 mt-2"
+                      className="pr-2 mt-2 hidden lg:block"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="12.5 9.5 63.5 29"
                       style={{ width: "6.8vw" }}
@@ -177,6 +179,7 @@ function NavBar() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
+                      className="hidden lg:block"
                       viewBox="10.5 -1 65 41"
                       style={{ width: "6.8vw" }}
                     >
@@ -189,10 +192,10 @@ function NavBar() {
                   </div>
                 </div>
                 <div>
-                  <h2 style={{ fontSize: "1.83vw" }}>account</h2>
+                  <h2>account</h2>
                   <br />
-                  <p style={{ fontSize: ".916667vw" }}>sign in</p>
-                  <p style={{ fontSize: ".916667vw" }}>register</p>
+                  <p>sign in</p>
+                  <p>register</p>
                 </div>
               </div>
               <div

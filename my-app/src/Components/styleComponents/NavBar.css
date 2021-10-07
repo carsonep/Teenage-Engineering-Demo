@@ -1,0 +1,32 @@
+/* style= {
+   {
+  }
+} */
+
+/* style={{ fontSize: ".916667vw" }} */
+
+/* style={{ fontSize: "1.83vw" }} */
+
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 1.83vw;
+  }
+  h2 {
+    font-size: 1.83vw;
+  }
+  p {
+    font-size: 0.916667vw;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  h1 {
+    font-size: 3.3333vw;
+  }
+  h2 {
+    font-size: 3.6777vw;
+  }
+  p {
+    font-size: 2.75vw;
+  }
+}

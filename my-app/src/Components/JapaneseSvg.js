@@ -4,6 +4,7 @@ function JapaneseSvg() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
+      className="hidden lg:block"
       viewBox="-2.5 -17 200 210"
       transform="scale(1 0.98)"
     >
