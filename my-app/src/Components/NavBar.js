@@ -22,16 +22,22 @@ function NavBar() {
 
   return (
     <nav
-      className="md:mt-2 w-full fixed lg:relative bg-red-500"
+      className={
+        "md:mt-2 w-full fixed lg:relative" +
+        (navbarOpen ? " bg-black" : " bg-transparent")
+      }
       style={{ padding: "0px 4.6vw" }}
     >
       <div
         className="tracking-wide lg:relative leading-none font-normal"
         style={{ fontFamily: "Univers TE20 Thin" }}
       >
-        <div className="flex justify-start lg:justify-between relative flex-nowrap items-start">
+        <div className="flex lg:justify-between relative flex-nowrap items-start">
           <button
-            className="cursor-pointer mr-12 fixed text-xl block lg:hidden outline-none focus:outline-none"
+            className={
+              "cursor-pointer mr-12 fixed text-xl block lg:hidden outline-none focus:outline-none" +
+              (navbarOpen ? " text-white" : "text-black")
+            }
             type="button"
             onClick={() => setNavbarOpen(!navbarOpen)}
           >
@@ -54,7 +60,7 @@ function NavBar() {
             className={
               "lg:flex py-8 lg:py-0 flex-col lg:flex-row flex-grow lg:items-center" +
               (navbarOpen
-                ? " flex h-screen text-white text-4xl leading-tight"
+                ? " flex h-screen w-full text-white leading-tight"
                 : " hidden")
             }
           >
@@ -68,7 +74,10 @@ function NavBar() {
                 </a>
               </h1>
               <br />
-              <span className="text-left" style={{ fontSize: ".916667vw" }}>
+              <span
+                className="text-left hidden lg:block"
+                style={{ fontSize: ".916667vw" }}
+              >
                 {dt.getFullYear()} {monthNames[dt.getUTCMonth()]}
               </span>
             </div>

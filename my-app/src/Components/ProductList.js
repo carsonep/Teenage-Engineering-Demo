@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import LoadingSpinner from "../Components/LoadingSpinner";
 import PostExcerpt from "../Components/PostExcerpt";
@@ -36,7 +36,7 @@ function ProductList() {
       <ProductCategory />
       <div
         style={{ padding: "0px 4.6vw" }}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5"
       >
         {content}
       </div>

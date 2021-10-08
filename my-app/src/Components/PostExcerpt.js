@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function PostExcerpt({ product }) {
-  console.log(product.photos[0].pictureUrl);
+  console.log(product.id);
   return (
-    <div className="m-2">
+    <div className="">
       <div className="w-full">
         <div className="w-full">
           <div
@@ -18,12 +18,14 @@ function PostExcerpt({ product }) {
               style={{ minHeight: "27.5vw" }}
             />
           </div>
-          <div class="ml-2 mr-2 flex justify-between">
-            <div className="mt-2">
-              <h3 class="text-xs">{product.name}</h3>
-              <a href="#" class="flex text-xs">
-                ${product.price}
-              </a>
+          <div class="ml-2 mr-2 flex  justify-between">
+            <div className="mt-2 bg-red-500 ">
+              <Link to={`/products/${product.id}`}>
+                <h3 class="text-xs">{product.name}</h3>
+                <p href="#" class="flex text-xs">
+                  ${product.price}
+                </p>
+              </Link>
             </div>
 
             <p class="text-4xl font-thin">+</p>
