@@ -48,7 +48,7 @@ function ImageCarousel({ images }) {
   };
 
   const arrowStyle =
-    "absolute text-white text-2xl z-10 h-10 w-10 opacity-75 flex items-center justify-center";
+    "absolute text-white text-2xl h-10 w-10 opacity-75 flex items-center justify-center";
 
   const sliderControl = (isLeft) => (
     <button
@@ -64,18 +64,23 @@ function ImageCarousel({ images }) {
   );
 
   return (
-    <div className="">
-      <div className="p-12 bg-red-500 flex flex-nowrap justify-center w-screen md:w-1/2 items-center">
-        <div className="relative w-full">
-          <div className="carousel">
-            {sliderControl(true)}
-            {images.map((img, i) => (
-              <div className="w-full flex-shrink-0" key={img} ref={refs[i]}>
-                <img src={img} className="w-full object-contain" />
-              </div>
-            ))}
-            {sliderControl()}
-          </div>
+    <div
+      className="p-12 h-4/5 rounded-2xl md:rounded-none flex flex-nowrap justify-center w-screen md:w-full items-center"
+      style={{ backgroundColor: "#e5e5e5", padding: "0px 4.6vw" }}
+    >
+      <div className="relative w-full">
+        <div className="carousel ">
+          {sliderControl(true)}
+          {images.map((img, i) => (
+            <div
+              className="w-full justify-center flex-shrink-0"
+              key={img}
+              ref={refs[i]}
+            >
+              <img src={img} className="w-full object-contain" />
+            </div>
+          ))}
+          {sliderControl()}
         </div>
       </div>
     </div>

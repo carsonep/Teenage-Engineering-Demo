@@ -23,7 +23,7 @@ function NavBar() {
   return (
     <nav
       className={
-        "md:mt-2 w-full fixed lg:relative" +
+        "md:mt-2 h-14 lg:h-auto  w-full lg:relative" +
         (navbarOpen ? " bg-black" : " bg-transparent")
       }
       style={{ padding: "0px 4.6vw" }}

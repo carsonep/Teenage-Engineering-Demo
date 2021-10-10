@@ -3,6 +3,7 @@ import LoadingSpinner from "../Components/LoadingSpinner";
 import { useGetProductQuery } from "../features/api/apiSlice";
 import ImageCarousel from "./ImageCarousel";
 import NavBar from "./NavBar";
+import "./styleComponents/ProductDetails.css";
 
 function ProductDetails({ match }) {
   const {
@@ -20,11 +21,32 @@ function ProductDetails({ match }) {
       (photo) => `https://localhost:5001/${photo.pictureUrl}`
     );
     content = (
-      <div>
-        <div className="w-screen flex justify-center">
-          <ImageCarousel images={photosArray} />
+      <div className="flex flex-col " style={{ backgroundColor: "#e5e5e5" }}>
+        <h1 className="flex justify-center pb-8 lg:hidden">{product.name}</h1>
+        <div className="flex flex-col md:flex-row">
+          <div
+            className="w-full md:w-1/2 md:h-full flex justify-center md:justify-start"
+            //   style={{ padding: "0px 4.6vw" }}
+          >
+            <ImageCarousel images={photosArray} />
+          </div>
+
+          <div className="flex justify-center items-center flex-col mt-8 md:w-1/2">
+            <div className="flex flex-row md:flex-col items-center justify-between">
+              <div>
+                <h1 className="hidden md:block md:text-5xl font-light">
+                  {product.name}
+                </h1>
+                <h1 className="text-5xl font-light">${product.price}</h1>
+                <p className="md:hidden">ready to ship</p>
+              </div>
+              <button className="bg-yellow-300 md:bg-black md:w-2/4 md:rounded-none nd md:text-white rounded-3xl text-4xl">
+                buy
+              </button>
+            </div>
+            <p className="mt-12 bg-red-500 md:w-1/2">{product.description}</p>
+          </div>
         </div>
-        <h1>{product.name}</h1>
       </div>
     );
   }
@@ -32,7 +54,7 @@ function ProductDetails({ match }) {
   return (
     <div>
       <NavBar />
-      <div>{content}</div>
+      <div className="">{content}</div>
     </div>
   );
 }
