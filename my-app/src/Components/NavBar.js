@@ -23,8 +23,8 @@ function NavBar() {
   return (
     <nav
       className={
-        "md:mt-2 h-14 lg:h-auto  w-full lg:relative" +
-        (navbarOpen ? " bg-black" : " bg-transparent")
+        "lg:mt-2 h-14 lg:h-auto w-full lg:relative" +
+        (navbarOpen ? " bg-black fixed h-full" : " bg-transparent")
       }
       style={{ padding: "0px 4.6vw" }}
     >
@@ -217,7 +217,7 @@ function NavBar() {
             </div>
           </div>
           <div
-            class=""
+            className=""
             style={{ height: "160px", width: "15%", overflow: "visible" }}
           >
             <div

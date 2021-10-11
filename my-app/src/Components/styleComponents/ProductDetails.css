@@ -3,4 +3,18 @@
     height: 18vh;
     width: 21vw;
   }
+
+  /* #secondary__div {
+  } */
+  .main {
+    background-color: white;
+    padding: 0px 4.6vw;
+  }
+
+  #buy_button {
+    height: 10vh;
+    width: 21vw;
+    min-width: 21vw;
+    background: rgb(250, 180, 19);
+  }
 }

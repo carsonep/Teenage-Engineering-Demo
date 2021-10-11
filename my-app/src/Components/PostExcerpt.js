@@ -19,7 +19,7 @@ function PostExcerpt({ product }) {
             />
           </div>
           <div class="ml-2 mr-2 flex  justify-between">
-            <div className="mt-2 bg-red-500 ">
+            <div className="mt-2">
               <Link to={`/products/${product.id}`}>
                 <h3 class="text-xs">{product.name}</h3>
                 <p href="#" class="flex text-xs">
