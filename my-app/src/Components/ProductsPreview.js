@@ -12,8 +12,8 @@ import cameraHero from "../images/cameraHero.png";
 
 function ProductsPreview() {
   return (
-    <div className="-mt-44">
-      <NavBar />
+    <div className="">
+      <NavBar bgColor={"#000000"} textColor={"#FFFFfF"} />
       <div className="grid grid-cols-6">
         <div className="col-span-6 h-full">
           <img src={ob4Hero} className="h-full w-full object-cover" />

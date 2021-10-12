@@ -22,7 +22,7 @@ function ProductDetails({ match }) {
     );
     content = (
       <div
-        className="main flex flex-col "
+        className="main flex flex-col"
         // style={{ backgroundColor: "#e5e5e5" }}
       >
         <h1 className="flex justify-center pb-8 lg:hidden">{product.name}</h1>
@@ -65,7 +65,7 @@ function ProductDetails({ match }) {
 
   return (
     <div>
-      <NavBar />
+      <NavBar textColor={"#000000"} />
       <div className="">{content}</div>
     </div>
   );

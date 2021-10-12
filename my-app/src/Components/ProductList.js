@@ -32,7 +32,7 @@ function ProductList() {
 
   return (
     <div className="">
-      <NavBar />
+      <NavBar textColor={"#000000"} />
       <ProductCategory />
       <div
         style={{ padding: "0px 4.6vw" }}
