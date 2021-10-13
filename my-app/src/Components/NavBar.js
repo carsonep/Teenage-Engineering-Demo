@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import JapaneseSvg from "./JapaneseSvg";
 import "./styleComponents/NavBar.css";
 
@@ -19,6 +19,8 @@ function NavBar({ bgColor, textColor }) {
     "december",
   ];
   let dt = new Date();
+
+  let currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
   return (
     <nav
@@ -209,6 +211,9 @@ function NavBar({ bgColor, textColor }) {
                   <br />
                   <p>sign in</p>
                   <p>register</p>
+                  {currentUser && currentUser.roles[0] == "Admin" && (
+                    <p>admin</p>
+                  )}
                 </div>
               </div>
               <div

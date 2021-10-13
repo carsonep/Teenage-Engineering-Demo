@@ -17,6 +17,12 @@ const LoginScreen = ({ location, history }) => {
 
   const canSave = [email, password].every(Boolean) && !isLoading;
 
+  useEffect(() => {
+    if (localStorage.getItem("currentUser")) {
+      history.push(redirect);
+    }
+  });
+
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
@@ -24,8 +30,7 @@ const LoginScreen = ({ location, history }) => {
       try {
         const result = await loginUser({ email, password }).unwrap();
 
-        console.log(result);
-        history.push(redirect);
+        localStorage.setItem("currentUser", JSON.stringify(result));
 
         setEmail("");
         setPassword("");

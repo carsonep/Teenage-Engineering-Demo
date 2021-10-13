@@ -21,6 +21,7 @@ const RegisterScreen = () => {
     if (canSave) {
       try {
         await createUser({ displayName, email, password }).unwrap();
+        window.location = "/login";
         setDisplayName("");
         setEmail("");
         setPassword("");
