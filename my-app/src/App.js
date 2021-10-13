@@ -9,6 +9,10 @@ import ProductsPreview from "./Components/ProductsPreview";
 import WirelessAudioPreview from "./Components/WirelessAudioPreview";
 import SynthesizerPreview from "./Components/SynthesizerPreview";
 import DesignsPreview from "./Components/DesignsPreview";
+import Ob4Screen from "./Components/Ob4Screen";
+import LoginScreen from "./Components/LoginScreen";
+import RegisterScreen from "./Components/RegisterScreen";
+
 function App() {
   return (
     <Router>
@@ -26,8 +30,11 @@ function App() {
             exact
             component={SynthesizerPreview}
           />
+          <Route path="/products/ob-4" exact component={Ob4Screen} />
           <Route path="/designs" exact component={DesignsPreview} />
           <Route path="/products/:id" component={ProductDetails} />
+          <Route path="/login" component={LoginScreen} />
+          <Route path="/register" component={RegisterScreen} />
         </Switch>
       </div>
     </Router>
