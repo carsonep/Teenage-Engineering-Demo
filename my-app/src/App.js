@@ -12,6 +12,7 @@ import DesignsPreview from "./Components/DesignsPreview";
 import Ob4Screen from "./Components/Ob4Screen";
 import LoginScreen from "./Components/LoginScreen";
 import RegisterScreen from "./Components/RegisterScreen";
+import OpzScreen from "./Components/OpzScreen";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             component={SynthesizerPreview}
           />
           <Route path="/products/ob-4" exact component={Ob4Screen} />
+          <Route path="/products/op-z" exact component={OpzScreen} />
           <Route path="/designs" exact component={DesignsPreview} />
           <Route path="/products/:id" component={ProductDetails} />
           <Route path="/login" component={LoginScreen} />
