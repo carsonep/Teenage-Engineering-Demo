@@ -1,16 +1,40 @@
-import React from "react";
 import NavBar from "./NavBar";
 import logo from "../images/logo.png";
 
-const LoginScreen = () => {
-  const handleFormSubmit = (e) => {
+import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import { useLoginUserMutation } from "../features/api/apiSlice";
+
+import LoadingSpinner from "../Components/LoadingSpinner";
+
+const LoginScreen = ({ location, history }) => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const [loginUser, { isLoading }] = useLoginUserMutation();
+
+  const redirect = location.search ? location.search.split("=")[1] : "/";
+
+  const canSave = [email, password].every(Boolean) && !isLoading;
+
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
 
-    let email = e.target.elements.email?.value;
-    let password = e.target.elements.password?.value;
+    if (canSave) {
+      try {
+        const result = await loginUser({ email, password }).unwrap();
 
-    console.log(email, password);
+        console.log(result);
+        history.push(redirect);
+
+        setEmail("");
+        setPassword("");
+      } catch (err) {
+        console.error("Failed to post user", err);
+      }
+    }
   };
+
   return (
     <div>
       <NavBar textColor={"#000000"} />
@@ -28,6 +52,7 @@ const LoginScreen = () => {
                 type="email"
                 className={`w-full p-4 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4`}
                 id="email"
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your Email"
               />
             </div>
@@ -37,6 +62,7 @@ const LoginScreen = () => {
                 type="password"
                 className={`w-full p-4 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4`}
                 id="password"
+                onChange={(e) => setPassword(e.target.value)}
                 placeholder="Your Password"
               />
             </div>

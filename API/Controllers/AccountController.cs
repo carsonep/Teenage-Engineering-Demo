@@ -28,7 +28,7 @@ namespace API.Controllers
         [HttpGet]
         public async Task<ActionResult<UserDto>> GetCurrentUser()
         {
-            var user = await _userManager.FindByEmailFromClaimsPrinciple(User);
+            var user = await _userManager.FindByEmailFromClaimsPrinciple(HttpContext.User);
 
              return new UserDto
             {
@@ -53,7 +53,8 @@ namespace API.Controllers
             {
                 Email = user.Email,
                 Token = await _tokenService.CreateToken(user),
-                DisplayName = user.DisplayName
+                DisplayName = user.DisplayName,
+                Roles = await _userManager.GetRolesAsync(user)
             };
         }
 

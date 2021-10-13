@@ -13,9 +13,17 @@ export const apiSlice = createApi({
     getProduct: builder.query({
       query: (productId) => `/Products/${productId}`,
     }),
+    getUser: builder.query({ query: () => `/Account` }),
     createUser: builder.mutation({
       query: (userInfo) => ({
         url: "/account/register",
+        method: "POST",
+        body: userInfo,
+      }),
+    }),
+    loginUser: builder.mutation({
+      query: (userInfo) => ({
+        url: "/account/login",
         method: "POST",
         body: userInfo,
       }),
@@ -28,4 +36,5 @@ export const {
   useGetProductsQuery,
   useGetProductQuery,
   useCreateUserMutation,
+  useLoginUserMutation,
 } = apiSlice;
