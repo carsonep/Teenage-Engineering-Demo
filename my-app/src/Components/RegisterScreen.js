@@ -1,15 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
+import { useCreateUserMutation } from "../features/api/apiSlice";
+
 import NavBar from "./NavBar";
 import logo from "../images/logo.png";
+import LoadingSpinner from "../Components/LoadingSpinner";
 
 const RegisterScreen = () => {
-  const handleFormSubmit = (e) => {
+  const [displayName, setDisplayName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const [createUser, { isLoading }] = useCreateUserMutation();
+
+  const canSave = [displayName, email, password].every(Boolean) && !isLoading;
+
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
 
-    let email = e.target.elements.email?.value;
-    let password = e.target.elements.password?.value;
-
-    console.log(email, password);
+    if (canSave) {
+      try {
+        await createUser({ displayName, email, password }).unwrap();
+        setDisplayName("");
+        setEmail("");
+        setPassword("");
+      } catch (err) {
+        console.error("Failed to post user", err);
+      }
+    }
   };
   return (
     <div>
@@ -23,11 +41,12 @@ const RegisterScreen = () => {
 
           <form onSubmit={handleFormSubmit}>
             <div>
-              <label htmlFor="name">Username</label>
+              <label htmlFor="text">Username</label>
               <input
-                type="name"
+                type="text"
                 className={`w-full p-4 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4`}
                 id="name"
+                onChange={(e) => setDisplayName(e.target.value)}
                 placeholder="Your Username"
               />
               <label htmlFor="email">Email</label>
@@ -35,6 +54,7 @@ const RegisterScreen = () => {
                 type="email"
                 className={`w-full p-4 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4`}
                 id="email"
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your Email"
               />
             </div>
@@ -44,6 +64,7 @@ const RegisterScreen = () => {
                 type="password"
                 className={`w-full p-4 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4`}
                 id="password"
+                onChange={(e) => setPassword(e.target.value)}
                 placeholder="Your Password"
               />
             </div>
