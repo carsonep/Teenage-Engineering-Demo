@@ -14,13 +14,15 @@ import LoginScreen from "./Components/LoginScreen";
 import RegisterScreen from "./Components/RegisterScreen";
 import OpzScreen from "./Components/OpzScreen";
 import PocketOperatorScreen from "./Components/PocketOperatorScreen";
+import HomePage from "./Components/HomePage";
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Switch>
-          <Route path="/" exact component={ProductList} />
+          <Route path="/" exact component={HomePage} />
+          <Route path="/store" exact component={ProductList} />
           <Route path="/products" exact component={ProductsPreview} />
           <Route
             path="/products/audio"
