@@ -15,7 +15,7 @@ function HomePage() {
           backgroundRepeat: "no-repeat",
           width: "100%",
           height: 0,
-          paddingTop: "77%",
+          paddingTop: "90%",
         }}
       >
         <h1 className="absolute top-32 flex w-full justify-center">

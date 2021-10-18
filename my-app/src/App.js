@@ -15,6 +15,7 @@ import RegisterScreen from "./Components/RegisterScreen";
 import OpzScreen from "./Components/OpzScreen";
 import PocketOperatorScreen from "./Components/PocketOperatorScreen";
 import HomePage from "./Components/HomePage";
+import OrthoRemotePreview from "./Components/OrthoRemotePreview";
 
 function App() {
   return (
@@ -37,6 +38,11 @@ function App() {
           <Route path="/products/ob-4" exact component={Ob4Screen} />
           <Route path="/products/op-z" exact component={OpzScreen} />
           <Route path="/products/po" exact component={PocketOperatorScreen} />
+          <Route
+            path="/products/orthoremote"
+            exact
+            component={OrthoRemotePreview}
+          />
           <Route path="/designs" exact component={DesignsPreview} />
           <Route path="/products/:id" component={ProductDetails} />
           <Route path="/login" component={LoginScreen} />
