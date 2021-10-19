@@ -17,6 +17,7 @@ import PocketOperatorScreen from "./Components/PocketOperatorScreen";
 import HomePage from "./Components/HomePage";
 import OrthoRemotePreview from "./Components/OrthoRemotePreview";
 import Od11Screen from "./Components/Od11Screen";
+import I1Preview from "./Components/I1Preview";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route path="/products/op-z" exact component={OpzScreen} />
           <Route path="/products/po" exact component={PocketOperatorScreen} />
           <Route path="/products/od-11" exact component={Od11Screen} />
+          <Route path="/designs/I-1" exact component={I1Preview} />
           <Route
             path="/products/orthoremote"
             exact
