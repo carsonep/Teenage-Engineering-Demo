@@ -188,10 +188,7 @@ function Od11Screen() {
           backgroundColor: "#0f0e12",
         }}
       >
-        <h1
-          className=" text-white text-2xl md:text-5xl"
-          style={{ color: "#e5e5e5", fontSize: "3.333vw" }}
-        >
+        <h1 style={{ color: "#e5e5e5", fontSize: "3.333vw" }}>
           a music lover's dream-come-true.
         </h1>
         <h2
@@ -308,15 +305,18 @@ function Od11Screen() {
         </div>
       </div>
       <div
-        className="col-span-6 h-48 flex flex-col justify-center items-center"
+        className="col-span-6 h-40 lg:h-72 flex flex-col justify-center items-center"
         style={{
           backgroundColor: "#0f0e12",
         }}
       >
-        <h1 className=" text-white text-2xl md:text-5xl">
+        <h1 style={{ color: "#e5e5e5", fontSize: "3.333vw" }}>
           a 40-year-old minimalist classic reborn.
         </h1>
-        <h2 className=" text-white text-xl md:text-3xl font-light">
+        <h2
+          className="font-light mt-4"
+          style={{ color: "#a2b2b2", fontSize: "1.8333vw" }}
+        >
           – DESIGN MILK
         </h2>
       </div>
