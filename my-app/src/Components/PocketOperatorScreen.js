@@ -22,43 +22,81 @@ import batteryProtection from "../images/batteryProtection.jpg";
 import poButtons from "../images/poButtons.png";
 import miniSyncCables from "../images/miniSyncCables.png";
 import displayProtection from "../images/displayProtection.png";
+import "./styleComponents/PocketOperator.css";
 
 function PocketOperatorScreen() {
   return (
     <div>
       <NavBar textColor={"#ffffff"} />
+
       <div
-        className=""
+        className="-mt-14 md:-mt-14 lg:-mt-44"
         style={{
           backgroundImage: `url(${poMegaman})`,
-          backgroundSize: "105%",
+          backgroundSize: "107%",
           backgroundRepeat: "no-repeat",
           width: "100%",
           height: 0,
           paddingTop: "100%",
         }}
       >
-        <h1>introducing pocket operator capcom® series.</h1>
+        {/* <h1>introducing pocket operator capcom® series.</h1> */}
       </div>
-      <div>
-        <h1>a wall of sound in your pocket.</h1>
-        <p>
-          pocket operators are small, ultra portable music devices, with studio
-          quality sound and the flexibility to make music on the go. affordable
-          for everyone and compatible with all other music gear.
-        </p>
-        <p>for an impossibly cheap price from $49.</p>
-        <img src={poBoxes} />
+      <div
+        className="flex flex-col justify-center items-center font-light leading-tight -mt-48"
+        style={{ fontSize: "1.8333vw" }}
+      >
+        <h1
+          className="font-normal pb-6 md:pb-12"
+          style={{ fontSize: "3.333vw" }}
+        >
+          a wall of sound in your pocket.
+        </h1>
+
+        <span>pocket operators are small, ultra portable music devices,</span>
+        <span>
+          with studio quality sound and the flexibility to make music on the go.
+        </span>
+        <span>
+          affordable for everyone and compatible with all other music gear.
+        </span>
+
+        <span>
+          <br />
+        </span>
+        <span>for an impossibly cheap price from $49.</span>
+
+        <div className="flex mt-4 md:mt-14 pb-12 md:pb-12 lg:pb-20 ">
+          <p style={{ fontSize: "1.8333vw" }} className="mr-4 md:mr-8">
+            features
+          </p>
+          <p style={{ fontSize: "1.8333vw" }} className="mr-4 md:mr-8">
+            sound samples{" "}
+          </p>
+          <p style={{ fontSize: "1.8333vw" }}>accessories</p>
+        </div>
+        <div
+          style={{
+            backgroundImage: `url(${poBoxes})`,
+            backgroundSize: "107%",
+            backgroundPosition: "25% 55%",
+            backgroundRepeat: "no-repeat",
+            width: "100%",
+            height: 0,
+            paddingTop: "30%",
+          }}
+        ></div>
       </div>
       <div
         className=""
         style={{
           backgroundImage: `url(${poDripBoxes})`,
-          backgroundSize: "105%",
+          backgroundSize: "214%",
+          backgroundPosition: "47% 35%",
           backgroundRepeat: "no-repeat",
           width: "100%",
           height: 0,
-          paddingTop: "100%",
+          paddingTop: "90%",
         }}
       >
         <div>
@@ -81,95 +119,169 @@ function PocketOperatorScreen() {
           <img src={poArcade} />
         </div>
       </div>
-      <div>
-        <h1>the pocket operator family.</h1>
-        <p>
-          all pocket operator models perfectly complement each other. from drum
-          machine, bass and lead synthesizers to noise percussion, the various
-          unique units allow you to start a pocket band. use them separately or
-          connect them together, the choice is yours.
-        </p>
-        <ul>
-          <li>user guides</li>
-          <li>video tutorials</li>
-          <li>workshops</li>
-        </ul>
+      <div
+        className="flex flex-col justify-center items-center font-light leading-tight mt-12 md:mt-16 lg:mt-24"
+        style={{ fontSize: "1.8333vw" }}
+      >
+        <h1
+          className="font-normal pb-6 md:pb-12"
+          style={{ fontSize: "3.333vw" }}
+        >
+          the pocket operator family.
+        </h1>
+        <span>all pocket operator models perfectly complement each other.</span>
+        <span>
+          from drum machine, bass and lead synthesizers to noise percussion,
+        </span>
+        <span>the various unique units allow you to start a pocket band.</span>
+        <span>
+          use them separately or connect them together, the choice is yours.
+        </span>
+
+        <div className="flex mt-4 md:mt-14 pb-12 md:pb-12 lg:pb-20 ">
+          <p style={{ fontSize: "1.8333vw" }} className="mr-4 md:mr-8">
+            user guides
+          </p>
+          <p style={{ fontSize: "1.8333vw" }} className="mr-4 md:mr-8">
+            video tutorials
+          </p>
+          <p style={{ fontSize: "1.8333vw" }}>workshops</p>
+        </div>
       </div>
-      <div className="grid grid-cols-2">
-        <div className="flex">
-          <div>
-            <img src={poRhythm} />
-          </div>
-          <div>
-            <p>PO-12 rhythm</p>
-            <p>
+      <div
+        className="grid grid-cols-2"
+        style={{
+          backgroundColor: "#e5e5e5",
+          fontSize: "1.8333vw",
+          paddingTop: "7.5%",
+          paddingLeft: "2.5%",
+          paddingRight: "2.5%",
+        }}
+      >
+        <div className="grid grid-cols-2">
+          <div
+            className=""
+            style={{
+              backgroundImage: `url(${poRhythm})`,
+              backgroundSize: "90%",
+              backgroundPosition: "center top",
+              backgroundRepeat: "no-repeat",
+              width: "100%",
+              height: "0",
+              paddingTop: "200%",
+            }}
+          ></div>
+          <div className="flex flex-col leading-none font-light">
+            <span>PO-12 rhythm</span>
+            <span className="po__description">
               16 sound drum machine and sequencer, perfect for making beats.
               parameter locks and punch-in effects.
-            </p>
-            <ul>
+            </span>
+            <ul className="po__list list-disc">
               <li>real synthesised drum sounds</li>
               <li>sampled drum sounds</li>
               <li>16 punch-in effects</li>
               <li>16 pattern chaining</li>
               <li>step multiplier</li>
             </ul>
-            <p>$69</p>
-            <p>view in store</p>
+            <span className="po__pricing-price">$69</span>
+            <span>view in store</span>
           </div>
         </div>
-        <div className="flex">
-          <div>
-            <img src={poSub} />
-          </div>
-          <div>
-            <p>PO-14 sub</p>
-            <p>
+        <div
+          className="grid grid-cols-2"
+          style={{
+            backgroundColor: "#e5e5e5",
+            fontSize: "1.8333vw",
+          }}
+        >
+          <div
+            className=""
+            style={{
+              backgroundImage: `url(${poSub})`,
+              backgroundSize: "90%",
+              backgroundPosition: "center top",
+              backgroundRepeat: "no-repeat",
+              width: "100%",
+              height: "0",
+              paddingTop: "200%",
+            }}
+          ></div>
+
+          <div className="flex flex-col leading-none font-light">
+            <span>PO-14 sub</span>
+            <span className="po__description">
               deep bass line synthesizer with sequencer, parameter locks, play
               styles and punch-in effects.
-            </p>
-            <ul>
+            </span>
+            <ul className="po__list list-disc">
               <li>multiple real synthesizer engines</li>
               <li>15 sounds + micro drum</li>
               <li>16 punch-in effects</li>
               <li>16 punch-in bass oriented play styles</li>
               <li>16 pattern chaining</li>
             </ul>
-            <p>$59</p>
-            <p>view in store</p>
+            <span className="po__pricing-price">$59</span>
+            <span>view in store</span>
           </div>
         </div>
-        <div className="flex">
-          <div>
-            <img src={poFactory} />
-          </div>
-          <div>
-            <p>PO-16 factory</p>
-            <p>
+        <div
+          className="grid grid-cols-2"
+          style={{ backgroundColor: "#e5e5e5", fontSize: "1.8333vw" }}
+        >
+          <div
+            className=""
+            style={{
+              backgroundImage: `url(${poFactory})`,
+              backgroundSize: "90%",
+              backgroundPosition: "center top",
+              backgroundRepeat: "no-repeat",
+              width: "100%",
+              height: "0",
+              paddingTop: "200%",
+            }}
+          ></div>
+
+          <div className="flex flex-col leading-none font-light">
+            <span>PO-16 factory</span>
+            <span className="po__description">
               lead synthesizer for keys melodies. sequencer with parameter
               locks, play styles and punch-in effects.
-            </p>
-            <ul>
+            </span>
+            <ul className="po__list list-disc">
               <li>multiple real synthesizer engines</li>
               <li>15 sounds + micro drum</li>
               <li>16 punch-in effects</li>
               <li>16 punch-in arpeggio and chord play styles</li>
               <li>16 pattern chaining</li>
             </ul>
-            <p>$59</p>
-            <p>view in store</p>
+            <span className="po__pricing-price">$59</span>
+            <span>view in store</span>
           </div>
         </div>
-        <div className="flex">
-          <div>
-            <img src={poArcadeList} />
-          </div>
-          <div>
-            <p>PO-20 arcade</p>
-            <p>
+        <div
+          className="grid grid-cols-2"
+          style={{ backgroundColor: "#e5e5e5", fontSize: "1.8333vw" }}
+        >
+          <div
+            className=""
+            style={{
+              backgroundImage: `url(${poArcadeList})`,
+              backgroundSize: "90%",
+              backgroundPosition: "center top",
+              backgroundRepeat: "no-repeat",
+              width: "100%",
+              height: "0",
+              paddingTop: "200%",
+            }}
+          ></div>
+          <div className="flex flex-col leading-none font-light">
+            <span>PO-20 arcade</span>
+            <span className="po__description">
               arcade synthesizer and sequencer, with parameter locks, chord
               control and punch-in effects.
-            </p>
-            <ul>
+            </span>
+            <ul className="po__list list-disc">
               <li>rapid beat making and chiptune improvisation</li>
               <li>synthesized arcade sounds</li>
               <li>128 chord chaining</li>
@@ -178,21 +290,33 @@ function PocketOperatorScreen() {
               <li>16 punch-in effects</li>
               <li>step multiplier</li>
             </ul>
-            <p>$69</p>
-            <p>view in store</p>
+            <span className="po__pricing-price">$69</span>
+            <span>view in store</span>
           </div>
         </div>
-        <div className="flex">
-          <div>
-            <img src={poOffice} />
-          </div>
-          <div>
-            <p>PO-24 office</p>
-            <p>
+        <div
+          className="grid grid-cols-2"
+          style={{ backgroundColor: "#e5e5e5", fontSize: "1.8333vw" }}
+        >
+          <div
+            className=""
+            style={{
+              backgroundImage: `url(${poOffice})`,
+              backgroundSize: "90%",
+              backgroundPosition: "center top",
+              backgroundRepeat: "no-repeat",
+              width: "100%",
+              height: "0",
+              paddingTop: "200%",
+            }}
+          ></div>
+
+          <div className="flex flex-col leading-none font-light">
+            <span className="po__description">
               noise percussion drum machine and sequencer, with parameter locks,
               solo functionality and punch-in effects.
-            </p>
-            <ul>
+            </span>
+            <ul className="po__list list-disc">
               <li>sampled vintage hardware and real synthesizer engines</li>
               <li>solo control</li>
               <li>128 pattern chaining</li>
@@ -200,21 +324,33 @@ function PocketOperatorScreen() {
               <li>16 punch-in effects</li>
               <li>step multiplier</li>
             </ul>
-            <p>$49</p>
-            <p>view in store</p>
+            <span className="po__pricing-price">$49</span>
+            <span>view in store</span>
           </div>
         </div>
-        <div className="flex">
-          <div>
-            <img src={poRobot} />
-          </div>
-          <div>
-            <p>PO-28 robot</p>
-            <p>
+        <div
+          className="grid grid-cols-2"
+          style={{ backgroundColor: "#e5e5e5", fontSize: "1.8333vw" }}
+        >
+          <div
+            className=""
+            style={{
+              backgroundImage: `url(${poRobot})`,
+              backgroundSize: "90%",
+              backgroundPosition: "center top",
+              backgroundRepeat: "no-repeat",
+              width: "100%",
+              height: "0",
+              paddingTop: "200%",
+            }}
+          ></div>
+          <div className="flex flex-col leading-none font-light">
+            <span>PO-28 robot</span>
+            <span className="po__description">
               live synthesizer and sequencer, with parameter locks, glide
               control and punch-in effects.
-            </p>
-            <ul>
+            </span>
+            <ul className="po__list list-disc">
               <li>
                 real 8-bit synthesizer engines for making live and sequenced
                 melodies and leads
@@ -224,43 +360,67 @@ function PocketOperatorScreen() {
               <li>128 pattern chaining</li>
               <li>step multiplier</li>
             </ul>
-            <p>$69</p>
-            <p>view in store</p>
+            <span className="po__pricing-price">$69</span>
+            <span>view in store</span>
           </div>
         </div>
-        <div className="flex">
-          <div>
-            <img src={poTonic} />
-          </div>
-          <div>
-            <p>PO-32 tonic</p>
-            <p>
+        <div
+          className="grid grid-cols-2"
+          style={{ backgroundColor: "#e5e5e5", fontSize: "1.8333vw" }}
+        >
+          <div
+            className=""
+            style={{
+              backgroundImage: `url(${poTonic})`,
+              backgroundSize: "90%",
+              backgroundPosition: "center top",
+              backgroundRepeat: "no-repeat",
+              width: "100%",
+              height: "0",
+              paddingTop: "200%",
+            }}
+          ></div>
+          <div className="flex flex-col leading-none font-light">
+            <span>PO-32 tonic</span>
+            <span className="po__description">
               drum and percussion synthesizer and sequencer with parameter
               locks, punch-in effects and unlimited sounds with microtonic vst
               through data transfer.
-            </p>
-            <ul>
+            </span>
+            <ul className="po__list list-disc">
               <li>real synthesizer engines</li>
               <li>unlimited sounds with microtonic vst</li>
               <li>step multiplier</li>
               <li>64 pattern chaining</li>
               <li>data transfer</li>
             </ul>
-            <p>$99</p>
-            <p>view in store</p>
+            <span className="po__pricing-price">$99</span>
+            <span>view in store</span>
           </div>
         </div>
-        <div className="flex">
-          <div>
-            <img src={po33} />
-          </div>
-          <div>
-            <p>PO-33 K.O!</p>
-            <p>
+        <div
+          className="grid grid-cols-2"
+          style={{ backgroundColor: "#e5e5e5", fontSize: "1.8333vw" }}
+        >
+          <div
+            className=""
+            style={{
+              backgroundImage: `url(${po33})`,
+              backgroundSize: "90%",
+              backgroundPosition: "center top",
+              backgroundRepeat: "no-repeat",
+              width: "100%",
+              height: "0",
+              paddingTop: "200%",
+            }}
+          ></div>
+          <div className="flex flex-col leading-none font-light">
+            <span>PO-33 K.O!</span>
+            <span className="po__description">
               micro sampler with 40 seconds sample memory and built-in recording
               microphone.
-            </p>
-            <ul>
+            </span>
+            <ul className="po__list list-disc">
               <li>microphone for sampling</li>
               <li>8 melodic sample slots</li>
               <li>8 drum slots</li>
@@ -268,21 +428,33 @@ function PocketOperatorScreen() {
               <li>16 effects</li>
               <li>step multiplier</li>
             </ul>
-            <p>$99</p>
-            <p>view in store</p>
+            <span className="po__pricing-price">$99</span>
+            <span>view in store</span>
           </div>
         </div>
-        <div className="flex">
-          <div>
-            <img src={poSpeak} />
-          </div>
-          <div>
-            <p>PO-35 speak</p>
-            <p>
+        <div
+          className="grid grid-cols-2"
+          style={{ backgroundColor: "#e5e5e5", fontSize: "1.8333vw" }}
+        >
+          <div
+            className=""
+            style={{
+              backgroundImage: `url(${poSpeak})`,
+              backgroundSize: "90%",
+              backgroundPosition: "center top",
+              backgroundRepeat: "no-repeat",
+              width: "100%",
+              height: "0",
+              paddingTop: "200%",
+            }}
+          ></div>
+          <div className="flex flex-col leading-none font-light">
+            <span>PO-35 speak</span>
+            <span className="po__description">
               vocal synthesizer and sequencer with built-in microphone for 8
               different voice character sampling.
-            </p>
-            <ul>
+            </span>
+            <ul className="po__list list-disc">
               <li>microphone for sampling</li>
               <li>120 seconds sample memory</li>
               <li>8 voice characters</li>
@@ -290,16 +462,19 @@ function PocketOperatorScreen() {
               <li>transpose and change scale</li>
               <li>replaceable drum sounds with microtonic (sold separately)</li>
             </ul>
-            <p>$99</p>
-            <p>view in store</p>
+            <span className="po__pricing-price">$99</span>
+            <span>view in store</span>
           </div>
         </div>
-        <div className="flex">
+        <div
+          className="grid grid-cols-2"
+          style={{ backgroundColor: "#e5e5e5", fontSize: "1.8333vw" }}
+        >
           <div></div>
-          <div>
-            <p>all units feature:</p>
+          <div className="flex flex-col leading-none font-light">
+            <span>all units feature:</span>
 
-            <ul>
+            <ul className="po__list list-disc">
               <li>16-step sequencer</li>
               <li>16 patterns</li>
               <li>parameter locks</li>
@@ -316,35 +491,64 @@ function PocketOperatorScreen() {
           </div>
         </div>
       </div>
-      <div>
-        <h1>small device, big sound.</h1>
-        <p>
-          use the built-in speaker for instant sound, connect a pair of
-          headphones for detailed personal listening, or hook up a speaker
-          system and the club will go boom!
-        </p>
-        <p>listen to sound samples below.</p>
+      <div
+        className="flex flex-col justify-center items-center font-light leading-tight mt-12 md:mt-16 lg:mt-24"
+        style={{ fontSize: "1.8333vw" }}
+      >
+        <h1
+          className="font-normal pb-6 md:pb-12"
+          style={{ fontSize: "3.333vw" }}
+        >
+          small device, big sound.
+        </h1>
+        <span>use the built-in speaker for instant sound,</span>
+        <span>
+          connect a pair of headphones for detailed personal listening,
+        </span>
+
+        <span>or hook up a speaker system and the club will go boom!</span>
+
+        <div className="flex mt-4 md:mt-14 pb-12 md:pb-12 lg:pb-20 ">
+          <span style={{ fontSize: "1.8333vw" }} className="mr-4 md:mr-8">
+            listen to sound samples below.
+          </span>
+        </div>
       </div>
-      <div>
-        <h1>clever design, high quality.</h1>
-        <p>
-          pocket operators are designed on a single multiple-layer circuit board
-          using high quality components. they all share a compact and durable
-          form factor.
-        </p>
+      <div
+        className="flex flex-col justify-center items-center font-light leading-tight mt-12 md:mt-16 lg:mt-24"
+        style={{ fontSize: "1.8333vw" }}
+      >
+        <h1
+          className="font-normal pb-6 md:pb-12"
+          style={{ fontSize: "3.333vw" }}
+        >
+          clever design, high quality.
+        </h1>
+        <span>pocket operators are designed on a single multiple-layer </span>
+        <span>circuit board using high quality components.</span>
+
+        <span>they all share a compact and durable form factor.</span>
+
+        <div className="flex mt-4 md:mt-14 pb-12 md:pb-12 lg:pb-20 ">
+          <span
+            style={{ fontSize: "1.8333vw" }}
+            className="mr-4 md:mr-8"
+          ></span>
+        </div>
       </div>
       <div
         className=""
         style={{
           backgroundImage: `url(${poScreen})`,
-          backgroundSize: "105%",
+          backgroundSize: "101%",
+          backgroundPosition: "-10% -8.7%",
           backgroundRepeat: "no-repeat",
           width: "100%",
           height: 0,
           paddingTop: "100%",
         }}
       >
-        <p>
+        {/* <p>
           by placing all vital and sensitive components under the LCD display
           there's no need for an outer case. by saving this cost, high quality
           components could be used to guarantee the best possible sound and very
@@ -356,20 +560,22 @@ function PocketOperatorScreen() {
           <li>cirrus logic dac</li>
           <li>knowles high quality speaker</li>
           <li>high quality crystal for solid clock.</li>
-        </ul>
+        </ul> */}
       </div>
       <div
         className=""
         style={{
           backgroundImage: `url(${poHardware})`,
-          backgroundSize: "100%",
+          backgroundSize: "85%",
+          backgroundPosition: "center",
+          backgroundColor: "#e5e5e5",
           backgroundRepeat: "no-repeat",
           width: "100%",
           height: 0,
-          paddingTop: "100%",
+          paddingTop: "85%",
         }}
       >
-        <ol>
+        {/* <ol>
           <li>BREAK AWAY HANGER</li>
           <li>3.5 MM AUDIO OUT / HEADPHONE SYNC OUT</li>
           <li>JTAG PROGRAMMING PORT</li>
@@ -378,44 +584,123 @@ function PocketOperatorScreen() {
           <li>BUILT-IN SPEAKER</li>
           <li>FOLDING WIRE STAND</li>
           <li>EXTERNAL SPEAKER SOLDERING POINTS</li>
-        </ol>
+        </ol> */}
       </div>
-      <div>
-        <h1>protect and synchronize</h1>
-        <p>
-          add the silicone pro case to protect your pocket operator and get
-          anti-slip feet, neck strap, battery protection and pro feel buttons.
-          use the SP-10 display protection to protect the LCD screen, and start
-          a jam sync session with your friends using the MC-3 mini cables.
-        </p>
-        <p>buy accessories</p>
+      <div
+        className="flex flex-col justify-center items-center font-light leading-tight mt-12 md:mt-16 lg:mt-24"
+        style={{ fontSize: "1.8333vw" }}
+      >
+        <h1
+          className="font-normal pb-6 md:pb-12"
+          style={{ fontSize: "3.333vw" }}
+        >
+          protect and synchronize
+        </h1>
+        <span>
+          add the silicone pro case to protect your pocket operator and
+        </span>
+        <span>
+          get anti-slip feet, neck strap, battery protection and pro feel
+          buttons.
+        </span>
+        <span>
+          use the SP-10 display protection to protect the LCD screen, and
+        </span>
+        <span>
+          start a jam sync session with your friends using the MC-3 mini cables.
+        </span>
+
+        <div className="flex mt-4 md:mt-14 pb-12 md:pb-12 lg:pb-20 ">
+          <p style={{ fontSize: "1.8333vw" }}>buy accessories</p>
+        </div>
       </div>
       <div className="grid grid-cols-2">
-        <div className="col-span-2">
-          <img src={poYellowCase} />
-        </div>
+        <div
+          className="col-span-2"
+          style={{
+            backgroundImage: `url(${poYellowCase})`,
+            backgroundSize: "101%",
+            backgroundPosition: "50% 15%",
+            backgroundColor: "#e5e5e5",
+            backgroundRepeat: "no-repeat",
+            width: "100%",
+            height: 0,
+            paddingTop: "60%",
+          }}
+        ></div>
         <div
           className="col-span-1"
           style={{
             backgroundImage: `url(${batteryProtection})`,
             backgroundPosition: "center top",
             backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
+            backgroundSize: "105",
+            width: "100%",
+            height: 0,
+            paddingTop: "100%",
           }}
         ></div>
-        <div>
-          <img src={poButtons} />
-        </div>
-        <div style={{ backgroundColor: "#4d4d4d" }}>
-          <img src={miniSyncCables} />
-        </div>
-        <div style={{ backgroundColor: "#0f0e12" }}>
-          <img src={displayProtection} />
-        </div>
-        <div className="col-span-2">
-          <h1>available now. worldwide delivery.</h1>
-          <p>visit store</p>
-          <img src={poBoxes} />
+        <div
+          className="col-span-1"
+          style={{
+            backgroundImage: `url(${poButtons})`,
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            width: "100%",
+            height: 0,
+            paddingTop: "100%",
+          }}
+        ></div>
+        <div
+          className="col-span-1"
+          style={{
+            backgroundColor: "#4d4d4d",
+            backgroundImage: `url(${miniSyncCables})`,
+            backgroundPosition: "65% 50%",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "150%",
+            width: "100%",
+            height: 0,
+            paddingTop: "100%",
+          }}
+        ></div>
+        <div
+          className="col-span-1"
+          style={{
+            backgroundColor: "#0f0e12",
+            backgroundImage: `url(${displayProtection})`,
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "125%",
+            width: "100%",
+            height: 0,
+            paddingTop: "100%",
+          }}
+        ></div>
+
+        <div
+          className="col-span-2 flex flex-col justify-center items-center font-light leading-tight pt-24"
+          style={{ fontSize: "1.8333vw" }}
+        >
+          <h1 className="font-normal" style={{ fontSize: "3.333vw" }}>
+            available now. worldwide delivery.
+          </h1>
+
+          <div className="flex mt-4 md:mt-14 pb-12 md:pb-12 lg:pb-20 ">
+            <p style={{ fontSize: "1.8333vw" }}>visit store</p>
+          </div>
+          <div
+            style={{
+              backgroundImage: `url(${poBoxes})`,
+              backgroundSize: "120%",
+              backgroundPosition: "40% 55%",
+              backgroundRepeat: "no-repeat",
+              width: "100%",
+              height: 0,
+              paddingTop: "30%",
+            }}
+          ></div>
         </div>
       </div>
     </div>

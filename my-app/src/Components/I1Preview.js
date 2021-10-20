@@ -3,7 +3,7 @@ import NavBar from "./NavBar";
 
 import i1Side from "../images/i1Side.jpg";
 import i1Back from "../images/i1Back.png";
-
+import i1App from "../images/i1App.jpg";
 import i1Header from "../images/i1Header.jpg";
 import poloroid1 from "../images/poloroid1.jpg";
 import poloroid2 from "../images/poloroid2.jpg";
@@ -154,14 +154,14 @@ function I1Preview() {
       <div
         className=""
         style={{
-          backgroundImage: `url(${i1Side})`,
+          backgroundImage: `url(${i1App})`,
 
-          backgroundSize: "165%",
-          backgroundPosition: "60% 15%",
+          backgroundSize: "120%",
+          backgroundPosition: "45% 68%",
           backgroundRepeat: "no-repeat",
           width: "100%",
           height: 0,
-          paddingTop: "65%",
+          paddingTop: "60%",
         }}
       ></div>
       <div
