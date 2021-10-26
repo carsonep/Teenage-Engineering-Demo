@@ -18,6 +18,7 @@ using Infrastructure.Identity;
 using API.Extensions;
 using Infrastructure.Services;
 using API.Helpers;
+using StackExchange.Redis;
 
 namespace API
 {
@@ -39,6 +40,7 @@ namespace API
             services.AddScoped<IUnitOfWork, UnitOfWork>(); 
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));  
+            services.AddScoped<IBasketRepository, BasketRepository>();
             services.AddAutoMapper(typeof(MappingProfiles));
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -50,6 +52,12 @@ namespace API
         );
 
             services.AddDbContext<StoreContext>(x => x.UseSqlite(_config.GetConnectionString("DefaultConnection")));
+
+            services.AddSingleton<ConnectionMultiplexer>(c => {
+                var configuration = ConfigurationOptions.Parse(_config.GetConnectionString("Redis"), true);
+                return ConnectionMultiplexer.Connect(configuration);
+            });
+
             services.AddDbContext<AppIdentityDbContext>(x => {
                 x.UseSqlite(_config.GetConnectionString("IdentityConnection"));
             });
