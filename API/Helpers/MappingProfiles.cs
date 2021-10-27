@@ -14,6 +14,7 @@ namespace API.Helpers
                 .ForMember(d => d.PictureUrl, 
                     o => o.MapFrom<PhotoUrlResolver>());
             CreateMap<ProductToCreateDto, Product>();
+            CreateMap<AddressDto, Core.Entities.OrderAggregate.Address>();
         }
     }
 }
