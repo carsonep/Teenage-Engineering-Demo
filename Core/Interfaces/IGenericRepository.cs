@@ -9,6 +9,7 @@ namespace Core.Interfaces
     public interface IGenericRepository<T> where T : class
     {
         T GetById(int id);
+        Task<IReadOnlyList<T>> ListAsync(ISpecification<T> spec);
         IEnumerable<T> Find(ISpecification<T> specification = null);
         Task<T> GetEntityWithSpec(ISpecification<T> spec);
         void Add(T entity);

@@ -43,6 +43,11 @@ namespace Core.Specifications
             GroupBy = groupByExpression;
         }
 
+        protected void AddOrderByDescending(Expression<Func<T, object>> orderByDescExpression)
+        {
+            OrderByDescending = orderByDescExpression;
+        }
+
         protected virtual void ApplyPaging(int skip, int take)
         {
             Skip = skip;

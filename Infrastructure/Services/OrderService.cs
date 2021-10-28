@@ -30,8 +30,6 @@ namespace Infrastructure.Services
                 
                 var productItem = _unitOfWork.Repository<Product>().GetById(item.Id);
 
-    
-
                 var itemOrdered = new ProductItemOrdered(productItem.Id, productItem.Name, item.PictureUrl);
 
                 var orderItem = new OrderItem(itemOrdered, productItem.Price, item.Quantity);
@@ -61,12 +59,16 @@ namespace Infrastructure.Services
 
         public Task<Order> GetOrderByIdAsync(int id, string buyerEmail)
         {
-            throw new System.NotImplementedException();
+            var spec = new OrdersWithItemsAndOrderingSpecification(id, buyerEmail);
+
+            return _unitOfWork.Repository<Order>().GetEntityWithSpec(spec);
         }
 
-        public Task<IReadOnlyList<Order>> GetOrdersForUserAsync(string buyerEmail)
+        public async Task<IReadOnlyList<Order>> GetOrdersForUserAsync(string buyerEmail)
         {
-            throw new System.NotImplementedException();
+            var spec = new OrdersWithItemsAndOrderingSpecification(buyerEmail);
+
+            return await _unitOfWork.Repository<Order>().ListAsync(spec);
         }
     }
 }
