@@ -37,11 +37,11 @@ namespace API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IPhotoService, PhotoService>();
+            services.AddScoped<IBasketRepository, BasketRepository>();
             services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>(); 
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));  
-            services.AddScoped<IBasketRepository, BasketRepository>();
             services.AddAutoMapper(typeof(MappingProfiles));
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -55,7 +55,8 @@ namespace API
             services.AddDbContext<StoreContext>(x => x.UseSqlite(_config.GetConnectionString("DefaultConnection")));
 
             services.AddSingleton<IConnectionMultiplexer>(c => {
-                var configuration = ConfigurationOptions.Parse(_config.GetConnectionString("Redis"), true);
+                var configuration = ConfigurationOptions.Parse(_config
+                    .GetConnectionString("Redis"), true);
                 return ConnectionMultiplexer.Connect(configuration);
             });
 

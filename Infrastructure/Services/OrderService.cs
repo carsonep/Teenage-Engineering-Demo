@@ -4,6 +4,8 @@ using System.Threading.Tasks;
 using Core.Entities;
 using Core.Entities.OrderAggregate;
 using Core.Interfaces;
+using Infrastructure.Data;
+using Core.Specifications;
 
 namespace Infrastructure.Services
 {
@@ -25,14 +27,19 @@ namespace Infrastructure.Services
             var items = new List<OrderItem>();
             foreach (var item in basket.Items)
             {
+                
                 var productItem = _unitOfWork.Repository<Product>().GetById(item.Id);
-                var itemOrdered = new ProductItemOrdered(productItem.Id, productItem.Name, productItem.Photos[0].PictureUrl);
+
+    
+
+                var itemOrdered = new ProductItemOrdered(productItem.Id, productItem.Name, item.PictureUrl);
+
                 var orderItem = new OrderItem(itemOrdered, productItem.Price, item.Quantity);
                 items.Add(orderItem);
             }
 
             // Calculate Subtotal
-            var subtotal = items.Sum(item => item.Price);
+            var subtotal = items.Sum(item => item.Price * item.Quantity);
 
             // Create order
             var order = new Order(items, buyerEmail, shippingAddress, subtotal);
