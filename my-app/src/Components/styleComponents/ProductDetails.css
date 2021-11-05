@@ -18,3 +18,11 @@
     background: rgb(250, 180, 19);
   }
 }
+
+@media only screen and (min-width: 770px) {
+  /* #secondary__div {
+  } */
+  .main {
+    background-color: #e5e5e5;
+  }
+}
