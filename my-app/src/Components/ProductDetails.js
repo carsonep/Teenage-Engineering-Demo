@@ -12,7 +12,6 @@ function ProductDetails({ match }) {
     isSuccess,
   } = useGetProductQuery(match.params.id);
 
-  console.log(product);
   let content;
   if (isFetching) {
     content = <LoadingSpinner />;

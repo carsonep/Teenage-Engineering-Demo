@@ -48,17 +48,17 @@ function ImageCarousel({ images }) {
   };
 
   const arrowStyle =
-    "absolute text-white text-2xl h-10 w-10 opacity-75 flex items-center justify-center";
+    "absolute text-5xl font-light h-10 w-10 opacity-75 flex items-center justify-center";
 
   const sliderControl = (isLeft) => (
     <button
       type="button"
       onClick={isLeft ? previousImage : nextImage}
       className={`${arrowStyle} ${isLeft ? "left-2" : "right-2"}`}
-      style={{ top: "40%" }}
+      style={{ top: "40%", color: "#7e6d59" }}
     >
       <span role="img" aria-label={`Arrow ${isLeft ? "left" : "right"}`}>
-        {isLeft ? "◀" : "▶"}
+        {isLeft ? "<" : ">"}
       </span>
     </button>
   );
