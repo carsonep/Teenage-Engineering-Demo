@@ -28,6 +28,16 @@ export const apiSlice = createApi({
         body: userInfo,
       }),
     }),
+    getBasket: builder.query({
+      query: (basketId) => `/Basket?id=${basketId}`,
+    }),
+    updateBasket: builder.mutation({
+      query: (userBasket) => ({
+        url: "/Basket",
+        method: "POST",
+        body: userBasket,
+      }),
+    }),
   }),
 });
 
@@ -35,6 +45,8 @@ export const apiSlice = createApi({
 export const {
   useGetProductsQuery,
   useGetProductQuery,
+  useGetBasketQuery,
   useCreateUserMutation,
   useLoginUserMutation,
+  useUpdateBasketMutation,
 } = apiSlice;

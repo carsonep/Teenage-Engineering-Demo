@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import LoadingSpinner from "../Components/LoadingSpinner";
-import { useGetProductQuery } from "../features/api/apiSlice";
+import {
+  useGetProductQuery,
+  useUpdateBasketMutation,
+  useGetBasketQuery,
+} from "../features/api/apiSlice";
 import ImageCarousel from "./ImageCarousel";
 import NavBar from "./NavBar";
 import "./styleComponents/ProductDetails.css";
@@ -11,6 +15,11 @@ function ProductDetails({ match }) {
     isFetching,
     isSuccess,
   } = useGetProductQuery(match.params.id);
+  const { data } = useGetBasketQuery("basket1");
+  // const basketItems = data.items;
+  // console.log(basketItems);
+
+  const [updateBasket, { isLoading }] = useUpdateBasketMutation();
 
   let content;
   if (isFetching) {
@@ -19,6 +28,45 @@ function ProductDetails({ match }) {
     let photosArray = product.photos.map(
       (photo) => `https://localhost:5001/${photo.pictureUrl}`
     );
+
+    const postBasket = async () => {
+      try {
+        const basket = {
+          id: "basket1",
+          items: [
+            //   if (data.items > 0) {
+            //   data.items.forEach((element) => {
+            //     return {
+            //       id: element.id,
+            //       name: element.name,
+            //       price: element.price,
+            //       quantity: 1,
+            //       pictureUrl:
+            //         "/images/products/a2cc7276-59eb-412f-937b-a22d4ca74dde.png",
+            //       // pictureUrl: element.photos[0].pictureUrl,
+            //       productType: element.productType.name,
+            //     }
+            //   })
+            // },
+            data.items,
+            {
+              id: product.id,
+              name: product.name,
+              price: product.price,
+              quantity: 1,
+              pictureUrl: product.photos[0].pictureUrl,
+              productType: product.productType.name,
+            },
+          ],
+        };
+
+        console.log(basket);
+        // await updateBasket(basket).unwrap();
+      } catch (err) {
+        console.error("Failed to post user", err);
+      }
+    };
+
     content = (
       <div
         className="main flex flex-col"
@@ -55,6 +103,7 @@ function ProductDetails({ match }) {
                 id="buy_button"
                 className="hidden md:block flex items-center justify-center md:bg-black md:w-full md:rounded-none md:text-white  text-2xl mt-6"
                 style={{ padding: "5% 0" }}
+                onClick={postBasket}
               >
                 add to cart
               </button>
