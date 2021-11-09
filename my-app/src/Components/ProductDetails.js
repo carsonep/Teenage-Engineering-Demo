@@ -16,8 +16,6 @@ function ProductDetails({ match }) {
     isSuccess,
   } = useGetProductQuery(match.params.id);
   const { data } = useGetBasketQuery("basket1");
-  // const basketItems = data.items;
-  // console.log(basketItems);
 
   const [updateBasket, { isLoading }] = useUpdateBasketMutation();
 
@@ -34,24 +32,9 @@ function ProductDetails({ match }) {
         const basket = {
           id: "basket1",
           items: [
-            //   if (data.items > 0) {
-            //   data.items.forEach((element) => {
-            //     return {
-            //       id: element.id,
-            //       name: element.name,
-            //       price: element.price,
-            //       quantity: 1,
-            //       pictureUrl:
-            //         "/images/products/a2cc7276-59eb-412f-937b-a22d4ca74dde.png",
-            //       // pictureUrl: element.photos[0].pictureUrl,
-            //       productType: element.productType.name,
-            //     }
-            //   })
-            // },
-            data.items,
             {
               id: product.id,
-              name: product.name,
+              productName: product.name,
               price: product.price,
               quantity: 1,
               pictureUrl: product.photos[0].pictureUrl,
@@ -60,8 +43,11 @@ function ProductDetails({ match }) {
           ],
         };
 
-        console.log(basket);
-        // await updateBasket(basket).unwrap();
+        for (var j = 0; j < data.items.length; j++) {
+          basket.items.push(data.items[j]);
+        }
+
+        await updateBasket(basket).unwrap();
       } catch (err) {
         console.error("Failed to post user", err);
       }
