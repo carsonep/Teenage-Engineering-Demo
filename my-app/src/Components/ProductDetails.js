@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import LoadingSpinner from "../Components/LoadingSpinner";
 import {
   useGetProductQuery,
@@ -16,7 +16,6 @@ function ProductDetails({ match }) {
     isSuccess,
   } = useGetProductQuery(match.params.id);
   const { data } = useGetBasketQuery("basket1");
-
   const [updateBasket, { isLoading }] = useUpdateBasketMutation();
 
   let content;
@@ -49,7 +48,7 @@ function ProductDetails({ match }) {
 
         await updateBasket(basket).unwrap();
       } catch (err) {
-        console.error("Failed to post user", err);
+        console.error("Failed to Add to Basket", err);
       }
     };
 

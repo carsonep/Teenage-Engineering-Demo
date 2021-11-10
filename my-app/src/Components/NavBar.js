@@ -1,9 +1,20 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { useGetBasketQuery } from "../features/api/apiSlice";
 import JapaneseSvg from "./JapaneseSvg";
 import "./styleComponents/NavBar.css";
 
 function NavBar({ bgColor, textColor }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
+  const [numberOfItems, setNumberOfItems] = React.useState(0);
+  const { data } = useGetBasketQuery("basket1");
+
+  useEffect(() => {
+    if (data) {
+      setNumberOfItems(data.items.length);
+    }
+  }, [data]);
+
   const monthNames = [
     "january",
     "february",
@@ -25,7 +36,7 @@ function NavBar({ bgColor, textColor }) {
   return (
     <nav
       className={
-        `lg:mt-2 h-14 lg:h-auto w-full lg:relative` +
+        `lg:pt-2 h-14 lg:h-auto w-full lg:relative` +
         (navbarOpen ? " bg-black fixed h-full" : " bg-transparent")
       }
       style={{ padding: "0px 4.6vw", backgroundColor: bgColor }}
@@ -63,20 +74,23 @@ function NavBar({ bgColor, textColor }) {
           </button>
           <div
             className={
-              "lg:flex py-8 lg:py-0 flex-col lg:flex-row flex-grow lg:items-center" +
+              "lg:flex py-8 lg:py-2 flex-col lg:flex-row flex-grow lg:items-center" +
               (navbarOpen
                 ? " flex h-screen w-full text-white leading-tight"
                 : " hidden")
             }
           >
             <div
-              style={{ margin: "-0.15vw 0px 0.458333vw", paddingRight: "5.3%" }}
+              style={{
+                margin: "-1.633vw 0px 0.458333vw 0vw",
+                paddingRight: "5.3%",
+              }}
             >
               <h1>
-                <a className="text-left">
+                <Link to="/" className="text-left">
                   teenage <br />
                   engineering
-                </a>
+                </Link>
               </h1>
               <br />
               <span
@@ -93,56 +107,70 @@ function NavBar({ bgColor, textColor }) {
                     className="flex justify-start"
                     style={{ paddingRight: "10px" }}
                   >
-                    <a>products</a>
+                    <Link to="/products">products</Link>
                   </h2>
                   <br />
-                  <p>wireless audio</p>
-                  <p>synthesizers</p>
-                  <p>designs</p>
+                  <p>
+                    <Link to="/products/audio">wireless audio</Link>
+                  </p>
+                  <p>
+                    <Link to="/products/synthesizers">synthesizers</Link>
+                  </p>
+                  <p>
+                    <Link to="/designs">designs</Link>
+                  </p>
                 </div>
               </div>
               <div className="flex pr-4 lg:py-0">
-                <div className="lg:pr-4">
-                  <svg
-                    style={{ width: "3.9vw" }}
-                    className="mt-2 hidden lg:block"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="37 9.5 38.5 61.5"
-                  >
-                    <path
-                      stroke="none"
-                      fill={`${textColor}`}
-                      stroke-width="0.5"
-                      stroke-miterlimit="10"
-                      d=" M48.8,10h20l5,5h-30L48.8,10z M75,30H42.5v40H75V30z M68.7,16.3v12.5H75V16.3H68.7z M42.5,16.3 v12.5h6.2V16.3H42.5z"
-                    ></path>
-                    <g opacity="0.8">
-                      <text
-                        data-cy="cart-icon"
-                        fill="#fff"
+                <div className="lg:pr-4 relative">
+                  <Link to="/cart">
+                    <svg
+                      style={{ width: "3.9vw" }}
+                      className="mt-2 hidden lg:block "
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="37 9.5 38.5 61.5"
+                    >
+                      <path
                         stroke="none"
-                        x="58.75"
-                        y="57.5"
-                        font-size="23"
-                        text-anchor="middle"
-                      ></text>
-                    </g>
-                  </svg>
+                        fill={`${textColor}`}
+                        stroke-width="0.5"
+                        stroke-miterlimit="10"
+                        d=" M48.8,10h20l5,5h-30L48.8,10z M75,30H42.5v40H75V30z M68.7,16.3v12.5H75V16.3H68.7z M42.5,16.3 v12.5h6.2V16.3H42.5z"
+                      ></path>
+                      <g opacity="0.8">
+                        <text
+                          data-cy="cart-icon"
+                          fill="#fff"
+                          stroke={bgColor}
+                          x="58.75"
+                          y="57.5"
+                          font-size="23"
+                          text-anchor="middle"
+                        >
+                          {numberOfItems}
+                        </text>
+                      </g>
+                    </svg>
+                  </Link>
                 </div>
                 <div className="flex mr-8 lg:py-0">
                   <div>
                     <h2>
-                      <a>store</a>
+                      <Link to="/store">store</Link>
                     </h2>
                     <br />
-                    <p>view cart</p>
-                    <p>checkout</p>
+                    <p>
+                      <Link to="/store/cart">view cart</Link>
+                    </p>
+                    <p>
+                      <Link to="/store/cart/checkout">checkout</Link>
+                    </p>
                   </div>
                 </div>
               </div>
               <div className="flex ">
                 <div className="lg:pr-4">
-                  <a>
+                  <Link to="/now">
                     <svg
                       style={{ width: "5.2vw" }}
                       className="mt-2 hidden lg:block"
@@ -158,18 +186,23 @@ function NavBar({ bgColor, textColor }) {
                         ></path>
                       </g>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
                 <div>
                   <div className="justify-evenly flex-nowrap ">
                     <div className="">
                       <h2 className="flex justify-start ">
-                        <a>now</a>
+                        <Link to="/now">now</Link>
                       </h2>
                       <br />
-                      <p>newsletter</p>
+                      <p>
+                        <Link to="/newsletter">newsletter</Link>
+                      </p>
                       <p>instagram</p>
-                      <p>ems</p>
+                      <p>
+                        {" "}
+                        <Link to="/ems">ems</Link>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -209,10 +242,16 @@ function NavBar({ bgColor, textColor }) {
                 <div>
                   <h2>account</h2>
                   <br />
-                  <p>sign in</p>
-                  <p>register</p>
+                  <p>
+                    <Link to="/login">sign in</Link>
+                  </p>
+                  <p>
+                    <Link to="/register">register</Link>
+                  </p>
                   {currentUser && currentUser.roles[0] == "Admin" && (
-                    <p>admin</p>
+                    <p>
+                      <Link to="/admin">admin</Link>
+                    </p>
                   )}
                 </div>
               </div>

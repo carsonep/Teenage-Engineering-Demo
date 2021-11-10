@@ -18,6 +18,8 @@ import HomePage from "./Components/HomePage";
 import OrthoRemotePreview from "./Components/OrthoRemotePreview";
 import Od11Screen from "./Components/Od11Screen";
 import I1Preview from "./Components/I1Preview";
+import CartScreen from "./Components/CartScreen";
+import CheckoutScreen from "./Components/CheckoutScreen";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/store" exact component={ProductList} />
+          <Route path="/store/cart" component={CartScreen} />
+          <Route path="/store/checkout" component={CheckoutScreen} />
           <Route path="/products" exact component={ProductsPreview} />
           <Route
             path="/products/audio"
@@ -49,6 +53,7 @@ function App() {
           />
           <Route path="/designs" exact component={DesignsPreview} />
           <Route path="/products/:id" component={ProductDetails} />
+
           <Route path="/login" component={LoginScreen} />
           <Route path="/register" component={RegisterScreen} />
         </Switch>
