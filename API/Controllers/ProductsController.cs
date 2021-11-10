@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using API.Dtos;
+using API.Helpers;
 using AutoMapper;
 using Core.Entities;
 using Core.Interfaces;
@@ -28,12 +29,14 @@ namespace API.Controllers
             _unitOfWork = unitOfWork;
         }
 
+        [Cached(600)]
         [HttpGet]
         public ActionResult<IEnumerable<Product>> GetProducts()
         {
             return _unitOfWork.Repository<Product>().Find(new ProductsWithProductTypeSpecification()).ToList();
         }
 
+        [Cached(600)]
         [HttpGet("{id}")]
         public ActionResult<Product> GetProduct(int id)
         {

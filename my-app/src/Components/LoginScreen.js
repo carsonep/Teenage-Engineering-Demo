@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import { useLoginUserMutation } from "../features/api/apiSlice";
 
 import LoadingSpinner from "../Components/LoadingSpinner";
+import { Link } from "react-router-dom";
 
 const LoginScreen = ({ location, history }) => {
   const [email, setEmail] = useState("");
@@ -13,7 +14,9 @@ const LoginScreen = ({ location, history }) => {
 
   const [loginUser, { isLoading }] = useLoginUserMutation();
 
-  const redirect = location.search ? location.search.split("=")[1] : "/";
+  const redirect = location.search
+    ? location.search.split("=")[1]
+    : "/store/checkout";
 
   const canSave = [email, password].every(Boolean) && !isLoading;
 
@@ -81,7 +84,7 @@ const LoginScreen = ({ location, history }) => {
             </div>
           </form>
           <p className="flex justify-center mt-4">
-            Don't Have An Account? <a> Register Here!</a>
+            Don't Have An Account? <Link to="/register"> Register Here!</Link>
           </p>
         </div>
       </div>

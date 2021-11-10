@@ -163,7 +163,7 @@ function NavBar({ bgColor, textColor }) {
                       <Link to="/store/cart">view cart</Link>
                     </p>
                     <p>
-                      <Link to="/store/cart/checkout">checkout</Link>
+                      <Link to="/store/checkout">checkout</Link>
                     </p>
                   </div>
                 </div>
