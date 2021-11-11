@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FJeKxV6CWePNsOFw5aL0cT8u7r5hufgjD/bXYALCpvZ3XKmYkj1gSSStY2v27x6sioCCvWIn/LrF57ws2RtQYA==",
+  "dgSpecHash": "31RcEuWxUS338c/iJZ2dOpDykus6jehOe/Ymf1Xo+K7MlMlZn9UpOFmKu5hlAy56YUmyIiEesfyJtajqBo0Lmw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\API\\API.csproj",
   "expectedPackageFiles": [
@@ -66,7 +66,7 @@
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
-    "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.0\\pipelines.sockets.unofficial.2.2.0.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.4\\sqlitepclraw.bundle_e_sqlite3.2.0.4.nupkg.sha512",
@@ -74,6 +74,7 @@
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.4\\sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\stackexchange.redis\\2.2.79\\stackexchange.redis.2.2.79.nupkg.sha512",
+    "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\stripe.net\\39.76.0\\stripe.net.39.76.0.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",

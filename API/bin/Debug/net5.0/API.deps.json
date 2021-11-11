@@ -535,7 +535,7 @@
       "Microsoft.AspNetCore.JsonPatch/5.0.10": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
-          "Newtonsoft.Json": "12.0.2"
+          "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {
@@ -550,7 +550,7 @@
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson/5.0.10": {
         "dependencies": {
           "Microsoft.AspNetCore.JsonPatch": "5.0.10",
-          "Newtonsoft.Json": "12.0.2",
+          "Newtonsoft.Json": "12.0.3",
           "Newtonsoft.Json.Bson": "1.0.2"
         },
         "runtime": {
@@ -913,11 +913,11 @@
           "Microsoft.NETCore.Platforms": "5.0.0"
         }
       },
-      "Newtonsoft.Json/12.0.2": {
+      "Newtonsoft.Json/12.0.3": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.0.2.23222"
+            "fileVersion": "12.0.3.23909"
           }
         },
         "compile": {
@@ -926,7 +926,7 @@
       },
       "Newtonsoft.Json.Bson/1.0.2": {
         "dependencies": {
-          "Newtonsoft.Json": "12.0.2"
+          "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
@@ -1085,6 +1085,21 @@
           "lib/net5.0/StackExchange.Redis.dll": {}
         }
       },
+      "Stripe.net/39.76.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "System.Configuration.ConfigurationManager": "5.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/Stripe.net.dll": {
+            "assemblyVersion": "39.76.0.0",
+            "fileVersion": "39.76.0.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Stripe.net.dll": {}
+        }
+      },
       "Swashbuckle.AspNetCore/5.6.3": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "3.0.0",
@@ -1153,6 +1168,9 @@
             "assemblyVersion": "5.0.0.0",
             "fileVersion": "5.0.20.51904"
           }
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/5.0.1": {
@@ -1294,6 +1312,7 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.5",
           "Microsoft.IdentityModel.Tokens": "6.12.2",
           "StackExchange.Redis": "2.2.79",
+          "Stripe.net": "39.76.0",
           "System.IdentityModel.Tokens.Jwt": "6.12.2"
         },
         "runtime": {
@@ -3389,12 +3408,12 @@
       "path": "microsoft.win32.systemevents/5.0.0",
       "hashPath": "microsoft.win32.systemevents.5.0.0.nupkg.sha512"
     },
-    "Newtonsoft.Json/12.0.2": {
+    "Newtonsoft.Json/12.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
-      "path": "newtonsoft.json/12.0.2",
-      "hashPath": "newtonsoft.json.12.0.2.nupkg.sha512"
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     },
     "Newtonsoft.Json.Bson/1.0.2": {
       "type": "package",
@@ -3444,6 +3463,13 @@
       "sha512": "sha512-cVk+SkWcfbeLHdCbaqzRwihBy/FkahpucmMHD7nr6364WGcy83aSSYEtksYByRY2z2AIBtsP2tj5ZtRAuNIARw==",
       "path": "stackexchange.redis/2.2.79",
       "hashPath": "stackexchange.redis.2.2.79.nupkg.sha512"
+    },
+    "Stripe.net/39.76.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+wqlEhtqarZYrL6i4OVdpf14B5poELU2BSdYqlC32CCweEKF7OdwdhIIDJ1IWOLbwd8O1jTCfjc0qCqGz7ovpA==",
+      "path": "stripe.net/39.76.0",
+      "hashPath": "stripe.net.39.76.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/5.6.3": {
       "type": "package",

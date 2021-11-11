@@ -1,9 +1,80 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
+import {
+  useCreateOrderMutation,
+  useCreatePaymentMutation,
+} from "../features/api/apiSlice";
+
+import { loadStripe } from "@stripe/stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
+import CheckoutForm from "./CheckoutForm";
+import "./styleComponents/CheckoutForm.css";
+
+const stripePromise = loadStripe(
+  "pk_test_51JuhpXDjpVDL6NtP9Ow4NL2ltCutY319dsfaGpQRuwYnlfRbJGmsvsnme6WXdkDgH769uJG0amWCgOlsPHOHwo1u00mfLQBesr"
+);
 
 function CheckoutScreen() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [street, setStreet] = useState("");
+  const [city, setCity] = useState("");
+  const [state, setState] = useState("");
+  const [zipCode, setZipCode] = useState("");
+  const [clientSecret, setClientSecret] = useState("");
+
+  const [order, { isLoading }] = useCreateOrderMutation();
+  const [data] = useCreatePaymentMutation();
+
+  useEffect(() => {
+    async function fetchMyAPI() {
+      let response = await data("basket1").unwrap();
+
+      console.log(response.clientSecret);
+
+      setClientSecret(response.clientSecret);
+    }
+
+    fetchMyAPI();
+  }, [data]);
+
   let currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+  const appearance = {
+    theme: "stripe",
+  };
+  const options = {
+    clientSecret,
+    appearance,
+  };
+
+  const canSave =
+    [firstName, lastName, street, city, state, zipCode].every(Boolean) &&
+    !isLoading;
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    if (canSave) {
+      try {
+        console.log(
+          await order({
+            basketId: "basket1",
+            shipToAddress: {
+              firstname: firstName,
+              lastName: lastName,
+              street: street,
+              city: city,
+              state: state,
+              zipcode: zipCode,
+            },
+          }).unwrap()
+        );
+      } catch (err) {
+        console.error("Failed to post user", err);
+      }
+    }
+  };
 
   return (
     <div style={{ backgroundColor: "#fff" }}>
@@ -149,14 +220,17 @@ function CheckoutScreen() {
             <h1 className="pt-2 ml-2">delivery address</h1>
           </div>
           <div className="mt-10 pt-4 border-t-2">
-            <form className="grid grid-cols-12 gap-4">
+            <form
+              onSubmit={handleFormSubmit}
+              className="grid grid-cols-12 gap-4"
+            >
               <div className="col-span-6">
                 <label htmlFor="text">first name*</label>
                 <input
                   type="text"
                   className={`w-full p-4 text-primary outline-none  transition duration-150 ease-in-out mb-4`}
                   id="firstName"
-                  //   onChange={(e) => setEmail(e.target.value)}
+                  onChange={(e) => setFirstName(e.target.value)}
                   placeholder="first name..."
                   required
                 />
@@ -167,7 +241,7 @@ function CheckoutScreen() {
                   type="text"
                   className={`w-full p-4 text-primary outline-none  transition duration-150 ease-in-out mb-4`}
                   id="lastName"
-                  //   onChange={(e) => setEmail(e.target.value)}
+                  onChange={(e) => setLastName(e.target.value)}
                   placeholder="last name..."
                   required
                 />
@@ -178,7 +252,7 @@ function CheckoutScreen() {
                   type="text"
                   className={`w-full p-4 text-primary outline-none  transition duration-150 ease-in-out mb-4`}
                   id="address"
-                  //   onChange={(e) => setPassword(e.target.value)}
+                  onChange={(e) => setStreet(e.target.value)}
                   placeholder="address..."
                   required
                 />
@@ -190,7 +264,7 @@ function CheckoutScreen() {
                   type="text"
                   className={`w-full p-4 text-primary outline-none  transition duration-150 ease-in-out mb-4`}
                   id="city"
-                  //   onChange={(e) => setPassword(e.target.value)}
+                  onChange={(e) => setCity(e.target.value)}
                   placeholder="city..."
                   required
                 />
@@ -201,7 +275,7 @@ function CheckoutScreen() {
                   type="text"
                   className={`w-full p-4 text-primary outline-none  transition duration-150 ease-in-out mb-4`}
                   id="state"
-                  //   onChange={(e) => setPassword(e.target.value)}
+                  onChange={(e) => setState(e.target.value)}
                   placeholder="state..."
                   required
                 />
@@ -212,7 +286,7 @@ function CheckoutScreen() {
                   type="text"
                   className={`w-full p-4 text-primary outline-none  transition duration-150 ease-in-out mb-4`}
                   id="zipcode"
-                  //   onChange={(e) => setPassword(e.target.value)}
+                  onChange={(e) => setZipCode(e.target.value)}
                   placeholder="zipcode..."
                   required
                 />
@@ -226,6 +300,19 @@ function CheckoutScreen() {
                 </button>
               </div>
             </form>
+          </div>
+        </div>
+        <div className="h-full my-6">
+          <div style={{ padding: "16px 20vw", backgroundColor: "#f5f5f5" }}>
+            {clientSecret && (
+              <Elements
+                options={options}
+                stripe={stripePromise}
+                clientSecret={clientSecret}
+              >
+                <CheckoutForm style={{ width: "100%" }} />
+              </Elements>
+            )}
           </div>
         </div>
       </div>

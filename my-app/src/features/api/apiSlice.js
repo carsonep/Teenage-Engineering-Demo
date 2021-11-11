@@ -38,6 +38,22 @@ export const apiSlice = createApi({
         body: userBasket,
       }),
     }),
+    createOrder: builder.mutation({
+      query: (orderInfo) => ({
+        url: "/Orders",
+        method: "POST",
+
+        body: orderInfo,
+      }),
+    }),
+    createPayment: builder.mutation({
+      query: (basketId) => ({
+        url: `/Payments/${basketId}`,
+        method: "POST",
+
+        body: basketId,
+      }),
+    }),
   }),
 });
 
@@ -49,4 +65,6 @@ export const {
   useCreateUserMutation,
   useLoginUserMutation,
   useUpdateBasketMutation,
+  useCreateOrderMutation,
+  useCreatePaymentMutation,
 } = apiSlice;
