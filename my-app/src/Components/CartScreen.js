@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NavBar from "./NavBar";
 import {
   useGetBasketQuery,
@@ -12,8 +12,38 @@ function CartScreen() {
   const { data, isFetching, isSuccess } = useGetBasketQuery("basket1");
   const [basketTotal, setBasketTotal] = useState(0);
   const [updateBasket, { isLoading }] = useUpdateBasketMutation();
-
+  let total = 0;
   let content;
+
+  useEffect(() => {
+    if (data) {
+      data.items.forEach((element) => {
+        total += element.price;
+      });
+
+      setBasketTotal(total.toFixed(2));
+    }
+  }, [data, updateBasket, content, total]);
+
+  const deleteBasketItem = async (e) => {
+    try {
+      var items = JSON.parse(localStorage.getItem("customerBasket"));
+
+      for (var i = 0; i < items.items.length; i++) {
+        if (items.items[i].id == e.id) {
+          items.items.splice(i, 1);
+        }
+      }
+
+      items = JSON.stringify(items);
+      localStorage.setItem("customerBasket", items);
+      console.log();
+
+      await updateBasket(JSON.parse(items)).unwrap();
+    } catch (err) {
+      console.error("Failed to Add to Basket", err);
+    }
+  };
 
   if (isFetching) {
     content = <LoadingSpinner />;
@@ -34,7 +64,10 @@ function CartScreen() {
         />
         <h1 className="mx-24">quantity: {cartItem.quantity}</h1>
         <h1 className="mr-40">${cartItem.price}</h1>
-        <XIcon className="h-12 w-12 ml-8 text-black " />
+        <XIcon
+          className="h-12 w-12 ml-8 text-black "
+          onClick={() => deleteBasketItem(cartItem)}
+        />
       </div>
     ));
   }
@@ -58,13 +91,13 @@ function CartScreen() {
               <span>subtotal</span>
               <span>estimated tax </span>
               <span>shipping </span>
-              <span className="font-normal text-4xl">total </span>
+              <span className="font-normal text-3xl">total </span>
             </div>
             <div className="flex flex-col font-light">
-              <span>$479.00</span>
+              <span>${basketTotal}</span>
               <span>$0.00</span>
               <span>$0.00</span>
-              <span className="font-normal text-4xl">$479</span>
+              <span className="font-normal text-3xl">${basketTotal}</span>
             </div>
           </div>
         </div>

@@ -7,13 +7,17 @@ import "./styleComponents/NavBar.css";
 function NavBar({ bgColor, textColor }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   const [numberOfItems, setNumberOfItems] = React.useState(0);
-  const { data } = useGetBasketQuery("basket1");
+
+  // const { data } = useGetBasketQuery("basket1");
+  let currentUser = JSON.parse(localStorage.getItem("currentUser"));
+  let customerBasket = JSON.parse(localStorage.getItem("customerBasket"));
 
   useEffect(() => {
-    if (data) {
-      setNumberOfItems(data.items.length);
+    if (customerBasket) {
+      setNumberOfItems(customerBasket.items.length);
+      // console.log();
     }
-  }, [data]);
+  }, [numberOfItems, customerBasket]);
 
   const monthNames = [
     "january",
@@ -30,8 +34,6 @@ function NavBar({ bgColor, textColor }) {
     "december",
   ];
   let dt = new Date();
-
-  let currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
   return (
     <nav

@@ -46,6 +46,8 @@ function ProductDetails({ match }) {
           basket.items.push(data.items[j]);
         }
 
+        localStorage.setItem("customerBasket", JSON.stringify(basket));
+
         await updateBasket(basket).unwrap();
       } catch (err) {
         console.error("Failed to Add to Basket", err);

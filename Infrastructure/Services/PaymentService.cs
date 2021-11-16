@@ -81,12 +81,20 @@ namespace Infrastructure.Services
             return basket;
         }
 
-        public Task<Core.Entities.OrderAggregate.Order> UpdateOrderPaymentFailed(string paymentIntentId)
+        public async Task<Order> UpdateOrderPaymentFailed(string paymentIntentId)
         {
-            throw new System.NotImplementedException();
+            var spec = new OrderByPaymentIntentIdSpecification(paymentIntentId);
+            var order = await _unitOfWork.Repository<Order>().GetEntityWithSpec(spec);
+
+            if (order == null) return null;
+
+            order.Status = OrderStatus.PaymentFailed;
+            _unitOfWork.Complete();
+
+            return order;
         }
 
-        public async Task<Core.Entities.OrderAggregate.Order> UpdateOrderPaymentSucceeded(string paymentIntentId)
+        public async Task<Order> UpdateOrderPaymentSucceeded(string paymentIntentId)
         {
             var spec = new OrderByPaymentIntentIdSpecification(paymentIntentId);
             var order = await _unitOfWork.Repository<Order>().GetEntityWithSpec(spec);
@@ -96,9 +104,9 @@ namespace Infrastructure.Services
             order.Status = OrderStatus.PaymentRecieved;
             _unitOfWork.Repository<Order>().Upsert(order);
 
-            await _unitOfWork.Complete();
+            _unitOfWork.Complete();
 
-            return null;
+            return order;
         }
     }
 }

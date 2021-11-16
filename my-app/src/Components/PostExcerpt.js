@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function PostExcerpt({ product }) {
-  console.log(product.id);
   return (
     <div className="">
       <div className="w-full">
