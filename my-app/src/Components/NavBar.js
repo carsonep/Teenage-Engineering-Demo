@@ -8,14 +8,12 @@ function NavBar({ bgColor, textColor }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   const [numberOfItems, setNumberOfItems] = React.useState(0);
 
-  // const { data } = useGetBasketQuery("basket1");
   let currentUser = JSON.parse(localStorage.getItem("currentUser"));
   let customerBasket = JSON.parse(localStorage.getItem("customerBasket"));
 
   useEffect(() => {
     if (customerBasket) {
       setNumberOfItems(customerBasket.items.length);
-      // console.log();
     }
   }, [numberOfItems, customerBasket]);
 

@@ -30,7 +30,7 @@ namespace Core.Entities.OrderAggregate
 
         public decimal GetTotal()
         {
-            return Subtotal + 8;
+            return Subtotal + 0;
         }
     }
 }

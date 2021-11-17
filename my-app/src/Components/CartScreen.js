@@ -14,6 +14,7 @@ function CartScreen() {
   const [updateBasket, { isLoading }] = useUpdateBasketMutation();
   let total = 0;
   let content;
+  let items;
 
   useEffect(() => {
     if (data) {
@@ -23,7 +24,15 @@ function CartScreen() {
 
       setBasketTotal(total.toFixed(2));
     }
-  }, [data, updateBasket, content, total]);
+  }, [
+    data,
+    updateBasket,
+    content,
+    total,
+    useUpdateBasketMutation,
+    useGetBasketQuery,
+    items,
+  ]);
 
   const deleteBasketItem = async (e) => {
     try {

@@ -6,6 +6,7 @@ export const apiSlice = createApi({
   reducerPath: "api",
   // All of our requests will have URLs starting with '/products'
   baseQuery: fetchBaseQuery({ baseUrl: "https://localhost:5001/api" }),
+  tagTypes: ["Cart"],
   endpoints: (builder) => ({
     getProducts: builder.query({
       query: () => "/products",
@@ -30,6 +31,7 @@ export const apiSlice = createApi({
     }),
     getBasket: builder.query({
       query: (basketId) => `/Basket?id=${basketId}`,
+      providesTags: ["Cart"],
     }),
     updateBasket: builder.mutation({
       query: (userBasket) => ({
@@ -37,6 +39,7 @@ export const apiSlice = createApi({
         method: "POST",
         body: userBasket,
       }),
+      invalidatesTags: ["Cart"],
     }),
     createOrder: builder.mutation({
       query: (orderInfo) => ({

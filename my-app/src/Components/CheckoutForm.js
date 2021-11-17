@@ -8,7 +8,7 @@ import {
 export default function CheckoutForm({ clientSecret }) {
   const stripe = useStripe();
   const elements = useElements();
-  console.log(clientSecret);
+
   const [message, setMessage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -16,11 +16,9 @@ export default function CheckoutForm({ clientSecret }) {
     if (!stripe) {
       return;
     }
-
     // const clientSecret = new URLSearchParams(window.location.search).get(
     //   "payment_intent_client_secret"
     // );
-
     if (!clientSecret) {
       return;
     }
