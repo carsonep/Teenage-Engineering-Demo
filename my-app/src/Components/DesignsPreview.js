@@ -14,14 +14,16 @@ function DesignsPreview() {
       <NavBar textColor={"#000000"} />
       <div className="grid grid-cols-6">
         <div
-          className="w-full col-span-6"
-          // style={{
-          //   height: "120vh",
-          //   backgroundImage: `url(${playdateHero})`,
-          //   backgroundRepeat: "no-repeat",
-          //   backgroundPosition: "50% 39%",
-          //   backgroundSize: "102%",
-          // }}
+          className="-mt-14 md:-mt-14 lg:-mt-44 w-full col-span-6"
+          style={{
+            backgroundImage: `url(${playdateHero})`,
+            backgroundSize: "107%",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "35% 30%",
+            width: "100%",
+            height: 0,
+            paddingTop: "70%",
+          }}
         >
           <img className="w-full" src={playdateHero} />
         </div>
