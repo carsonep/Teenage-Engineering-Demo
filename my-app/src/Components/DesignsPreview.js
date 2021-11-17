@@ -24,9 +24,7 @@ function DesignsPreview() {
             height: 0,
             paddingTop: "70%",
           }}
-        >
-          <img className="w-full" src={playdateHero} />
-        </div>
+        ></div>
         <div className="col-span-3 object-cover">
           <img className="w-full" src={coolSpeakerHero} />
         </div>

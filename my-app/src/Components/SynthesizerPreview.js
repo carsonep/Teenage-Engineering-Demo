@@ -16,7 +16,20 @@ function SynthesizerPreview() {
     <div>
       <NavBar bgColor={"#cb986c"} textColor={"#ddcec0"} />
       <div className="grid grid-cols-6">
-        <div className="col-span-6" style={{ backgroundColor: "#cb986c" }}>
+        <div
+          style={{}}
+          className="-mt-14 md:-mt-14 lg:-mt-44 w-full col-span-6"
+          style={{
+            backgroundImage: `url(${redModularHero})`,
+            backgroundSize: "92.33%",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "50% 40%",
+            width: "100%",
+            height: 0,
+            paddingTop: "70%",
+            backgroundColor: "#cb986c",
+          }}
+        >
           <img src={redModularHero} />
         </div>
         <div
