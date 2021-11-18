@@ -20,6 +20,7 @@ import Od11Screen from "./Components/Od11Screen";
 import I1Preview from "./Components/I1Preview";
 import CartScreen from "./Components/CartScreen";
 import CheckoutScreen from "./Components/CheckoutScreen";
+import PlayDateScreen from "./Components/PlayDateScreen";
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
           <Route path="/products/po" exact component={PocketOperatorScreen} />
           <Route path="/products/od-11" exact component={Od11Screen} />
           <Route path="/designs/I-1" exact component={I1Preview} />
+          <Route path="/designs/playdate" exact component={PlayDateScreen} />
           <Route
             path="/products/orthoremote"
             exact

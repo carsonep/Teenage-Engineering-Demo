@@ -15,9 +15,19 @@ function ProductsPreview() {
     <div className="">
       <NavBar bgColor={"#000000"} textColor={"#FFFFfF"} />
       <div className="grid grid-cols-6">
-        <div className="col-span-6 h-full">
-          <img src={ob4Hero} className="h-full w-full object-cover" />
-        </div>
+        <div
+          // className="col-span-6 h-full"
+          className="-mt-14 md:-mt-14 lg:-mt-44 w-full col-span-6"
+          style={{
+            backgroundImage: `url(${ob4Hero})`,
+            backgroundSize: "100%",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "50% 60%",
+            width: "100%",
+            height: 0,
+            paddingTop: "70%",
+          }}
+        ></div>
         <div className="col-span-3 object-cover">
           <img className="w-full" src={opzHero} />
         </div>
