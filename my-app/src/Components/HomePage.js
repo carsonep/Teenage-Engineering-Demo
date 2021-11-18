@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "./NavBar";
 import computer1Hero from "../images/computer1Hero.jpg";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
@@ -46,7 +47,7 @@ function HomePage() {
             width: "18%",
           }}
         >
-          explore
+          <Link to="/products/computer-1">explore</Link>
         </h2>
       </div>
       <div

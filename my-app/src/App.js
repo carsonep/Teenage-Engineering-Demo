@@ -21,6 +21,7 @@ import I1Preview from "./Components/I1Preview";
 import CartScreen from "./Components/CartScreen";
 import CheckoutScreen from "./Components/CheckoutScreen";
 import PlayDateScreen from "./Components/PlayDateScreen";
+import Computer1Preview from "./Components/Computer1Preview";
 
 function App() {
   return (
@@ -41,6 +42,11 @@ function App() {
             path="/products/synthesizers"
             exact
             component={SynthesizerPreview}
+          />
+          <Route
+            path="/products/computer-1"
+            exact
+            component={Computer1Preview}
           />
           <Route path="/products/ob-4" exact component={Ob4Screen} />
           <Route path="/products/op-z" exact component={OpzScreen} />
