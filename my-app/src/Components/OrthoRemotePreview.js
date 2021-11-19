@@ -167,7 +167,10 @@ function OrthoRemotePreview() {
               paddingTop: "100%",
             }}
           ></div>
-          <p className="flex justify-center mt-4" style={{ fontSize: "18px" }}>
+          <p
+            className="flex justify-center mt-4 font-light"
+            style={{ fontSize: "1.83vw" }}
+          >
             OD-11 overview
           </p>
         </div>
@@ -184,7 +187,10 @@ function OrthoRemotePreview() {
               paddingTop: "100%",
             }}
           ></div>
-          <p className="flex justify-center mt-4" style={{ fontSize: "18px" }}>
+          <p
+            className="flex justify-center mt-4 font-light"
+            style={{ fontSize: "1.83vw" }}
+          >
             carlsson story
           </p>
         </div>
@@ -201,7 +207,10 @@ function OrthoRemotePreview() {
               paddingTop: "100%",
             }}
           ></div>
-          <p className="flex justify-center mt-4" style={{ fontSize: "18px" }}>
+          <p
+            className="flex justify-center mt-4 font-light"
+            style={{ fontSize: "1.83vw" }}
+          >
             technology
           </p>
         </div>
@@ -217,7 +226,10 @@ function OrthoRemotePreview() {
               paddingTop: "100%",
             }}
           ></div>
-          <p className="flex justify-center mt-4" style={{ fontSize: "18px" }}>
+          <p
+            className="flex justify-center mt-4 font-light"
+            style={{ fontSize: "1.83vw" }}
+          >
             ortho remote
           </p>
         </div>
@@ -234,7 +246,10 @@ function OrthoRemotePreview() {
               paddingTop: "100%",
             }}
           ></div>
-          <p className="flex justify-center mt-4" style={{ fontSize: "18px" }}>
+          <p
+            className="flex justify-center mt-4 font-light"
+            style={{ fontSize: "1.83vw" }}
+          >
             orthoplay
           </p>
         </div>

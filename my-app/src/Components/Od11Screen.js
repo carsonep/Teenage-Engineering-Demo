@@ -14,7 +14,7 @@ function Od11Screen() {
     <div className="relative">
       <NavBar textColor={"#cac9c4"} />
       <div
-        className="-mt-44"
+        className="-mt-14 md:-mt-14 lg:-mt-44 w-full"
         style={{
           backgroundImage: `url(${od11SwedishRoom})`,
 
@@ -27,8 +27,14 @@ function Od11Screen() {
         }}
       >
         <h1
-          style={{ color: "#ebebeb" }}
-          className="top-0 bottom-1/2 absolute w-full text-center text-5xl"
+          style={{}}
+          className="absolute w-full text-center"
+          style={{
+            top: "2%",
+
+            fontSize: "3.33vw",
+            color: "#ebebeb",
+          }}
         >
           experience the warm and natural carlsson sound.
         </h1>
