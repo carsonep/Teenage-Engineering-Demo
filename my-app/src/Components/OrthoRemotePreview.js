@@ -24,39 +24,55 @@ function OrthoRemotePreview() {
           paddingTop: "67%",
         }}
       ></div>
-      <div className="flex justify-center" style={{ height: "80px" }}>
-        <h1 className="text-4xl" style={{ color: "#b2b2b2" }}>
+      <div className="flex justify-center">
+        <h1 className="py-2" style={{ color: "#b2b2b2", fontSize: "3.33vw" }}>
           ortho remote
         </h1>
       </div>
-      <div className=" flex justify-center" style={{ padding: "0 45px" }}>
+      <div
+        className="flex justify-center leading-tight font-light"
+        style={{ marginTop: "2.5%" }}
+      >
         <p
-          style={{ fontSize: "18px", color: "#8ab2a1" }}
-          className="w-1/3 pr-2"
+          style={{
+            fontSize: "18px",
+            color: "#8ab2a1",
+            width: "30%",
+            fontSize: "1.8vw",
+            marginRight: "1%",
+          }}
         >
           ortho remote is the wireless remote control designed for OD-11 and
           OB–4. with ortho remote you adjust the volume, skip track and pause
           your music from any room, at up to 20 meters distance.
         </p>
         <p
-          style={{ fontSize: "18px", color: "#8ab2a1" }}
-          className="w-1/3 pr-2"
+          style={{
+            fontSize: "18px",
+            color: "#8ab2a1",
+            width: "30%",
+            fontSize: "1.8vw",
+          }}
         >
           ortho remote has a magnetic back so you can stick it to any magnetic
           metal surface, like a fridge. the non-slip bottom makes it rest steady
           on any surface. experience real 1-click music.
         </p>
       </div>
-      <div className="text-white flex flex-col items-center mt-16">
-        <p style={{ fontSize: "18px" }}>ortho remote from $89</p>
-        <p style={{ fontSize: "18px" }}>visit store</p>
+      <div className="text-white flex flex-col items-center mt-16 leading-tight">
+        <p style={{ fontSize: "1.833vw" }} className="font-light">
+          ortho remote from $89
+        </p>
+        <p style={{ fontSize: "1.833vw" }} className="font-light">
+          visit store
+        </p>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center" style={{ marginTop: "2%" }}>
         <div
           style={{
             backgroundImage: `url(${orthoRemote})`,
-            backgroundSize: "52%",
-            backgroundPosition: "center",
+            backgroundSize: "51%",
+            backgroundPosition: "48.7% 55%",
             backgroundRepeat: "no-repeat",
             width: "100%",
             height: 0,
@@ -65,27 +81,34 @@ function OrthoRemotePreview() {
         ></div>
       </div>
       <div
-        className="text-white flex justify-center pb-36"
-        style={{ height: "80px" }}
+        className="text-white flex justify-center"
+        style={{ paddingBottom: "10%" }}
       >
-        <p style={{ fontSize: "18px" }}>matte black</p>
+        <p style={{ fontSize: "1.833vw" }} className="font-light">
+          matte black
+        </p>
       </div>
       <div
         className="flex flex-col md:grid md:gap-4 md:grid-cols-5 text-white"
         style={{ padding: "0 12vw", color: "#e5e5e5" }}
       >
-        <div className="pb-0 md:pb-32" style={{ textSizeAdjust: "none" }}>
-          <p style={{ fontSize: "18px" }}>over 2 year battery life</p>
-          <p className="mt-4" style={{ fontSize: "9px" }}>
+        <div
+          className="pb-0 md:pb-32 font-light leading-tight"
+          style={{ textSizeAdjust: "none" }}
+        >
+          <p style={{ fontSize: "1.83vw" }}>over 2 year battery life</p>
+          <p className="mt-4" style={{ fontSize: ".9vw" }}>
             ortho remote uses Bluetooth® 4 low energy to communicate with OD-11
             and OB–4. this in combination with 2 X AAA batteries makes it last
             over two years without the need to change batteries.
           </p>
         </div>
 
-        <div className="mt-4 md:mt-0">
-          <p style={{ fontSize: "18px" }}>1-click music</p>
-          <p className="mt-4" style={{ fontSize: "9px" }}>
+        <div className="pb-0 md:pb-32 font-light leading-tight">
+          <p style={{ fontSize: "1.83vw" }} className="mt-4">
+            1-click music
+          </p>
+          <p className="mt-4" style={{ fontSize: ".9vw" }}>
             ortho remote is created to simplify your music listening experience.
             pair ortho remote with your OD-11 and all it takes is 1 click for
             your favorite music to start playing. simply tap to start playing,
@@ -95,27 +118,33 @@ function OrthoRemotePreview() {
           </p>
         </div>
 
-        <div className="mt-4 md:mt-0">
-          <p style={{ fontSize: "18px" }}>MIDI controller</p>
-          <p className="mt-4" style={{ fontSize: "9px" }}>
+        <div className="pb-0 md:pb-32 font-light leading-tight">
+          <p style={{ fontSize: "1.83vw" }} className="mt-4">
+            MIDI controller
+          </p>
+          <p className="mt-4" style={{ fontSize: ".9vw" }}>
             the ortho remote can be used as a wireless midi controller, to
             control logic, garage band or any other BLE-MIDI compatible software
             or devices.
           </p>
         </div>
 
-        <div className="mt-4 md:mt-0">
-          <p style={{ fontSize: "18px" }}>works with iOS and android too</p>
-          <p className="mt-4" style={{ fontSize: "9px" }}>
+        <div className="pb-0 md:pb-32 font-light leading-tight">
+          <p style={{ fontSize: "1.83vw" }} className="mt-4">
+            works with iOS and android too
+          </p>
+          <p className="mt-4" style={{ fontSize: ".9vw" }}>
             ortho remote follows the universal Bluetooth® standard for HID –
             human interface devices. this makes it work seamlessly with any
             music player on iOS, mac OS X and android.
           </p>
         </div>
 
-        <div className="mt-4 md:mt-0 pb-16 md:pb-0">
-          <p style={{ fontSize: "18px" }}>technical specs</p>
-          <p className="mt-4" style={{ fontSize: "9px" }}>
+        <div className="mt-4 md:mt-0 pb-16 md:pb-0 font-light leading-tight">
+          <p style={{ fontSize: "1.83vw" }} className="mt-4">
+            technical specs
+          </p>
+          <p className="mt-4" style={{ fontSize: ".9vw" }}>
             dimensions in mm: 68 X 23 (W X H) dimensions in inch: 2.67 X
             0.88inch (W X H) weight: 104g / 0.23lbs
           </p>
@@ -127,14 +156,15 @@ function OrthoRemotePreview() {
       >
         <div>
           <div
-            className="bg-red-500"
+            className=""
             style={{
               backgroundImage: `url(${od11Small})`,
               backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              height: "140px",
+              backgroundSize: "135%",
+              height: 0,
               width: "100%",
               backgroundPosition: "50% 50%",
+              paddingTop: "100%",
             }}
           ></div>
           <p className="flex justify-center mt-4" style={{ fontSize: "18px" }}>
@@ -148,9 +178,10 @@ function OrthoRemotePreview() {
               backgroundImage: `url(${carlsson})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
-              height: "140px",
+              height: 0,
               width: "100%",
               backgroundPosition: "25% 2%",
+              paddingTop: "100%",
             }}
           ></div>
           <p className="flex justify-center mt-4" style={{ fontSize: "18px" }}>
@@ -164,9 +195,10 @@ function OrthoRemotePreview() {
               backgroundImage: `url(${od11SideTriangle})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "168%",
-              height: "140px",
+              height: 0,
               width: "100%",
               backgroundPosition: "45% 34%",
+              paddingTop: "100%",
             }}
           ></div>
           <p className="flex justify-center mt-4" style={{ fontSize: "18px" }}>
@@ -179,9 +211,10 @@ function OrthoRemotePreview() {
               backgroundImage: `url(${smallOrthoRemote})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "contain",
-              height: "140px",
+              height: 0,
               width: "100%",
               backgroundPosition: "45% 34%",
+              paddingTop: "100%",
             }}
           ></div>
           <p className="flex justify-center mt-4" style={{ fontSize: "18px" }}>
@@ -195,9 +228,10 @@ function OrthoRemotePreview() {
               backgroundRepeat: "no-repeat",
               backgroundSize: "contain",
 
-              height: "140px",
+              height: 0,
               width: "100%",
               backgroundPosition: "45% 34%",
+              paddingTop: "100%",
             }}
           ></div>
           <p className="flex justify-center mt-4" style={{ fontSize: "18px" }}>

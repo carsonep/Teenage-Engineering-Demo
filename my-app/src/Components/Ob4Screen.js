@@ -11,44 +11,62 @@ import op4Carrier from "../images/op4Carrier.png";
 
 function Ob4Screen() {
   return (
-    <div className="relative">
-      <NavBar className="absolute" textColor={"#ffffff"} />
-      <div className=" text-white">
+    <div className="relative z-0">
+      <NavBar className="relative inset-0 z-20" textColor={"#fff"} />
+      <div className="text-white">
         <div
-          className="text-white"
+          className="-mt-14 md:-mt-14 lg:-mt-44"
           style={{
             backgroundImage: `url(${ob4PageHeader})`,
-            backgroundSize: "cover",
-            minHeight: "200vh",
-            // backgroundPosition: "center",
+            backgroundSize: "101.1%",
+            backgroundPosition: "50% 20%",
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "50% 45%",
+            width: "100%",
+            height: 0,
+            paddingTop: "120%",
           }}
         >
-          {/* <img src={ob4PageHeader} className="h-full" /> */}
-          <h1 className="text-5xl font-base flex justify-center">
+          <h1
+            className="absolute flex justify-center w-full text-white"
+            style={{ top: "2.5%", fontSize: "3.33vw" }}
+          >
             the magic radio.
           </h1>
-          <div className="flex  justify-center">
-            <p className="w-1/4">
-              the magic radio. OB–4 introducing OB–4, the portable high fidelity
-              loudspeaker with two 4'' bass drivers and a pair of neodymium
-              tweeters that deliver crystal clear, open natural sound with 38
-              watts per channel — that's around 100 decibels
+          <h2
+            className="absolute flex font-light leading-none"
+            style={{
+              top: "2.65%",
+              left: "62.5%",
+              fontSize: "1.9vw",
+              width: "18%",
+            }}
+          >
+            OB-4
+          </h2>
+
+          <div className="flex justify-center leading-tight">
+            <p style={{ width: "30%", fontSize: "1.8vw", marginRight: "2.5%" }}>
+              introducing OB–4, the portable high fidelity loudspeaker with two
+              4'' bass drivers and a pair of neodymium tweeters that deliver
+              crystal clear, open natural sound with 38 watts per channel —
+              that's around 100 decibels
             </p>
-            <p className="w-1/4">
-              of incredible sounding stereo. listen using line input, bluetooth,
-              FM radio and disk. the interface is minimal, with only the things
-              you really need. yet if you look below the surface, there's a lot
-              more than meets the eye.{" "}
+
+            <p style={{ width: "30%", fontSize: "1.8vw" }}>
+              the weight of the unit when moving it around. a couple of literal
+              computer crashes later, we turned to a lighter and sturdier design
+              using aluminium. we'll always continue to iterate on the design,
+              but here we are. it's not a ground-breaking pc case, but we like
+              it, and use it everyday. now we'd like to share it with you.
             </p>
           </div>
         </div>
+
         <div className="h-screen bg-black">
           <iframe
             id="te-b9fcfe52-35be586a-2bf80289"
             // width="50vw"
-            // height="195.91836734693877%"
+            height="195.91836734693877%"
             scrolling="no"
             frameborder="no"
             allowtransparency="true"

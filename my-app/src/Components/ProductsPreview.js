@@ -9,12 +9,25 @@ import orthoHero from "../images/orthoHero.png";
 import od11Hero from "../images/od11Hero.png";
 import op1Acc from "../images/op1Acc.jpg";
 import cameraHero from "../images/cameraHero.png";
+import computer1Hero from "../images/computer1Hero.jpg";
 
 function ProductsPreview() {
   return (
     <div className="">
-      <NavBar bgColor={"#000000"} textColor={"#FFFFfF"} />
+      <NavBar textColor={"rgb(232,143,110)"} />
       <div className="grid grid-cols-6">
+        <div
+          className="-mt-14 md:-mt-14 lg:-mt-44 w-full col-span-6"
+          style={{
+            backgroundImage: `url(${computer1Hero})`,
+            backgroundSize: "100%",
+            backgroundPosition: "50% 101.3%",
+            backgroundRepeat: "no-repeat",
+            width: "100%",
+            height: 0,
+            paddingTop: "100%",
+          }}
+        ></div>
         <div
           // className="col-span-6 h-full"
           className="-mt-14 md:-mt-14 lg:-mt-44 w-full col-span-6"
