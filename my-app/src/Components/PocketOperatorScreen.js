@@ -43,7 +43,7 @@ function PocketOperatorScreen() {
         {/* <h1>introducing pocket operator capcom® series.</h1> */}
       </div>
       <div
-        className="flex flex-col justify-center items-center font-light leading-tight -mt-48"
+        className="flex flex-col justify-center items-center font-light leading-tight lg:-mt-48"
         style={{ fontSize: "1.8333vw" }}
       >
         <h1
@@ -537,7 +537,7 @@ function PocketOperatorScreen() {
         </div>
       </div>
       <div
-        className=""
+        className="relative"
         style={{
           backgroundImage: `url(${poScreen})`,
           backgroundSize: "101%",
@@ -545,25 +545,34 @@ function PocketOperatorScreen() {
           backgroundRepeat: "no-repeat",
           width: "100%",
           height: 0,
-          paddingTop: "100%",
+          paddingTop: "70%",
         }}
       >
-        {/* <p>
-          by placing all vital and sensitive components under the LCD display
-          there's no need for an outer case. by saving this cost, high quality
-          components could be used to guarantee the best possible sound and very
-          low power consumption. the space under the display also doubles as a
-          speaker box.
-        </p>
-        <ul>
-          <li>silabs efm 32 gecko mcu</li>
-          <li>cirrus logic dac</li>
-          <li>knowles high quality speaker</li>
-          <li>high quality crystal for solid clock.</li>
-        </ul> */}
+        <div
+          className="absolute font-light leading-tight"
+          style={{ padding: "0 4.6vw", top: "7.5%", fontSize: "1.833vw" }}
+        >
+          <p style={{ fontSize: "1.833vw", width: "35%" }}>
+            by placing all vital and sensitive components under the LCD display
+            there's no need for an outer case. by saving this cost, high quality
+            components could be used to guarantee the best possible sound and
+            very low power consumption. the space under the display also doubles
+            as a speaker box.
+          </p>
+          <ul
+            className="list-disc"
+            style={{ paddingTop: "2.5%", paddingLeft: "2%" }}
+          >
+            <li>silabs efm 32 gecko mcu</li>
+            <li>cirrus logic dac</li>
+            <li>knowles high quality speaker</li>
+            <li>high quality crystal for solid clock.</li>
+          </ul>
+        </div>
       </div>
+
       <div
-        className=""
+        className=" relative"
         style={{
           backgroundImage: `url(${poHardware})`,
           backgroundSize: "85%",
@@ -575,7 +584,15 @@ function PocketOperatorScreen() {
           paddingTop: "85%",
         }}
       >
-        {/* <ol>
+        <ol
+          className="list-decimal absolute"
+          style={{
+            bottom: "5%",
+            right: "3%",
+            width: "11%",
+            fontSize: ".833vw",
+          }}
+        >
           <li>BREAK AWAY HANGER</li>
           <li>3.5 MM AUDIO OUT / HEADPHONE SYNC OUT</li>
           <li>JTAG PROGRAMMING PORT</li>
@@ -584,8 +601,9 @@ function PocketOperatorScreen() {
           <li>BUILT-IN SPEAKER</li>
           <li>FOLDING WIRE STAND</li>
           <li>EXTERNAL SPEAKER SOLDERING POINTS</li>
-        </ol> */}
+        </ol>
       </div>
+
       <div
         className="flex flex-col justify-center items-center font-light leading-tight mt-12 md:mt-16 lg:mt-24"
         style={{ fontSize: "1.8333vw" }}
@@ -634,7 +652,7 @@ function PocketOperatorScreen() {
             backgroundImage: `url(${batteryProtection})`,
             backgroundPosition: "center top",
             backgroundRepeat: "no-repeat",
-            backgroundSize: "105",
+            backgroundSize: "cover",
             width: "100%",
             height: 0,
             paddingTop: "100%",
