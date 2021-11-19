@@ -37,7 +37,7 @@ function PlayDateScreen() {
         <span>gaming console, playdate. playdate is a hand-held gaming</span>
         <span>system with a flip-out analog crank controller.</span>
 
-        <div className="flex mt-12 pb-12 md:pb-16 lg:pb-24 ">
+        <div className="flex mt-8 pb-12 md:pb-16 lg:pb-24 ">
           <p style={{ fontSize: "1.8333vw", color: "#aa9413" }}>read more</p>
         </div>
       </div>
