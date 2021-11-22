@@ -23,6 +23,7 @@ import CheckoutScreen from "./Components/CheckoutScreen";
 import PlayDateScreen from "./Components/PlayDateScreen";
 import Computer1Preview from "./Components/Computer1Preview";
 import FrekvensScreen from "./Components/FrekvensScreen";
+import poModularScreen from "./Components/poModularScreen";
 
 function App() {
   return (
@@ -52,6 +53,11 @@ function App() {
           <Route path="/products/ob-4" exact component={Ob4Screen} />
           <Route path="/products/op-z" exact component={OpzScreen} />
           <Route path="/products/po" exact component={PocketOperatorScreen} />
+          <Route
+            path="/products/po/modular"
+            exact
+            component={poModularScreen}
+          />
           <Route path="/products/od-11" exact component={Od11Screen} />
           <Route path="/designs/I-1" exact component={I1Preview} />
           <Route path="/designs/playdate" exact component={PlayDateScreen} />

@@ -45,7 +45,7 @@ function Ob4Screen() {
 
         <div
           className="flex absolute justify-center leading-tight font-light z-50"
-          style={{ color: "#b2b2ab", top: "22.75%" }}
+          style={{ color: "#b2b2ab", top: "20.75%" }}
         >
           <p style={{ width: "30%", fontSize: "1.8vw", marginRight: "2.5%" }}>
             introducing OB–4, the portable high fidelity loudspeaker with two
@@ -63,10 +63,10 @@ function Ob4Screen() {
         </div>
       </div>
 
-      <div className="h-screen bg-black">
+      <div className="bg-black -mt-44" style={{ height: "580px" }}>
         <iframe
           id="te-b9fcfe52-35be586a-2bf80289"
-          // width="50vw"
+          // width="100vw"
           height="195.91836734693877%"
           scrolling="no"
           frameborder="no"
@@ -76,12 +76,33 @@ function Ob4Screen() {
           allowfullscreen=""
           sandbox="allow-same-origin allow-popups allow-scripts allow-top-navigation allow-presentation"
           className="w-screen"
-          style={{ height: "100%" }}
+          // style={{ height: "100%" }}
           src="https://player.vimeo.com/video/462682237?background=1"
         ></iframe>
       </div>
 
-      <div className="bg-black">
+      <div>
+        <div
+          className="flex justify-center leading-tight font-light bg-red-500"
+          style={{ color: "#b2b2ab" }}
+        >
+          <p style={{ width: "30%", fontSize: "1.8vw", marginRight: "2.5%" }}>
+            introducing OB–4, the portable high fidelity loudspeaker with two
+            4'' bass drivers and a pair of neodymium tweeters that deliver
+            crystal clear, open natural sound with 38 watts per channel — that's
+            around 100 decibels
+          </p>
+
+          <p style={{ width: "30%", fontSize: "1.8vw" }}>
+            of incredible sounding stereo. listen using line input, bluetooth,
+            FM radio and disk. the interface is minimal, with only the things
+            you really need. yet if you look below the surface, there's a lot
+            more than meets the eye.
+          </p>
+        </div>
+      </div>
+
+      <div className="bg-black py-24">
         <div className="grid grid-cols-4 text-white">
           <div className="row-span-1">
             <h2>natural sound</h2>
