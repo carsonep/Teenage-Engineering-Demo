@@ -1,0 +1,31 @@
+@media only screen and (max-width: 769px) {
+  #modular__title {
+    bottom: 4%;
+  }
+
+  iframe {
+    height: 20vh;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #modular__title {
+    bottom: 2%;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  #modular__title {
+    bottom: 15%;
+  }
+
+  iframe {
+    height: 35vh;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  iframe {
+    height: 50vh;
+  }
+}
