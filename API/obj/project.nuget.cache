@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VvXT6kq9IeBTr/R8ujeXYhzhUdxLCCPOUZ37JpTqHsZ4WRaT16rrb4FLSOl2Bl3dt30T4UkSiQWq5IkItmHbng==",
+  "dgSpecHash": "31RcEuWxUS338c/iJZ2dOpDykus6jehOe/Ymf1Xo+K7MlMlZn9UpOFmKu5hlAy56YUmyIiEesfyJtajqBo0Lmw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\api\\API.csproj",
+  "projectFilePath": "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

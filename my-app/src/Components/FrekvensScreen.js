@@ -30,7 +30,7 @@ function FrekvensScreen() {
           meet frekvens.
         </h1>
         <h1
-          className="font-normal pb-6 md:pb-8"
+          className="font-normal pb-6 md:pb-12"
           style={{ fontSize: "3.333vw" }}
         >
           the ultimate house party collection.

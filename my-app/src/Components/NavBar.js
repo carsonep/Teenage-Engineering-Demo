@@ -242,15 +242,27 @@ function NavBar({ bgColor, textColor }) {
                 <div>
                   <h2>account</h2>
                   <br />
-                  <p>
-                    <Link to="/login">sign in</Link>
-                  </p>
-                  <p>
-                    <Link to="/register">register</Link>
-                  </p>
+                  {!currentUser && (
+                    <div>
+                      <p>
+                        <Link to="/login">sign in</Link>
+                      </p>
+                      <p>
+                        <Link to="/register">register</Link>
+                      </p>
+                    </div>
+                  )}
+
+                  {currentUser && currentUser.roles[0] == "Member" && (
+                    <p>
+                      <p>logout</p>
+                    </p>
+                  )}
+
                   {currentUser && currentUser.roles[0] == "Admin" && (
                     <p>
                       <Link to="/admin">admin</Link>
+                      <p>logout</p>
                     </p>
                   )}
                 </div>
