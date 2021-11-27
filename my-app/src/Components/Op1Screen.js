@@ -1,7 +1,8 @@
 import React from "react";
 import NavBar from "./NavBar";
 import Op1Header from "../images/Op1Header.jpg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import Op1NavBarHeader from "./Op1NavBarHeader";
 
 function Op1Screen() {
   return (
@@ -17,13 +18,39 @@ function Op1Screen() {
           width: "100%",
           height: 0,
           paddingTop: "145%",
-          backgroundColor: "#c9cdd2",
+          
+          
         }}
       >
-        <p
-          className="absolute flex  font-light leading-tight text-center"
+        <h1
+          className="absolute flex  leading-tight"
           style={{
-            top: "58%",
+            top: "17.5%",
+            right: "5.5%",
+            fontSize: "3.33vw",
+            width: "20%",
+          }}
+        >
+          the portable wonder synthesizer
+        </h1>
+
+        <h1
+          className="absolute flex  leading-tight"
+          style={{
+            top: "27.5%",
+            right: "5.5%",
+            fontSize: "1.833vw",
+            width: "20%",
+            color: "#1274bb",
+          }}
+        >
+          <NavLink to="store">view in store.</NavLink>
+        </h1>
+
+        <p
+          className="absolute flex font-light leading-tight text-center"
+          style={{
+            top: "51%",
             left: "6.5%",
             fontSize: "1.866vw",
             width: "20%",
@@ -35,7 +62,7 @@ function Op1Screen() {
         <p
           className="absolute flex  font-light leading-tight text-center"
           style={{
-            top: "64%",
+            top: "57%",
             left: "19.5%",
             fontSize: "1.5vw",
             width: "20%",
@@ -46,7 +73,7 @@ function Op1Screen() {
         <h2
           className="absolute flex  font-light leading-tight text-center"
           style={{
-            top: "67%",
+            top: "59.5%",
             left: "6.5%",
             fontSize: "1.866vw",
             width: "21%",
@@ -60,7 +87,7 @@ function Op1Screen() {
         <p
           className="absolute flex  font-light leading-tight text-center"
           style={{
-            top: "83.5%",
+            top: "74%",
             left: "15.5%",
             fontSize: "1.5vw",
             width: "20%",
@@ -72,7 +99,7 @@ function Op1Screen() {
         <h2
           className="absolute flex  font-light leading-tight text-center"
           style={{
-            top: "72%",
+            top: "65%",
             left: "30.5%",
             fontSize: "1.866vw",
             width: "21%",
@@ -88,7 +115,7 @@ function Op1Screen() {
         <p
           className="absolute flex  font-light leading-tight text-center"
           style={{
-            top: "98%",
+            top: "87.5%",
             left: "37.5%",
             fontSize: "1.5vw",
             width: "20%",
@@ -100,7 +127,7 @@ function Op1Screen() {
         <p
           className="absolute flex  font-light leading-tight text-center"
           style={{
-            top: "87%",
+            top: "77%",
             left: "8.5%",
             fontSize: "1.866vw",
             width: "20%",
@@ -111,7 +138,7 @@ function Op1Screen() {
         <p
           className="absolute flex  font-light leading-tight"
           style={{
-            top: "90%",
+            top: "80%",
             left: "15.5%",
             fontSize: "1.5vw",
             width: "12%",
@@ -123,7 +150,7 @@ function Op1Screen() {
         <p
           className="absolute flex  font-light leading-tight text-center"
           style={{
-            top: "94%",
+            top: "83.5%",
             left: "6.5%",
             fontSize: "1.866vw",
             width: "20%",
@@ -134,7 +161,7 @@ function Op1Screen() {
         <p
           className="absolute flex  font-light leading-tight"
           style={{
-            top: "98%",
+            top: "87.5%",
             left: "15.5%",
             fontSize: "1.5vw",
             width: "12%",
@@ -142,29 +169,34 @@ function Op1Screen() {
         >
           –ELIJAH WOOD
         </p>
-        {/*
-        <h2
-          style={{ color: "#ed614a" }}
-          className="absolute flex  font-light leading-tight"
-          style={{
-            top: "35%",
-            left: "4.633%",
-            fontSize: "1.9vw",
-            width: "18%",
-          }}
-        >
-          <Link to="/products/computer-1">explore</Link>
-        </h2>
       </div>
       <div
-        className="col-span-6  flex justify-center items-center"
-        style={{
-          backgroundColor: "#f05a24",
-
-          padding: "2.5%",
-        }}
+        className="flex w-full justify-around font-light leading-tight"
+        style={{ backgroundColor: "#e5e5e5", fontSize: "2vw", padding: "0 5vw" }}
       >
-        <h1 className=" text-white text-xl md:text-6xl">visit store.</h1> */}
+        <div className="flex flex-col text-center " style={{padding: "5% 0"}}>
+          <span>FUTURE</span>
+          <span>MUSIC PLATINUM</span>
+          <span>AWARD</span>
+        </div>
+
+        <div className="flex flex-col text-center " style={{padding: "5% 0"}}>
+          <span>DESIGN S</span>
+          <span>GOLD</span>
+          <span>AWARD</span>
+        </div>
+
+        <div className="flex flex-col text-center " style={{padding: "5% 0"}}>
+          <span>GEORGIA TECH</span>
+          <span>MARGARET GUTHMAN</span>
+          <span>AWARD</span>
+        </div>
+
+        <div className="flex flex-col text-center " style={{padding: "5% 0"}}>
+          <span>MoMA SF</span>
+          <span>PERMANENT</span>
+          <span>COLLECTION</span>
+        </div>
       </div>
     </div>
   );

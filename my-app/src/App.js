@@ -25,6 +25,7 @@ import Computer1Preview from "./Components/Computer1Preview";
 import FrekvensScreen from "./Components/FrekvensScreen";
 import poModularScreen from "./Components/poModularScreen";
 import Op1Screen from "./Components/Op1Screen";
+import Op1Accessories from "./Components/Op1Accessories";
 
 function App() {
   return (
@@ -61,6 +62,11 @@ function App() {
           />
           <Route path="/products/od-11" exact component={Od11Screen} />
           <Route path="/products/op-1" exact component={Op1Screen} />
+          <Route
+            path="/products/op-1/accessories"
+            exact
+            component={Op1Accessories}
+          />
           <Route path="/designs/I-1" exact component={I1Preview} />
           <Route path="/designs/playdate" exact component={PlayDateScreen} />
           <Route path="/designs/frekvens" exact component={FrekvensScreen} />

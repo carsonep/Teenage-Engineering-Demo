@@ -195,9 +195,7 @@ function NavBar({ bgColor, textColor }) {
                         <Link to="/now">now</Link>
                       </h2>
                       <br />
-                      <p>
-                        <Link to="/newsletter">newsletter</Link>
-                      </p>
+
                       <p>instagram</p>
                       <p>
                         {" "}
