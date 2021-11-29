@@ -10,14 +10,15 @@ import od11Hero from "../images/od11Hero.png";
 import op1Acc from "../images/op1Acc.jpg";
 import cameraHero from "../images/cameraHero.png";
 import computer1Hero from "../images/computer1Hero.jpg";
+import "./styleComponents/ProductPreview.css";
 
 function ProductsPreview() {
   return (
-    <div className="">
+    <div className="product__preview">
       <NavBar textColor={"rgb(232,143,110)"} />
-      <div className="grid grid-cols-6">
+      <div className="grid grid-cols-6 gap-2 md:gap-0">
         <div
-          className="-mt-14 md:-mt-14 lg:-mt-44 w-full col-span-6"
+          className="md:-mt-14 lg:-mt-44 w-full col-span-6 rounded-2xl md:rounded-none mt-2 md:mt-0"
           style={{
             backgroundImage: `url(${computer1Hero})`,
             backgroundSize: "100%",
@@ -30,7 +31,7 @@ function ProductsPreview() {
         ></div>
         <div
           // className="col-span-6 h-full"
-          className="-mt-14 md:-mt-14 lg:-mt-44 w-full col-span-6"
+          className="md:-mt-14 lg:-mt-44 w-full col-span-6 rounded-2xl md:rounded-none mt-2 md:mt-0"
           style={{
             backgroundImage: `url(${ob4Hero})`,
             backgroundSize: "100%",
@@ -41,29 +42,41 @@ function ProductsPreview() {
             paddingTop: "70%",
           }}
         ></div>
-        <div className="col-span-3 object-cover">
-          <img className="w-full" src={opzHero} />
+        <div className="col-span-6 md:col-span-3 mt-2 md:mt-0">
+          <img className="w-full rounded-2xl md:rounded-none" src={opzHero} />
         </div>
-        <div className="col-span-3" style={{ backgroundColor: "#cb986c" }}>
+        <div
+          className="col-span-6 md:col-span-3 rounded-2xl md:rounded-none mt-2 md:mt-0"
+          style={{ backgroundColor: "#cb986c" }}
+        >
           <img src={redModularHero} />
         </div>
-        <div className="col-span-6" style={{ backgroundColor: "#e5e5e5" }}>
+        <div
+          className="col-span-6 rounded-2xl md:rounded-none mt-2 md:mt-0"
+          style={{ backgroundColor: "#e5e5e5" }}
+        >
           <img src={pocketOperatorHero} />
         </div>
-        <div className="col-span-2" style={{ backgroundColor: "#b2b2b7" }}>
+        <div
+          className="col-span-6 md:col-span-2 rounded-2xl md:rounded-none mt-2 md:mt-0"
+          style={{ backgroundColor: "#b2b2b7" }}
+        >
           <img src={op1Hero} />
         </div>
-        <div className="col-span-2" style={{ backgroundColor: "#0f0e12" }}>
+        <div
+          className="col-span-3 md:col-span-2 rounded-2xl md:rounded-none mt-2 md:mt-0"
+          style={{ backgroundColor: "#0f0e12" }}
+        >
           <img src={orthoHero} />
         </div>
-        <div className="col-span-2">
-          <img src={od11Hero} />
+        <div className="col-span-3 md:col-span-2 mt-2 md:mt-0">
+          <img className="rounded-2xl md:rounded-none" src={od11Hero} />
         </div>
-        <div className="col-span-6">
+        <div className="hidden md:block col-span-6 rounded-2xl md:rounded-none mt-2 md:mt-0">
           <img src={op1Acc} />
         </div>
         <div
-          className="col-span-6 "
+          className="col-span-6 rounded-2xl md:rounded-none mt-2 md:mt-0"
           style={{
             backgroundColor: "#282828",
             backgroundSize: "72.9%",
@@ -72,12 +85,12 @@ function ProductsPreview() {
           <img src={cameraHero} className="object-contain" />
         </div>
         <div
-          className="col-span-6 h-48 flex justify-center items-center"
+          className="col-span-6 h-48 flex justify-center items-center rounded-2xl md:rounded-none mt-2 md:mt-0"
           style={{
             backgroundColor: "#0071bb",
           }}
         >
-          <h1 className=" text-white text-2xl md:text-5xl">
+          <h1 className="text-white text-2xl md:text-5xl">
             worldwide delivery. visit our store.
           </h1>
         </div>

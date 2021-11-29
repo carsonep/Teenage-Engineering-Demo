@@ -26,6 +26,7 @@ import FrekvensScreen from "./Components/FrekvensScreen";
 import poModularScreen from "./Components/poModularScreen";
 import Op1Screen from "./Components/Op1Screen";
 import Op1Accessories from "./Components/Op1Accessories";
+import threeDFrekvensPage from "./Components/threeDFrekvensPage";
 
 function App() {
   return (
@@ -70,6 +71,11 @@ function App() {
           <Route path="/designs/I-1" exact component={I1Preview} />
           <Route path="/designs/playdate" exact component={PlayDateScreen} />
           <Route path="/designs/frekvens" exact component={FrekvensScreen} />
+          <Route
+            path="/designs/frekvens-hacks"
+            exact
+            component={threeDFrekvensPage}
+          />
           <Route
             path="/products/orthoremote"
             exact

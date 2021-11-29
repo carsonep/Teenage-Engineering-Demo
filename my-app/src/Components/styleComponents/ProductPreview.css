@@ -1,0 +1,36 @@
+@media only screen and (max-width: 767px) {
+  .product__preview {
+    padding: 0 4.6vw;
+  }
+
+  .product__preview-design {
+    background-color: #4d4d4d;
+  }
+
+  .product__preview-nav {
+    background-color: none;
+  }
+
+  .thumbnail {
+    padding-top: 100%;
+    background-position: 50% 0%;
+    background-size: 150%;
+    background-color: #0f0e12;
+  }
+
+  .product__preview-design {
+    background-color: #0f0e12;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .product__preview-nav {
+    background-color: #cb986c;
+  }
+
+  .thumbnail {
+    background-position: center top;
+    background-size: 250.1%;
+    background-color: #282828;
+  }
+}

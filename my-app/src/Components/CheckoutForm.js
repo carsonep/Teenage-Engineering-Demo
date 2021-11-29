@@ -76,21 +76,29 @@ export default function CheckoutForm({ clientSecret }) {
 
   return (
     <form
+      className=""
       id="payment-form"
       onSubmit={handleSubmit}
       style={{
-        width: "30vw",
-        minWidth: "500px",
-        alignSelf: "center",
+        flexDirection: "column",
+        margin: "0 auto",
         boxShadow: `0px 0px 0px 0.5px rgba(50, 50, 93, 0.1),
           0px 2px 5px 0px rgba(50, 50, 93, 0.1), 0px 1px 1.5px 0px rgba(0, 0, 0, 0.07),
         border-radius: 7px`,
-        padding: "40px",
+        padding: "40px 0",
       }}
     >
       <PaymentElement id="payment-element" />
-      <button disabled={isLoading || !stripe || !elements} id="submit">
-        <span id="button-text">
+      <button
+        disabled={isLoading || !stripe || !elements}
+        id="submit"
+        className={`flex justify-center text-center md:mt-6 col-span-12 h-32 w-full
+        `}
+      >
+        <span
+          id="button-text"
+          className="bg-black h-3/4 md:p-2 text-sm text-white flex items-center justify-center w-full text-4xl "
+        >
           {isLoading ? <div className="spinner" id="spinner"></div> : "Pay now"}
         </span>
       </button>

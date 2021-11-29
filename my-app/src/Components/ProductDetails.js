@@ -70,9 +70,9 @@ function ProductDetails({ match }) {
           </div>
 
           <div className="flex md:justify-center md:items-center flex-col mt-14 md:w-1/2 ">
-            <div className="flex flex-row md:flex-col items-center justify-between ">
+            <div className="flex flex-row justify-between items-center md:flex-col md:items-start md:w-4/6">
               <div className="">
-                <h1 className="hidden md:block" style={{ fontSize: "2.5vw" }}>
+                <h1 className="hidden md:block " style={{ fontSize: "2.5vw" }}>
                   {product.name}
                 </h1>
                 <h1 className="" style={{ fontSize: "2.5vw" }}>
@@ -97,7 +97,7 @@ function ProductDetails({ match }) {
             </div>
             <div className="w-4/6">
               <p
-                className="hidden md:block pl-2 md:w-full mt-12 break-normal tracking-tighter"
+                className="hidden md:block  md:w-full mt-12 break-normal tracking-tighter"
                 style={{ fontSize: "1.21vw", color: "#7e6d59" }}
               >
                 {product.description}
@@ -106,10 +106,7 @@ function ProductDetails({ match }) {
             <p className="md:hidden mt-12 md:w-1/2 break-normal text-base">
               {product.description}
             </p>
-            <p
-              className="w-4/6 md:pl-2 md:pt-4 pb-8"
-              style={{ fontSize: "1.21vw" }}
-            >
+            <p className="w-4/6 md:pt-4 pb-8" style={{ fontSize: "1.21vw" }}>
               explore
             </p>
           </div>
