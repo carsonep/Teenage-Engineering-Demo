@@ -28,6 +28,7 @@ import Op1Screen from "./Components/Op1Screen";
 import Op1Accessories from "./Components/Op1Accessories";
 import threeDFrekvensPage from "./Components/threeDFrekvensPage";
 import ScrollToTop from "./Components/ScrollToTop";
+import OrderCompletePage from "./Components/OrderCompletePage";
 
 function App() {
   return (
@@ -88,6 +89,7 @@ function App() {
 
           <Route path="/login" component={LoginScreen} />
           <Route path="/register" component={RegisterScreen} />
+          <Route path="/store/ordercomplete" component={OrderCompletePage} />
         </Switch>
       </div>
     </Router>
