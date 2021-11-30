@@ -46,12 +46,12 @@ function NavBar({ bgColor, textColor }) {
         style={{ fontFamily: "Univers TE20 Thin" }}
       >
         <div
-          className="flex lg:justify-between relative flex-nowrap items-start "
+          className="flex justify-end lg:justify-between  relative flex-nowrap items-start "
           style={{ color: textColor }}
         >
           <button
             className={
-              "cursor-pointer mr-12 fixed text-xl block lg:hidden outline-none focus:outline-none" +
+              "cursor-pointer mr-12 mt-2 h-auto fixed text-xl flex justify-end lg:hidden outline-none focus:outline-none " +
               (navbarOpen ? " text-white" : "text-black")
             }
             type="button"
@@ -275,7 +275,7 @@ function NavBar({ bgColor, textColor }) {
             </div>
           </div>
           <div
-            className=""
+            className="flex "
             style={{
               height: "160px",
               width: "15%",
@@ -283,13 +283,13 @@ function NavBar({ bgColor, textColor }) {
             }}
           >
             <div
-              class=""
+              className=""
               style={{
                 width: "60%",
                 height: "20%",
               }}
             >
-              <div class="svg">
+              <div className="hidden md:block">
                 <svg
                   xmlns="http:​/​/​www.w3.org/​2000/​svg"
                   viewBox="20 0 80 40"
