@@ -38,6 +38,7 @@ function DesignsPreview() {
           className="col-span-6 md:col-span-3 object-cover  mt-2 md:mt-0"
         >
           <img
+            alt=""
             className="w-full rounded-2xl md:rounded-none"
             src={coolSpeakerHero}
           />
@@ -96,6 +97,7 @@ function DesignsPreview() {
           className="col-span-6 md:col-span-3  mt-2 md:mt-0"
         >
           <img
+            alt=""
             className="w-full rounded-2xl md:rounded-none"
             src={cameraDesignHero}
           />
@@ -106,6 +108,7 @@ function DesignsPreview() {
           className="col-span-6  mt-2 md:mt-0"
         >
           <img
+            alt=""
             className="w-full rounded-2xl md:rounded-none"
             src={forestOb11}
           />

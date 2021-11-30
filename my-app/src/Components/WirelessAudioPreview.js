@@ -1,14 +1,10 @@
 import React from "react";
 import NavBar from "./NavBar";
 import ob4Hero from "../images/ob4Hero.png";
-import opzHero from "../images/opzHero.jpg";
-import redModularHero from "../images/redModularHero.png";
-import pocketOperatorHero from "../images/pocketOperatorHero.png";
-import op1Hero from "../images/op1Hero.png";
+
 import orthoHero from "../images/orthoHero.png";
 import od11Hero from "../images/od11Hero.png";
-import op1Acc from "../images/op1Acc.jpg";
-import cameraHero from "../images/cameraHero.png";
+
 import { NavLink } from "react-router-dom";
 
 function WirelessAudioPreview() {
@@ -39,7 +35,7 @@ function WirelessAudioPreview() {
           className="col-span-6 md:col-span-3 rounded-2xl md:rounded-none mt-2 md:mt-0"
           style={{ backgroundColor: "#e5e5e5" }}
         >
-          <img src={orthoHero} />
+          <img alt="" src={orthoHero} />
         </NavLink>
 
         <NavLink
@@ -47,7 +43,7 @@ function WirelessAudioPreview() {
           className="col-span-6 md:col-span-3 mt-2 md:mt-0"
           style={{ backgroundColor: "#e5e5e5" }}
         >
-          <img className="rounded-2xl md:rounded-none" src={od11Hero} />
+          <img alt="" className="rounded-2xl md:rounded-none" src={od11Hero} />
         </NavLink>
 
         <NavLink

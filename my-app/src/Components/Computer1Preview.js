@@ -43,13 +43,13 @@ function Computer1Preview() {
           computer–1.
         </h2>
         <h2
-          style={{ color: "#ed614a" }}
           className="absolute flex  font-light leading-tight"
           style={{
             top: "7.25%",
             left: "4.633%",
             fontSize: "1.9vw",
             width: "18%",
+            color: "#ed614a",
           }}
         >
           <Link to="/products/computer-1">$195</Link>
@@ -210,88 +210,114 @@ function Computer1Preview() {
           }}
         ></div>
 
-        <div style={{fontSize: "1.23vw"}} className="flex justify-center -mt-16 lg:-mt-64">
-            <ul className="w-1/3" style={{marginRight:"5%", paddingLeft:'1%'}}>
-                <li className="flex flex-col" style={{paddingBottom: "10%"}}>
-                    <span className="font-normal">form factor</span>
-                    <span className="font-light">mini-ITX</span>
-                </li>
-                <li className="flex flex-col" style={{paddingBottom: "10%"}}>
-                    <span className="font-normal">gpu</span>
-                    <span className="font-light">mini-ITX</span>
-                </li>
-                <li className="flex flex-col" style={{paddingBottom: "10%"}}>
-                    <span className="font-normal">power supply</span>
-                    <span className="font-light">mini-ITX</span>
-                </li>
-                <li className="flex flex-col" style={{paddingBottom: "10%"}}>
-                    <span className="font-normal">cpu cooler </span>
-                    <span className="font-light">height limit from motherboard </span>
-                    <span className="font-light">surface 120 mm</span>
-                </li>
-                <li className="flex flex-col" style={{paddingBottom: "10%"}}>
-                    <span className="font-normal">material
-</span>
-                    <span className="font-light">powder coated aluminium</span>
-                </li>
+        <div
+          style={{ fontSize: "1.23vw" }}
+          className="flex justify-center -mt-16 lg:-mt-64"
+        >
+          <ul
+            className="w-1/3"
+            style={{ marginRight: "5%", paddingLeft: "1%" }}
+          >
+            <li className="flex flex-col" style={{ paddingBottom: "10%" }}>
+              <span className="font-normal">form factor</span>
+              <span className="font-light">mini-ITX</span>
+            </li>
+            <li className="flex flex-col" style={{ paddingBottom: "10%" }}>
+              <span className="font-normal">gpu</span>
+              <span className="font-light">mini-ITX</span>
+            </li>
+            <li className="flex flex-col" style={{ paddingBottom: "10%" }}>
+              <span className="font-normal">power supply</span>
+              <span className="font-light">mini-ITX</span>
+            </li>
+            <li className="flex flex-col" style={{ paddingBottom: "10%" }}>
+              <span className="font-normal">cpu cooler </span>
+              <span className="font-light">height limit from motherboard </span>
+              <span className="font-light">surface 120 mm</span>
+            </li>
+            <li className="flex flex-col" style={{ paddingBottom: "10%" }}>
+              <span className="font-normal">material</span>
+              <span className="font-light">powder coated aluminium</span>
+            </li>
 
-                <li className="flex flex-col " style={{paddingBottom: "10%"}}>
-                    <span className="font-normal">color</span>
-                    <span className="font-light">pure orange RAL 2004</span>
-                </li>
-            </ul>
+            <li className="flex flex-col " style={{ paddingBottom: "10%" }}>
+              <span className="font-normal">color</span>
+              <span className="font-light">pure orange RAL 2004</span>
+            </li>
+          </ul>
 
-            <ul className="w-1/3" style={{marginLeft:"8%", paddingLeft:'5%'}}>
-                <li className="flex flex-col" style={{paddingBottom: "10%"}}>
-                    <span className="font-normal">outer dimensions (mm)</span>
-                    <span className="font-light">W 170 D 190* H 322**</span>
-                </li>
-                <li className="flex flex-col" style={{paddingBottom: "10%"}} style={{fontSize: ".833vw"}}>
-                    <span className="font-light">*FRONT PANEL SWITCH PROTRUDES 10 MM, CABLING TYPICALLY NEEDS MINIMUM 50 MM 
-SPACE AT THE BACK.</span>
-                    <span className="font-light" style={{paddingTop: "5%"}}>**285 MM WITHOUT HANDLES.</span>
-                </li>
-                <li className="flex flex-col" style={{paddingBottom: "10%"}}>
-                    <span className="font-normal"></span>
-                    <span className="font-light"></span>
-                </li>
-                <li className="flex flex-col" style={{paddingBottom: "10%"}}>
-                    <span className="font-normal">inner dimensions (mm)
-</span>
-                    <span className="font-light">W 164 D 189 H 275.5</span>
-                    
-                </li>
-                <li className="flex flex-col" style={{paddingBottom: "10%"}}>
-                    <span className="font-light">width from motherboard to case 
-</span>
-                    <span className="font-light">147 mm </span>
-                </li>
+          <ul className="w-1/3" style={{ marginLeft: "8%", paddingLeft: "5%" }}>
+            <li className="flex flex-col" style={{ paddingBottom: "10%" }}>
+              <span className="font-normal">outer dimensions (mm)</span>
+              <span className="font-light">W 170 D 190* H 322**</span>
+            </li>
+            <li
+              className="flex flex-col"
+              style={{ fontSize: ".833vw", paddingBottom: "10%" }}
+            >
+              <span className="font-light">
+                *FRONT PANEL SWITCH PROTRUDES 10 MM, CABLING TYPICALLY NEEDS
+                MINIMUM 50 MM SPACE AT THE BACK.
+              </span>
+              <span className="font-light" style={{ paddingTop: "5%" }}>
+                **285 MM WITHOUT HANDLES.
+              </span>
+            </li>
+            <li className="flex flex-col" style={{ paddingBottom: "10%" }}>
+              <span className="font-normal"></span>
+              <span className="font-light"></span>
+            </li>
+            <li className="flex flex-col" style={{ paddingBottom: "10%" }}>
+              <span className="font-normal">inner dimensions (mm)</span>
+              <span className="font-light">W 164 D 189 H 275.5</span>
+            </li>
+            <li className="flex flex-col" style={{ paddingBottom: "10%" }}>
+              <span className="font-light">width from motherboard to case</span>
+              <span className="font-light">147 mm </span>
+            </li>
 
-                <li className="flex flex-col" style={{paddingBottom: "10%"}}>
-                    <span className="font-light">approximate width from </span>
-                    <span className="font-light">motherboard to case fan* 120</span>
-                    <span className="font-light">mm</span>
-                </li>
+            <li className="flex flex-col" style={{ paddingBottom: "10%" }}>
+              <span className="font-light">approximate width from </span>
+              <span className="font-light">motherboard to case fan* 120</span>
+              <span className="font-light">mm</span>
+            </li>
 
-                <li className="flex flex-col" style={{paddingBottom: "5%"}} style={{fontSize: ".833vw"}}>
-                    <span className="font-light">*DEPENDS ON CASE FAN THICKNESS.</span>
-                
-                </li>
-            </ul>
-            
+            <li
+              className="flex flex-col"
+              style={{ fontSize: ".833vw", paddingBottom: "5%" }}
+            >
+              <span className="font-light">
+                *DEPENDS ON CASE FAN THICKNESS.
+              </span>
+            </li>
+          </ul>
         </div>
-<div className="flex mt-4 md:mt-14 pb-12 md:pb-12 lg:pb-20 "></div>
+        <div className="flex mt-4 md:mt-14 pb-12 md:pb-12 lg:pb-20 "></div>
 
-        <div className="grid grid-cols-3" style={{height: "90vh"}}>
-        <div className="flex justify-center items-center" style={{outline: "0.001em solid grey" }}> 
-          <img className="" src={computer1Grid1} />
-        </div>
-        <div className="flex justify-center items-center" style={{outline: "0.001em solid grey"}}>
-          <img className="" src={computer1Grid1} />
-        </div>
-        <div className="flex justify-center items-center"  style={{outline: "0.001em solid grey"}}>
-          <img className="" style={{width: "200%"}} src={computer1Grid1} />
-        </div>
+        <div className="grid grid-cols-3" style={{ height: "90vh" }}>
+          <div
+            className="flex justify-center items-center"
+            style={{ outline: "0.001em solid grey" }}
+          >
+            <img className="" alt="" src={computer1Grid1} />
+          </div>
+          <div
+            className="flex justify-center items-center"
+            style={{ outline: "0.001em solid grey" }}
+          >
+            <img className="" alt="" src={computer1Grid1} />
+          </div>
+          <div
+            className="flex justify-center items-center"
+            style={{ outline: "0.001em solid grey" }}
+          >
+            <img
+              className=""
+              alt=""
+              style={{ width: "200%" }}
+              src={computer1Grid1}
+            />
+          </div>
         </div>
       </div>
 

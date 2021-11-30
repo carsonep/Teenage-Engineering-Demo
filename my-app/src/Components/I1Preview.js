@@ -111,16 +111,16 @@ function I1Preview() {
         }}
       >
         <div className="flex justify-center items-center">
-          <img className="" src={poloroid1} />
+          <img alt="poloroid" className="" src={poloroid1} />
         </div>
         <div className="flex justify-center items-center">
-          <img className="" src={poloroid2} />
+          <img alt="poloroid" className="" src={poloroid2} />
         </div>
         <div className="flex justify-center items-center">
-          <img className="" src={poloroid3} />
+          <img alt="poloroid" className="" src={poloroid3} />
         </div>
         <div className="flex justify-center items-center">
-          <img className="" src={poloroid4} />
+          <img alt="poloroid" className="" src={poloroid4} />
         </div>
       </div>
 

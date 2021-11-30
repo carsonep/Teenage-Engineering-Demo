@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
 import LoadingSpinner from "../Components/LoadingSpinner";
 import PostExcerpt from "../Components/PostExcerpt";

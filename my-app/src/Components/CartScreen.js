@@ -39,7 +39,7 @@ function CartScreen() {
       var items = JSON.parse(localStorage.getItem("customerBasket"));
 
       for (var i = 0; i < items.items.length; i++) {
-        if (items.items[i].id == e.id) {
+        if (items.items[i].id === e.id) {
           items.items.splice(i, 1);
         }
       }
@@ -67,6 +67,7 @@ function CartScreen() {
           <p className="font-light text-2xl">in stock</p>
         </div>
         <img
+          alt=""
           className=""
           style={{ height: "180px" }}
           src={`https://localhost:5001/${cartItem.pictureUrl}`}
@@ -86,7 +87,8 @@ function CartScreen() {
       <h1 className="flex justify-center items-center text-5xl my-20">
         shopping cart
       </h1>
-      <div className="">{content}</div>
+      {isLoading ? <LoadingSpinner /> : <div className="">{content}</div>}
+
       <div className="pb-8 ">
         <div
           className="grid grid-cols-12 gap-2 "

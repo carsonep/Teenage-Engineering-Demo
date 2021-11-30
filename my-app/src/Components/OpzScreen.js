@@ -32,7 +32,7 @@ function OpzScreen() {
         }}
       ></div>
       <div>
-        <img src={opzSideView} />
+        <img alt="" src={opzSideView} />
         <div
           className="flex flex-col justify-center items-center font-light "
           style={{ fontSize: "1.833vw", padding: "0 5vw" }}
@@ -77,7 +77,7 @@ function OpzScreen() {
         </div>
       </div>
       <div className="flex justify-center" style={{ paddingBottom: "5vh" }}>
-        <img src={opzGrid} className="w-2/3" />
+        <img alt="" src={opzGrid} className="w-2/3" />
       </div>
       <div
         className="flex flex-col justify-center items-center font-light "
@@ -167,7 +167,7 @@ function OpzScreen() {
         </div>
       </div>
       <div className="flex justify-center items-center pb-12 md:pb-16 lg:pb-24 ">
-        <img src={opzApp} className="w-3/4" />
+        <img alt="" src={opzApp} className="w-3/4" />
       </div>
       <div
         className="flex flex-col justify-center items-center font-light "
@@ -303,7 +303,7 @@ function OpzScreen() {
         className="flex flex-col justify-center items-center font-light "
         style={{ fontSize: "1.833vw", padding: "0 5vw" }}
       >
-        <img src={opzPhotomatic} className="w-3/4" />
+        <img alt="" src={opzPhotomatic} className="w-3/4" />
 
         <h1
           style={{ fontSize: "3vw" }}
@@ -444,10 +444,10 @@ function OpzScreen() {
       </div>
       <div className="grid grid-cols-2">
         <div style={{ backgroundColor: "#0f0e12" }}>
-          <img src={opLab} />
+          <img alt="" src={opLab} />
         </div>
         <div style={{ backgroundColor: "#b2b2b2" }}>
-          <img src={rumble} />
+          <img alt="" src={rumble} />
         </div>
       </div>
       <div
@@ -468,7 +468,7 @@ function OpzScreen() {
         <p>read more</p>
       </div>
       <div>
-        <img className="w-full" src={concertLazers} />
+        <img alt="" className="w-full" src={concertLazers} />
       </div>
       <div
         className="flex flex-col justify-center items-center font-light "

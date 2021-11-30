@@ -35,7 +35,6 @@ function OrthoRemotePreview() {
       >
         <p
           style={{
-            fontSize: "18px",
             color: "#8ab2a1",
             width: "30%",
             fontSize: "1.8vw",
@@ -48,7 +47,6 @@ function OrthoRemotePreview() {
         </p>
         <p
           style={{
-            fontSize: "18px",
             color: "#8ab2a1",
             width: "30%",
             fontSize: "1.8vw",

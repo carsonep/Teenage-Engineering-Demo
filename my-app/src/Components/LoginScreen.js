@@ -2,7 +2,7 @@ import NavBar from "./NavBar";
 import logo from "../images/logo.png";
 
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+
 import { useLoginUserMutation } from "../features/api/apiSlice";
 
 import LoadingSpinner from "../Components/LoadingSpinner";
@@ -48,7 +48,7 @@ const LoginScreen = ({ location, history }) => {
       <NavBar textColor={"#000000"} />
       <div className="h-screen flex items-center bg-gray-bg1">
         <div className="w-full max-w-md m-auto bg-white rounded-lg border border-primaryBorder shadow-default py-10 px-16">
-          <img src={logo} />
+          <img alt="logo" src={logo} />
           <h1 className="text-4xl font-medium text-primary mt-4 mb-8 text-center">
             Sign In
           </h1>
@@ -79,7 +79,7 @@ const LoginScreen = ({ location, history }) => {
               <button
                 className={`bg-black h-3/4 md:p-2 text-sm text-white w-full text-lg`}
               >
-                Login
+                {isLoading ? <LoadingSpinner /> : "Login"}
               </button>
             </div>
           </form>

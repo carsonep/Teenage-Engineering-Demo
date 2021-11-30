@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useGetBasketQuery } from "../features/api/apiSlice";
+
 import JapaneseSvg from "./JapaneseSvg";
 import "./styleComponents/NavBar.css";
 
@@ -133,8 +133,8 @@ function NavBar({ bgColor, textColor }) {
                       <path
                         stroke="none"
                         fill={`${textColor}`}
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
+                        strokeWidth="0.5"
+                        strokeMiterlimit="10"
                         d=" M48.8,10h20l5,5h-30L48.8,10z M75,30H42.5v40H75V30z M68.7,16.3v12.5H75V16.3H68.7z M42.5,16.3 v12.5h6.2V16.3H42.5z"
                       ></path>
                       <g opacity="0.8">
@@ -144,8 +144,8 @@ function NavBar({ bgColor, textColor }) {
                           stroke={bgColor}
                           x="58.75"
                           y="57.5"
-                          font-size="23"
-                          text-anchor="middle"
+                          fontSize="23"
+                          textAnchor="middle"
                         >
                           {numberOfItems}
                         </text>
@@ -251,17 +251,17 @@ function NavBar({ bgColor, textColor }) {
                     </div>
                   )}
 
-                  {currentUser && currentUser.roles[0] == "Member" && (
-                    <p>
+                  {currentUser && currentUser.roles[0] === "Member" && (
+                    <div>
                       <p>logout</p>
-                    </p>
+                    </div>
                   )}
 
-                  {currentUser && currentUser.roles[0] == "Admin" && (
-                    <p>
+                  {currentUser && currentUser.roles[0] === "Admin" && (
+                    <div>
                       <Link to="/admin">admin</Link>
                       <p>logout</p>
-                    </p>
+                    </div>
                   )}
                 </div>
               </div>
@@ -297,18 +297,18 @@ function NavBar({ bgColor, textColor }) {
                   style={{ overflow: "visible" }}
                 >
                   <path
-                    class="fill"
+                    className="fill"
                     d="M132.706,69.979H98.218L80.924,39.99L98.218,10h34.488L150,39.99L132.706,69.979z M103.816,33.192c-3.699,6.398-1.499,14.595,4.898,18.294c6.398,3.699,14.595,1.499,18.294-4.898 c3.699-6.398,1.499-14.595-4.898-18.294S107.515,26.794,103.816,33.192 M36.439,29.993l6.498,3.699l-5.298,9.197l-6.498-3.699 L17.946,62.082l19.393,11.196l10.596-18.294L71.127,68.38c5.098,2.899,11.496,1.2,14.395-3.899 c2.899-5.098,1.2-11.496-3.899-14.395L58.532,36.591l10.496-18.294L49.635,7.101L36.439,29.993z"
                   ></path>
                   <path
-                    class="line"
+                    className="line"
                     fill={`${textColor}`}
-                    stroke-width="0.5"
-                    stroke-miterlimit="10"
+                    strokeWidth="0.5"
+                    strokeMiterlimit="10"
                     d="M132.706,69.979H98.218 L80.924,39.99L98.218,10h34.488L150,39.99L132.706,69.979z M103.816,33.192c-3.699,6.398-1.499,14.595,4.898,18.294 c6.398,3.699,14.595,1.499,18.294-4.898c3.699-6.398,1.499-14.595-4.898-18.294S107.515,26.794,103.816,33.192 M36.439,29.993 l6.498,3.699l-5.298,9.197l-6.498-3.699L17.946,62.082l19.393,11.196l10.596-18.294L71.127,68.38 c5.098,2.899,11.496,1.2,14.395-3.899c2.899-5.098,1.2-11.496-3.899-14.395L58.532,36.591l10.496-18.294L49.635,7.101 L36.439,29.993z"
                   ></path>
                   <path
-                    class="allfill"
+                    className="allfill"
                     d="M143.102,15.298c-1.499,0-2.699-1.3-2.699-2.699c0-1.499,1.2-2.699,2.699-2.699 s2.699,1.2,2.699,2.699S144.602,15.298,143.102,15.298z M143.102,10.2c-1.3,0-2.399,1-2.399,2.399c0,1.3,1,2.399,2.399,2.399 c1.3,0,2.399-1.1,2.399-2.399C145.402,11.3,144.402,10.2,143.102,10.2z M143.902,13.999c-0.1-0.1-0.1-0.3-0.1-0.5 c0-0.5-0.2-0.7-0.8-0.7h-0.6v1.2h-0.4V11.1h1c0.7,0,1.2,0.2,1.2,0.8c0,0.4-0.2,0.6-0.5,0.7c0.4,0.2,0.5,0.4,0.5,0.9 c0,0.2,0,0.4,0.1,0.5H143.902z M143.202,11.499h-0.8v1h0.7c0.4,0,0.8-0.1,0.8-0.5C143.902,11.699,143.702,11.499,143.202,11.499z"
                   ></path>
                 </svg>

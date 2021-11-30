@@ -87,7 +87,6 @@ function Op1Accessories() {
             height: 0,
             width: "100%",
             backgroundPosition: "50% 50%",
-            backgroundColor: "#e5e5e5",
             paddingTop: "100%",
             backgroundColor: "#0071bb",
             marginTop: "46.5%",

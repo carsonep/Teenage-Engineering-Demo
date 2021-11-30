@@ -27,7 +27,6 @@ function Od11Screen() {
         }}
       >
         <h1
-          style={{}}
           className="absolute w-full text-center"
           style={{
             top: "2%",

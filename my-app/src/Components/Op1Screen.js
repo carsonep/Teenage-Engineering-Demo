@@ -1,8 +1,7 @@
 import React from "react";
 import NavBar from "./NavBar";
 import Op1Header from "../images/Op1Header.jpg";
-import { Link, NavLink } from "react-router-dom";
-import Op1NavBarHeader from "./Op1NavBarHeader";
+import { NavLink } from "react-router-dom";
 
 function Op1Screen() {
   return (
@@ -18,8 +17,6 @@ function Op1Screen() {
           width: "100%",
           height: 0,
           paddingTop: "145%",
-          
-          
         }}
       >
         <h1
@@ -172,27 +169,31 @@ function Op1Screen() {
       </div>
       <div
         className="flex w-full justify-around font-light leading-tight"
-        style={{ backgroundColor: "#e5e5e5", fontSize: "2vw", padding: "0 5vw" }}
+        style={{
+          backgroundColor: "#e5e5e5",
+          fontSize: "2vw",
+          padding: "0 5vw",
+        }}
       >
-        <div className="flex flex-col text-center " style={{padding: "5% 0"}}>
+        <div className="flex flex-col text-center " style={{ padding: "5% 0" }}>
           <span>FUTURE</span>
           <span>MUSIC PLATINUM</span>
           <span>AWARD</span>
         </div>
 
-        <div className="flex flex-col text-center " style={{padding: "5% 0"}}>
+        <div className="flex flex-col text-center " style={{ padding: "5% 0" }}>
           <span>DESIGN S</span>
           <span>GOLD</span>
           <span>AWARD</span>
         </div>
 
-        <div className="flex flex-col text-center " style={{padding: "5% 0"}}>
+        <div className="flex flex-col text-center " style={{ padding: "5% 0" }}>
           <span>GEORGIA TECH</span>
           <span>MARGARET GUTHMAN</span>
           <span>AWARD</span>
         </div>
 
-        <div className="flex flex-col text-center " style={{padding: "5% 0"}}>
+        <div className="flex flex-col text-center " style={{ padding: "5% 0" }}>
           <span>MoMA SF</span>
           <span>PERMANENT</span>
           <span>COLLECTION</span>

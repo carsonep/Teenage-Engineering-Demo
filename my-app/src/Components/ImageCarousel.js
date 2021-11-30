@@ -77,7 +77,7 @@ function ImageCarousel({ images }) {
               key={img}
               ref={refs[i]}
             >
-              <img src={img} className="w-full object-contain" />
+              <img alt="products" src={img} className="w-full object-contain" />
             </div>
           ))}
           {sliderControl()}

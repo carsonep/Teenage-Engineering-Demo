@@ -1,13 +1,11 @@
 import React from "react";
 import NavBar from "./NavBar";
 
-import ob4Hero from "../images/ob4Hero.png";
 import opz2Hero from "../images/opz2Hero.png";
 import redModularHero from "../images/redModularHero.png";
-import pocketOperatorHero from "../images/pocketOperatorHero.png";
+
 import op1Hero from "../images/op1Hero.png";
-import orthoHero from "../images/orthoHero.png";
-import od11Hero from "../images/od11Hero.png";
+
 import oplabHero from "../images/oplabHero.jpg";
 import operatorDemo from "../images/operatorDemo.png";
 import "./styleComponents/ProductPreview.css";
@@ -36,7 +34,7 @@ function SynthesizerPreview() {
             backgroundColor: "#8a8a8a",
           }}
         >
-          <img className="w-full" src={opz2Hero} />
+          <img alt="" className="w-full" src={opz2Hero} />
         </div>
         <div
           className="thumbnail col-span-6 md:col-span-3 row-span-1 md:row-span-2 rounded-2xl md:rounded-none mt-2 md:mt-0"
@@ -49,7 +47,7 @@ function SynthesizerPreview() {
           className="col-span-6 md:col-span-3 rounded-2xl md:rounded-none mt-2 md:mt-0"
           style={{ backgroundColor: "#b2b2bc" }}
         >
-          <img className="" src={op1Hero} />
+          <img alt="" className="" src={op1Hero} />
         </div>
         <div
           className="hidden md:block col-span-6 "

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
+
 import { useCreateUserMutation } from "../features/api/apiSlice";
 
 import NavBar from "./NavBar";
 import logo from "../images/logo.png";
-import LoadingSpinner from "../Components/LoadingSpinner";
+import { NavLink } from "react-router-dom";
+// import LoadingSpinner from "../Components/LoadingSpinner";
 
 const RegisterScreen = () => {
   const [displayName, setDisplayName] = useState("");
@@ -35,7 +36,7 @@ const RegisterScreen = () => {
       <NavBar textColor={"#000000"} />
       <div className="h-screen flex items-center bg-gray-bg1">
         <div className="w-full max-w-md m-auto bg-white rounded-lg border border-primaryBorder shadow-default py-10 px-16">
-          <img src={logo} />
+          <img alt="" src={logo} />
           <h1 className="text-4xl font-medium text-primary mt-4 mb-8 text-center">
             Register
           </h1>
@@ -79,7 +80,7 @@ const RegisterScreen = () => {
             </div>
           </form>
           <p className="flex justify-center mt-4">
-            Already Have an Account? <a> Sign In!</a>
+            Already Have an Account? <NavLink to="/login"> Sign In!</NavLink>
           </p>
         </div>
       </div>

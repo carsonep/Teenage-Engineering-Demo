@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-let currentUser = JSON.parse(localStorage.getItem("currentUser"));
+// let currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
 // Define our single API slice object
 export const apiSlice = createApi({

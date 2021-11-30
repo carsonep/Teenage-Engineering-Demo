@@ -408,6 +408,7 @@ function poModularScreen() {
         >
           <div className="">
             <img
+              alt=""
               className="flex justify-center  w-full h-1/2"
               src={playButton1}
             />
@@ -418,6 +419,7 @@ function poModularScreen() {
           </div>
           <div className="">
             <img
+              alt=""
               className="flex justify-center  w-full h-1/2"
               src={playButton1}
             />
@@ -428,6 +430,7 @@ function poModularScreen() {
           </div>
           <div className="">
             <img
+              alt=""
               className="flex justify-center  w-full h-1/2"
               src={playButton1}
             />
@@ -551,7 +554,7 @@ function poModularScreen() {
           className="absolute w-full flex flex-col items-center"
           style={{ bottom: "2.5%" }}
         >
-          <img src={pdfButton} style={{ width: "15%" }} />
+          <img alt="" src={pdfButton} style={{ width: "15%" }} />
           <span className="font-light" style={{ fontSize: "1.833vw" }}>
             download manual for the 16, 170 and 400 as a pdf.
           </span>
@@ -806,7 +809,7 @@ function poModularScreen() {
           className="absolute w-full flex flex-col items-center"
           style={{ bottom: "22.5%" }}
         >
-          <img src={pdfButton} style={{ width: "15%" }} />
+          <img alt="" src={pdfButton} style={{ width: "15%" }} />
           <span className="font-light" style={{ fontSize: "1.833vw" }}>
             download the system dimensions guide
           </span>
@@ -831,6 +834,7 @@ function poModularScreen() {
           >
             <div>
               <iframe
+                title="poModularDemo1"
                 width="100%"
                 height="100%"
                 scrolling="no"
@@ -847,6 +851,7 @@ function poModularScreen() {
             </div>
             <div className="bg-red-500">
               <iframe
+                title="poModularDemo2"
                 width="100%"
                 height="100%"
                 scrolling="no"

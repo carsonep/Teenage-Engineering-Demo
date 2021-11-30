@@ -39,7 +39,7 @@ export default function CheckoutForm({ clientSecret }) {
           break;
       }
     });
-  }, [stripe]);
+  }, [stripe, clientSecret]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

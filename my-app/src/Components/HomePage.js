@@ -38,13 +38,13 @@ function HomePage() {
           computer–1.
         </h2>
         <h2
-          style={{ color: "#ed614a" }}
           className="absolute flex  font-light leading-tight"
           style={{
             top: "35%",
             left: "4.633%",
             fontSize: "1.9vw",
             width: "18%",
+            color: "#ed614a",
           }}
         >
           <Link to="/products/computer-1">explore</Link>

@@ -109,14 +109,14 @@ function PocketOperatorScreen() {
         </div>
       </div>
       <div>
-        <img src={poTonix} />
+        <img alt="" src={poTonix} />
       </div>
       <div className="grid grid-cols-2">
         <div>
-          <img src={poWithCase} />
+          <img alt="" src={poWithCase} />
         </div>
         <div style={{ backgroundColor: "#c8c8c8" }}>
-          <img src={poArcade} />
+          <img alt="" src={poArcade} />
         </div>
       </div>
       <div

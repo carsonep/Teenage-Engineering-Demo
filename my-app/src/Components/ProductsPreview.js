@@ -61,7 +61,11 @@ function ProductsPreview() {
           className="col-span-6 md:col-span-3 mt-2 md:mt-0"
         >
           <div>
-            <img className="w-full rounded-2xl md:rounded-none" src={opzHero} />
+            <img
+              alt=""
+              className="w-full rounded-2xl md:rounded-none"
+              src={opzHero}
+            />
           </div>
         </NavLink>
 
@@ -89,7 +93,7 @@ function ProductsPreview() {
             className="rounded-2xl md:rounded-none"
             style={{ backgroundColor: "#e5e5e5" }}
           >
-            <img src={pocketOperatorHero} />
+            <img alt="" src={pocketOperatorHero} />
           </div>
         </NavLink>
 
@@ -120,7 +124,7 @@ function ProductsPreview() {
             className="h-full rounded-2xl md:rounded-none"
             style={{ backgroundColor: "#0f0e12" }}
           >
-            <img className="" src={orthoHero} />
+            <img alt="" className="" src={orthoHero} />
           </div>
         </NavLink>
 
@@ -129,7 +133,11 @@ function ProductsPreview() {
           className="col-span-3 md:col-span-2 mt-2 md:mt-0"
         >
           <div className="">
-            <img className="rounded-2xl md:rounded-none" src={od11Hero} />
+            <img
+              alt=""
+              className="rounded-2xl md:rounded-none"
+              src={od11Hero}
+            />
           </div>
         </NavLink>
 
@@ -138,7 +146,7 @@ function ProductsPreview() {
           className="hidden md:block col-span-6 rounded-2xl md:rounded-none mt-2 md:mt-0"
         >
           <div className="hidden md:block rounded-2xl md:rounded-none">
-            <img src={op1Acc} />
+            <img alt="" src={op1Acc} />
           </div>
         </NavLink>
 
@@ -150,7 +158,7 @@ function ProductsPreview() {
               backgroundSize: "72.9%",
             }}
           >
-            <img src={cameraHero} className="object-contain" />
+            <img alt="" src={cameraHero} className="object-contain" />
           </div>
         </NavLink>
 
