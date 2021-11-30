@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\api\\API.csproj": {}
+    "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\api\\API.csproj": {
+    "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\api\\API.csproj",
+        "projectPath": "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\api\\obj\\",
+        "outputPath": "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nicklas Peterson\\AppData\\Roaming\\NuGet\\NuGet.Config",

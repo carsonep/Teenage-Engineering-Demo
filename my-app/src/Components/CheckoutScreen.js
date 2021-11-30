@@ -27,6 +27,7 @@ function CheckoutScreen() {
   const [basketTotal, setBasketTotal] = useState(0);
 
   const [order, { isLoading }] = useCreateOrderMutation();
+
   const [data] = useCreatePaymentMutation();
   let total = 0;
 
@@ -76,6 +77,17 @@ function CheckoutScreen() {
             zipcode: zipCode,
           },
         }).unwrap();
+      } catch (err) {
+        console.error("Failed to post user", err);
+      }
+    }
+  };
+
+  const showPaymentDiv = (e) => {
+    e.preventDefault();
+    if (canSave) {
+      try {
+        document.getElementById("payment__div").style.display = "block";
       } catch (err) {
         console.error("Failed to post user", err);
       }
@@ -306,6 +318,7 @@ function CheckoutScreen() {
               <div className="flex justify-center items-center md:mt-6 col-span-12 h-32 px-4 md:px-0">
                 <button
                   className={`bg-black h-3/4 md:p-2 text-sm text-white w-full text-4xl `}
+                  onClick={showPaymentDiv}
                 >
                   continue to payment
                 </button>
@@ -314,8 +327,37 @@ function CheckoutScreen() {
           </div>
         </div>
         <div className="h-full my-6 checkout__div">
-          <div className="px-4 md:px-0">
-            {clientSecret && (
+          <div className="flex items-start">
+            <div style={{ width: "4vw", height: "4vh" }}>
+              <svg viewBox="0 0 100 100" class="w-full">
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="46"
+                  stroke-width="4"
+                  fill="#000"
+                ></circle>
+                <text
+                  x="50"
+                  y="64.5"
+                  text-anchor="middle"
+                  font-size="48"
+                  stroke="none"
+                  fontWeight="normal"
+                  class="fill-current text-white"
+                >
+                  3
+                </text>
+              </svg>
+            </div>
+            <h1 className="pt-2 ml-2">delivery address</h1>
+          </div>
+          <div
+            className="px-4 md:px-0 "
+            style={{ display: "none" }}
+            id="payment__div"
+          >
+            {clientSecret && order && (
               <Elements
                 options={options}
                 stripe={stripePromise}

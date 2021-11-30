@@ -27,11 +27,13 @@ import poModularScreen from "./Components/poModularScreen";
 import Op1Screen from "./Components/Op1Screen";
 import Op1Accessories from "./Components/Op1Accessories";
 import threeDFrekvensPage from "./Components/threeDFrekvensPage";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <ScrollToTop />
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/store" exact component={ProductList} />

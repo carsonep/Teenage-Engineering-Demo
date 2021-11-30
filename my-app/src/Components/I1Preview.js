@@ -15,7 +15,7 @@ function I1Preview() {
     <div className="relative">
       <NavBar textColor={"#d59911"} />
       <div
-        className="-mt-44"
+        className="-mt-14 md:-mt-14 lg:-mt-44 w-full"
         style={{
           backgroundImage: `url(${i1Header})`,
 
