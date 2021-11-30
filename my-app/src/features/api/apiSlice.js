@@ -1,15 +1,23 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
+let currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
 // Define our single API slice object
 export const apiSlice = createApi({
   // The cache reducer expects to be added at `state.api` (already default - this is optional)
   reducerPath: "api",
   // All of our requests will have URLs starting with '/products'
-  baseQuery: fetchBaseQuery({ baseUrl: "https://localhost:5001/api" }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: "https://localhost:5001/api",
+  }),
   tagTypes: ["Cart"],
   endpoints: (builder) => ({
     getProducts: builder.query({
       query: () => "/products",
+      // headers: {
+      //   "content-type": "text/plain",
+      //   authorization: `Bearer ${currentUser.token}`,
+      // },
     }),
     getProduct: builder.query({
       query: (productId) => `/Products/${productId}`,

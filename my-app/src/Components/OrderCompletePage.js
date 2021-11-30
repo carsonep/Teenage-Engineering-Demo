@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import NavBar from "./NavBar";
 
 function OrderCompletePage() {
+  useEffect(() => {
+    localStorage.removeItem("customerBasket");
+  }, []);
+
   return (
     <div style={{ padding: "0 4.6vw", backgroundColor: "#e5e5e5" }}>
       <NavBar textColor={"#000"} />
