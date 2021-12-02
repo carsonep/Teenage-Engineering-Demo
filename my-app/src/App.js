@@ -30,6 +30,7 @@ import threeDFrekvensPage from "./Components/threeDFrekvensPage";
 import ScrollToTop from "./Components/ScrollToTop";
 import OrderCompletePage from "./Components/OrderCompletePage";
 import HScreen from "./Components/HScreen";
+import RScreen from "./Components/RScreen";
 
 function App() {
   return (
@@ -81,6 +82,7 @@ function App() {
             component={threeDFrekvensPage}
           />
           <Route path="/designs/h" exact component={HScreen} />
+          <Route path="/designs/r" exact component={RScreen} />
           <Route
             path="/products/orthoremote"
             exact

@@ -34,7 +34,7 @@ function DesignsPreview() {
         </NavLink>
 
         <NavLink
-          to="/designs/frekvens"
+          to="/designs/frekvens-hacks"
           className="col-span-6 md:col-span-3 object-cover  mt-2 md:mt-0"
         >
           <img
