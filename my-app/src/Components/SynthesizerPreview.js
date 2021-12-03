@@ -12,7 +12,7 @@ import "./styleComponents/ProductPreview.css";
 
 function SynthesizerPreview() {
   return (
-    <div className="product__preview product__preview-design">
+    <div className="product__preview product__preview-design" style={{backgroundColor: "#4d4d4d"}}>
       <NavBar className="product__preview-nav" textColor={"#ddcec0"} />
       <div className="grid grid-cols-6">
         <div

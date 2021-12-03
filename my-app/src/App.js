@@ -31,6 +31,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 import OrderCompletePage from "./Components/OrderCompletePage";
 import HScreen from "./Components/HScreen";
 import RScreen from "./Components/RScreen";
+import NowPage from "./Components/NowPage";
 
 function App() {
   return (
@@ -90,6 +91,8 @@ function App() {
           />
           <Route path="/designs" exact component={DesignsPreview} />
           <Route path="/products/:id" component={ProductDetails} />
+
+          <Route path="/now" component={NowPage} />
 
           <Route path="/login" component={LoginScreen} />
           <Route path="/register" component={RegisterScreen} />
