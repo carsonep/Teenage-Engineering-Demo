@@ -2,63 +2,62 @@ import React from "react";
 import NavBar from "./NavBar";
 import computer1Hero from "../images/computer1Hero.jpg";
 import { Link } from "react-router-dom";
+import teChristmas from "../images/teChristmas.jpg";
+
+
+
 
 function HomePage() {
   return (
     <div className="relative z-0">
-      <NavBar className="relative inset-0 z-20" textColor={"#cc996c"} />
+      <NavBar className="relative inset-0 z-20" textColor={"#fff"} />
       <div
         className="-mt-14 md:-mt-14 lg:-mt-44 w-full col-span-6"
         style={{
-          backgroundImage: `url(${computer1Hero})`,
-          backgroundSize: "100%",
-          backgroundPosition: "50% 101.3%",
+          backgroundImage: `url(${teChristmas})`,
+          backgroundSize: "110%",
+          backgroundPosition: "50% 75%",
           backgroundRepeat: "no-repeat",
           width: "100%",
           height: 0,
-          paddingTop: "100%",
+          paddingTop: "80%",
         }}
       >
-        <h1
-          className="absolute flex w-full"
-          style={{ top: "20.5%", left: "4.633%", fontSize: "3.33vw" }}
-        >
-          hey!
-        </h1>
+        
         <h2
-          className="absolute flex  font-light leading-none"
+          className="absolute flex justify-center w-full leading-none"
           style={{
-            top: "26.5%",
-            left: "4.633%",
+            top: "75%",
+            // left: "50%",
             fontSize: "1.9vw",
-            width: "18%",
+          
+            color: "#e5e5e5"
           }}
         >
-          no big deal. we have made a mini-ITX pc chassis that we call the
-          computer–1.
+          our holiday gift shop is now open! 
         </h2>
         <h2
-          className="absolute flex  font-light leading-tight"
+          className="absolute flex justify-center w-full leading-none"
           style={{
-            top: "35%",
-            left: "4.633%",
+            top: "78%",
+            
             fontSize: "1.9vw",
-            width: "18%",
-            color: "#ed614a",
+            
+            color: "#e5e5e5",
           }}
         >
-          <Link to="/products/computer-1">explore</Link>
+          gift ideas for your loved ones, or gift yourself.
         </h2>
       </div>
       <div
         className="col-span-6  flex justify-center items-center"
         style={{
-          backgroundColor: "#f05a24",
+          backgroundColor: "#006837",
 
           padding: "2.5%",
         }}
       >
-        <h1 className=" text-white text-xl md:text-6xl">visit store.</h1>
+        <h1 className="text-white text-xl md:text-6xl">visit store.</h1>
       </div>
     </div>
   );

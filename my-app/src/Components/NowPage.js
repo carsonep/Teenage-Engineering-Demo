@@ -210,7 +210,6 @@ function NowPage() {
           backgroundSize: "90%",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "50% 50%",
-        //   width: "100%",
           height: 0,
           paddingTop: "60%",
           backgroundColor: "#b2b2b2",
@@ -258,7 +257,7 @@ function NowPage() {
         </p>
       </div>
 
-      <div className="w-full flex lg:justify-center lg:mt-8">
+      <div className="w-full flex lg:justify-center lg:mt-8 pb-16">
       <div className="flex rounded-2xl w-full lg:w-1/2">
           <div
         className="rounded-2xl md:w-1/2 w-full"
@@ -284,7 +283,10 @@ function NowPage() {
         paddingTop: "50%",
         backgroundColor: "#b2b2b2",
       }}
-    ></div></div></div>
+    ></div></div>
+
+    
+    </div><div style={{ borderBottom: "1px solid #b2b2b2" }}></div>
     </div>
   );
 }
