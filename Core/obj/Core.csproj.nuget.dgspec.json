@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\Core\\Core.csproj": {}
+    "C:\\Users\\14059\\Desktop\\Projects\\Capstone\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\Core\\Core.csproj": {
+    "C:\\Users\\14059\\Desktop\\Projects\\Capstone\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\14059\\Desktop\\Projects\\Capstone\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\Core\\obj\\",
+        "projectPath": "C:\\Users\\14059\\Desktop\\Projects\\Capstone\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\14059\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\14059\\Desktop\\Projects\\Capstone\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nicklas Peterson\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\14059\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

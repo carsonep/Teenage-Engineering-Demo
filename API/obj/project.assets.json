@@ -3516,19 +3516,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\": {}
+    "C:\\Users\\14059\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\14059\\Desktop\\Projects\\Capstone\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\Nicklas Peterson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\API\\obj\\",
+      "projectPath": "C:\\Users\\14059\\Desktop\\Projects\\Capstone\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\14059\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\14059\\Desktop\\Projects\\Capstone\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Nicklas Peterson\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\14059\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -3540,8 +3540,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Nicklas Peterson\\Desktop\\Projects\\Capstone\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\14059\\Desktop\\Projects\\Capstone\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\14059\\Desktop\\Projects\\Capstone\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

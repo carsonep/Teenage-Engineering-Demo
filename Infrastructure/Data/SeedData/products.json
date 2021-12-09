@@ -1,770 +1,261 @@
 [
   {
-    "id": 38,
-    "name": "computer–1",
-    "description": "a flat pack, sheet metal computer case with the same build-it-yourself design as our modular series. the case has a small desk foot print and is built around the mini-ITX motherboard and the sfx power supply format. it also fits a dual slot graphics card up to 180mm. available in pure orange RAL 2004. note: the computer–1 is a pc case only, computer components must be bought separately.",
-    "price": 195,
-    "productType": {
-      "name": "Accessories",
-      "id": 3
-    },
-    "photos": [
-      {
-        "id": 42,
-        "pictureUrl": "https://localhost:5001/images/products/dd93848a-6a95-4d4a-a2af-3992f84f67d6.png",
-        "fileName": "dd93848a-6a95-4d4a-a2af-3992f84f67d6.png",
-        "isMain": true
-      },
-      {
-        "id": 43,
-        "pictureUrl": "https://localhost:5001/images/products/5128606a-e197-40e7-a96b-d437f6b17a78.png",
-        "fileName": "5128606a-e197-40e7-a96b-d437f6b17a78.png",
-        "isMain": false
-      },
-      {
-        "id": 44,
-        "pictureUrl": "https://localhost:5001/images/products/6722bc0f-ad2a-422c-8146-cc260b12814d.png",
-        "fileName": "6722bc0f-ad2a-422c-8146-cc260b12814d.png",
-        "isMain": false
-      }
-    ]
+    "Name": "computer–1",
+    "Description": "a flat pack, sheet metal computer case with the same build-it-yourself design as our modular series. the case has a small desk foot print and is built around the mini-ITX motherboard and the sfx power supply format. it also fits a dual slot graphics card up to 180mm. available in pure orange RAL 2004. note: the computer–1 is a pc case only, computer components must be bought separately.",
+    "Price": 195,
+    "PictureUrl": "images/products/dd93848a-6a95-4d4a-a2af-3992f84f67d6.png",
+    "ProductTypeId": 3
   },
   {
-    "name": "pocket operator modular 400",
-    "description": "the POM-400 is a home-build analog synthesizer with 3 oscillators, noise, random generator, 2 envelopes, 2 vca’s, lfo, filter, mixer, speakerbox, power pack and a 1-16 step sequencer. complete kit with powder coated aluminum chassis, 16 modules, 15 patch cables, screwdriver, and an illustrated build guide. 16 modules and 15 patch cables included.",
-    "price": 599.99,
-    "productType": {
-      "name": "Synthesizer",
-      "id": 1
-    },
-    "productTypeId": 1,
-    "photos": [
-      {
-        "pictureUrl": "images/products/fa1df84a-9172-45cf-bc72-ba58b6cc78be.png",
-        "fileName": "fa1df84a-9172-45cf-bc72-ba58b6cc78be.png",
-        "isMain": true,
-        "productId": 3,
-        "id": 6
-      },
-      {
-        "pictureUrl": "images/products/2faaf15d-60ea-4463-8e82-5b929a8c0765.png",
-        "fileName": "2faaf15d-60ea-4463-8e82-5b929a8c0765.png",
-        "isMain": false,
-        "productId": 3,
-        "id": 41
-      }
-    ],
-    "id": 3
+    "Name": "pocket operator modular 400",
+    "Description": "the POM-400 is a home-build analog synthesizer with 3 oscillators, noise, random generator, 2 envelopes, 2 vca’s, lfo, filter, mixer, speakerbox, power pack and a 1-16 step sequencer. complete kit with powder coated aluminum chassis, 16 modules, 15 patch cables, screwdriver, and an illustrated build guide. 16 modules and 15 patch cables included.",
+    "Price": 599.99,
+    "PictureUrl": "images/products/fa1df84a-9172-45cf-bc72-ba58b6cc78be.png",
+    "ProductTypeId": 1
   },
   {
-    "name": "pocket operator modular 170",
-    "description": "the POM-170 is a home-build analog monophonic synthesizer with built-in programmable sequencer. complete kit with powder coated aluminum chassis, keyboard, oscillator, filter, envelope, lfo, vca, speaker, power distro, psu, a screwdriver, 8 patch cables, and illustrated build guide.",
-    "price": 479.99,
-    "productType": {
-      "name": "Synthesizer",
-      "id": 1
-    },
-    "productTypeId": 1,
-    "photos": [
-      {
-        "pictureUrl": "images/products/fff45ead-04c0-43dd-85a8-cd07910cda64.png",
-        "fileName": "fff45ead-04c0-43dd-85a8-cd07910cda64.png",
-        "isMain": true,
-        "productId": 4,
-        "id": 7
-      }
-    ],
-    "id": 4
+    "Name": "pocket operator modular 170",
+    "Description": "the POM-170 is a home-build analog monophonic synthesizer with built-in programmable sequencer. complete kit with powder coated aluminum chassis, keyboard, oscillator, filter, envelope, lfo, vca, speaker, power distro, psu, a screwdriver, 8 patch cables, and illustrated build guide.",
+    "Price": 479.99,
+    "PictureUrl": "images/products/fff45ead-04c0-43dd-85a8-cd07910cda64.png",
+    "ProductTypeId": 1
   },
   {
-    "name": "pocket operator modular 16",
-    "description": "the POM-16 is a stand alone keyboard with individual tuneable keys and a programmable step sequencer with a powder coated aluminum chassis.  note: the unit is designed to send cv, gate, midi, and po sync to control the 400 or other synthesizers. these signals do not make sounds.",
-    "price": 239.99,
-    "productType": {
-      "name": "Synthesizer",
-      "id": 1
-    },
-    "productTypeId": 1,
-    "photos": [
-      {
-        "pictureUrl": "images/products/8add1281-bd0e-4dff-821a-1b01a22d6270.png",
-        "fileName": "8add1281-bd0e-4dff-821a-1b01a22d6270.png",
-        "isMain": true,
-        "productId": 5,
-        "id": 8
-      }
-    ],
-    "id": 5
+    "Name": "pocket operator modular 16",
+    "Description": "the POM-16 is a stand alone keyboard with individual tuneable keys and a programmable step sequencer with a powder coated aluminum chassis.  note: the unit is designed to send cv, gate, midi, and po sync to control the 400 or other synthesizers. these signals do not make sounds.",
+    "Price": 239.99,
+    "PictureUrl": "images/products/8add1281-bd0e-4dff-821a-1b01a22d6270.png",
+    "ProductTypeId": 1
+
   },
   {
-    "name": "incense quattro odore",
-    "description": "12 sticks of the quattro odore incense, made in india..",
-    "price": 15.99,
-    "productType": {
-      "name": "Accessories",
-      "id": 3
-    },
-    "productTypeId": 3,
-    "photos": [
-      {
-        "pictureUrl": "images/products/3ef712e5-e5fb-406d-b9a5-39d68e5aea1b.png",
-        "fileName": "3ef712e5-e5fb-406d-b9a5-39d68e5aea1b.png",
-        "isMain": true,
-        "productId": 6,
-        "id": 9
-      }
-    ],
-    "id": 6
+    "Name": "incense quattro odore",
+    "Description": "12 sticks of the quattro odore incense, made in india..",
+    "Price": 15.99,
+    "PictureUrl": "images/products/3ef712e5-e5fb-406d-b9a5-39d68e5aea1b.png",
+    "ProductTypeId": 3
+
   },
   {
-    "name": "OB–4 + ortho remote bundle",
-    "description": "the incredible sounding portable hifi stereo with line-in, wireless audio, and the evolution of radio. OB–4 memorizes everything you play on an endless looping tape. rewind the radio and remix anything. ultra power efficient with up to a week of music listening. this bundle includes both OB–4 and ortho remote for wireless volume control.",
-    "price": 549.99,
-    "productType": {
-      "name": "Audio",
-      "id": 2
-    },
-    "productTypeId": 2,
-    "photos": [
-      {
-        "pictureUrl": "images/products/a4deb3a0-6f19-4437-81b4-127a6b9d4dbc.png",
-        "fileName": "a4deb3a0-6f19-4437-81b4-127a6b9d4dbc.png",
-        "isMain": true,
-        "productId": 7,
-        "id": 10
-      }
-    ],
-    "id": 7
+    "Name": "OB–4 + ortho remote bundle",
+    "Description": "the incredible sounding portable hifi stereo with line-in, wireless audio, and the evolution of radio. OB–4 memorizes everything you play on an endless looping tape. rewind the radio and remix anything. ultra power efficient with up to a week of music listening. this bundle includes both OB–4 and ortho remote for wireless volume control.",
+    "Price": 549.99,
+    "PictureUrl": "images/products/a4deb3a0-6f19-4437-81b4-127a6b9d4dbc.png",
+    "ProductTypeId": 2
   },
   {
-    "id": 39,
-    "name": "capcom® series",
-    "description": "back to battle it out, this time in pocket operator form. play with the original sounds from Street Fighter and Mega Man with the capcom® series. the ultimate duo, now available for one special price.",
-    "price": 129,
-    "productType": {
-      "name": "Synthesizer",
-      "id": 1
-    },
-    "photos": [
-      {
-        "id": 45,
-        "pictureUrl": "https://localhost:5001/images/products/668d6499-bad9-43f7-b443-85b5c020e95b.png",
-        "fileName": "668d6499-bad9-43f7-b443-85b5c020e95b.png",
-        "isMain": true
-      },
-      {
-        "id": 46,
-        "pictureUrl": "https://localhost:5001/images/products/2bf2cd76-dbee-49f5-978f-eb4cf3dc5554.png",
-        "fileName": "2bf2cd76-dbee-49f5-978f-eb4cf3dc5554.png",
-        "isMain": false
-      },
-      {
-        "id": 47,
-        "pictureUrl": "https://localhost:5001/images/products/762a5f8b-36ab-46a5-90a8-469780e376ba.png",
-        "fileName": "762a5f8b-36ab-46a5-90a8-469780e376ba.png",
-        "isMain": false
-      }
-    ]
+    
+    "Name": "capcom® series",
+    "Description": "back to battle it out, this time in pocket operator form. play with the original sounds from Street Fighter and Mega Man with the capcom® series. the ultimate duo, now available for one special Price.",
+    "Price": 129,
+    "PictureUrl": "images/products/668d6499-bad9-43f7-b443-85b5c020e95b.png",
+    "ProductTypeId": 1  
   },
   {
-    "name": "OP–Z + leather sleeve bundle",
-    "description": "limited edition bundle including both the OP–Z and the new handmade bill amberg leather sleeve, sculpted to fit the OP–Z perfectly. available for a limited period only.",
-    "price": 648.99,
-    "productType": {
-      "name": "Synthesizer",
-      "id": 1
-    },
-    "productTypeId": 1,
-    "photos": [
-      {
-        "pictureUrl": "images/products/1c09d6b0-4c0e-44f8-9534-b8da2117ea04.png",
-        "fileName": "1c09d6b0-4c0e-44f8-9534-b8da2117ea04.png",
-        "isMain": true,
-        "productId": 8,
-        "id": 11
-      }
-    ],
-    "id": 8
+    "Name": "OP–Z + leather sleeve bundle",
+    "Description": "limited edition bundle including both the OP–Z and the new handmade bill amberg leather sleeve, sculpted to fit the OP–Z perfectly. available for a limited period only.",
+    "Price": 648.99,
+    "PictureUrl": "images/products/1c09d6b0-4c0e-44f8-9534-b8da2117ea04.png",
+    "ProductTypeId": 1
   },
   {
-    "name": "OP–Z",
-    "description": "OP–Z is a portable 16-track multimedia synthesizer and sequencer with a range of sample based and synthesis based sounds. the world's first stand-alone sequencer of its kind that lets you sequence music, visuals, lights and more. iOS and android companion app available.",
-    "price": 599.99,
-    "productType": {
-      "name": "Synthesizer",
-      "id": 1
-    },
-    "productTypeId": 1,
-    "photos": [
-      {
-        "pictureUrl": "images/products/d6338137-f8a1-4ba1-92c6-ff058442d5a8.png",
-        "fileName": "d6338137-f8a1-4ba1-92c6-ff058442d5a8.png",
-        "isMain": true,
-        "productId": 9,
-        "id": 12
-      }
-    ],
-    "id": 9
+    "Name": "OP–Z",
+    "Description": "OP–Z is a portable 16-track multimedia synthesizer and sequencer with a range of sample based and synthesis based sounds. the world's first stand-alone sequencer of its kind that lets you sequence music, visuals, lights and more. iOS and android companion app available.",
+    "Price": 599.99,
+    "PictureUrl": "images/products/d6338137-f8a1-4ba1-92c6-ff058442d5a8.png",
+    "ProductTypeId": 1  
   },
   {
-    "name": "OP–Z protective soft case",
-    "description": "made in water repellent cordura nylon with eva foam for protection, a divider for storing cables and a detachable wrist strap. the velcro patch in the front is detachable and can be used to attach the case to the OP-1 protective soft case.",
-    "price": 69.99,
-    "productType": {
-      "name": "Accessories",
-      "id": 3
-    },
-    "productTypeId": 3,
-    "photos": [
-      {
-        "pictureUrl": "images/products/347b9651-4044-460e-80b1-83d10b43cda6.png",
-        "fileName": "347b9651-4044-460e-80b1-83d10b43cda6.png",
-        "isMain": true,
-        "productId": 10,
-        "id": 13
-      }
-    ],
-    "id": 10
+    "Name": "OP–Z protective soft case",
+    "Description": "made in water repellent cordura nylon with eva foam for protection, a divider for storing cables and a detachable wrist strap. the velcro patch in the front is detachable and can be used to attach the case to the OP-1 protective soft case.",
+    "Price": 69.99,
+    "PictureUrl": "images/products/347b9651-4044-460e-80b1-83d10b43cda6.png",
+    "ProductTypeId": 3
+
   },
   {
-    "name": "OP–Z starter set",
-    "description": "OP–Z is a portable 16-track multimedia synthesizer and sequencer with a range of sample based and synthesis based sounds. the world’s first stand-alone sequencer of its kind that lets you sequence music, visuals, lights and more. this starter set includes both the OP–Z and the foldable M-1 headphones, perfect to use with the OP–Z in headset mode for voice/vocal sampling.",
-    "price": 599.99,
-    "productType": {
-      "name": "Synthesizer",
-      "id": 1
-    },
-    "productTypeId": 1,
-    "photos": [
-      {
-        "pictureUrl": "images/products/c890b380-fee5-4ad2-a652-c69b8aaac3fc.png",
-        "fileName": "c890b380-fee5-4ad2-a652-c69b8aaac3fc.png",
-        "isMain": true,
-        "productId": 11,
-        "id": 14
-      }
-    ],
-    "id": 11
+    "Name": "OP–Z starter set",
+    "Description": "OP–Z is a portable 16-track multimedia synthesizer and sequencer with a range of sample based and synthesis based sounds. the world’s first stand-alone sequencer of its kind that lets you sequence music, visuals, lights and more. this starter set includes both the OP–Z and the foldable M-1 headphones, perfect to use with the OP–Z in headset mode for voice/vocal sampling.",
+    "Price": 599.99,
+    "PictureUrl": "images/products/c890b380-fee5-4ad2-a652-c69b8aaac3fc.png",
+    "ProductTypeId": 1
+
   },
   {
-    "name": "M-1 personal monitor",
-    "description": "foldable headphones with detachable and built in microphones. M-1 is perfect for voice sampling with OP-Z. 1200 mm audio cable with 3.5 mm 4-pole (trrs) plug connectors included.",
-    "price": 799.99,
-    "productType": {
-      "name": "Audio",
-      "id": 2
-    },
-    "productTypeId": 2,
-    "photos": [
-      {
-        "pictureUrl": "images/products/897d6d6e-cddb-4972-b6a0-d45bd364b611.png",
-        "fileName": "897d6d6e-cddb-4972-b6a0-d45bd364b611.png",
-        "isMain": true,
-        "productId": 12,
-        "id": 15
-      }
-    ],
-    "id": 12
+    "Name": "M-1 personal monitor",
+    "Description": "foldable headphones with detachable and built in microphones. M-1 is perfect for voice sampling with OP-Z. 1200 mm audio cable with 3.5 mm 4-pole (trrs) plug connectors included.",
+    "Price": 799.99,    
+    "PictureUrl": "images/products/897d6d6e-cddb-4972-b6a0-d45bd364b611.png",
+    "ProductTypeId": 2
   },
   {
-    "name": "oplab module",
-    "description": "oplab is an expansion module for OP–Z. oplab adds midi in/out, trig in/out, PO sync out, 3 cv out and one gate out. connect any compatible equipment and make it programmable from OP-Z. a 3.5 mm to din midi adapter cable is included.",
-    "price": 149.99,
-    "productType": {
-      "name": "Synthesizer",
-      "id": 1
-    },
-    "productTypeId": 1,
-    "photos": [
-      {
-        "pictureUrl": "images/products/b1a276b2-0f95-40d3-8924-db5ed4685572.png",
-        "fileName": "b1a276b2-0f95-40d3-8924-db5ed4685572.png",
-        "isMain": true,
-        "productId": 13,
-        "id": 16
-      }
-    ],
-    "id": 13
+    "Name": "oplab module",
+    "Description": "oplab is an expansion module for OP–Z. oplab adds midi in/out, trig in/out, PO sync out, 3 cv out and one gate out. connect any compatible equipment and make it programmable from OP-Z. a 3.5 mm to din midi adapter cable is included.",
+    "Price": 149.99,
+    "PictureUrl": "images/products/b1a276b2-0f95-40d3-8924-db5ed4685572.png",
+    "ProductTypeId": 1 
   },
   {
-    "name": "rumble module",
-    "description": "rumble is an expansion module for OP-Z, adding a haptic subwoofer allowing you to feel your music. it also features a silent metronome mode, great when performing live to know exactly where the beat is.",
-    "price": 89.99,
-    "productType": {
-      "name": "Synthesizer",
-      "id": 1
-    },
-    "productTypeId": 1,
-    "photos": [
-      {
-        "pictureUrl": "images/products/2ee99404-6daf-423e-aa5d-7c2cc3153d1a.png",
-        "fileName": "2ee99404-6daf-423e-aa5d-7c2cc3153d1a.png",
-        "isMain": true,
-        "productId": 14,
-        "id": 17
-      }
-    ],
-    "id": 14
+    "Name": "rumble module",
+    "Description": "rumble is an expansion module for OP-Z, adding a haptic subwoofer allowing you to feel your music. it also features a silent metronome mode, great when performing live to know exactly where the beat is.",
+    "Price": 89.99,
+    "PictureUrl": "images/products/2ee99404-6daf-423e-aa5d-7c2cc3153d1a.png",
+    "ProductTypeId": 1 
   },
   {
-    "name": "OP–Z keychain",
-    "description": "OP–Z  keychain in grey enamel.",
-    "price": 25.99,
-    "productType": {
-      "name": "Accessories",
-      "id": 3
-    },
-    "productTypeId": 3,
-    "photos": [
-      {
-        "pictureUrl": "images/products/ce73acd6-1f9a-4aa3-bd92-137308daf2ec.png",
-        "fileName": "ce73acd6-1f9a-4aa3-bd92-137308daf2ec.png",
-        "isMain": true,
-        "productId": 15,
-        "id": 18
-      }
-    ],
-    "id": 15
+    "Name": "OP–Z keychain",
+    "Description": "OP–Z  keychain in grey enamel.",
+    "Price": 25.99,
+    "PictureUrl": "images/products/ce73acd6-1f9a-4aa3-bd92-137308daf2ec.png",
+    "ProductTypeId": 3
   },
   {
-    "name": "sync cable kit 150 mm",
-    "description": "OP–Z  keychain in grey enamel.",
-    "price": 19.99,
-    "productType": {
-      "name": "Audio",
-      "id": 2
-    },
-    "productTypeId": 2,
-    "photos": [
-      {
-        "pictureUrl": "images/products/7a7059a3-1eaf-4634-89b2-f72fcb360e7b.png",
-        "fileName": "7a7059a3-1eaf-4634-89b2-f72fcb360e7b.png",
-        "isMain": true,
-        "productId": 16,
-        "id": 19
-      }
-    ],
-    "id": 16
+    "Name": "sync cable kit 150 mm",
+    "Description": "OP–Z  keychain in grey enamel.",
+    "Price": 19.99,
+    "PictureUrl": "images/products/7a7059a3-1eaf-4634-89b2-f72fcb360e7b.png",
+    "ProductTypeId": 2
   },
   {
-    "name": "OP-1 leather wrap",
-    "description": "leather wrap for OP-1, handmade in london by our friends at bill amberg studio. the wrap is cut in one piece. edges and individual holes for closing are cut to perfectly fit the OP–1 knobs. the leather is a byproduct of the european meat industry made from cows farmed in the eu.",
-    "price": 169.99,
-    "productType": {
-      "name": "Accessories",
-      "id": 3
-    },
-    "productTypeId": 3,
-    "photos": [
-      {
-        "pictureUrl": "images/products/ed2a6831-f404-4351-8b11-0d2b9c489a71.png",
-        "fileName": "ed2a6831-f404-4351-8b11-0d2b9c489a71.png",
-        "isMain": true,
-        "productId": 17,
-        "id": 20
-      }
-    ],
-    "id": 17
+    "Name": "OP-1 leather wrap",
+    "Description": "leather wrap for OP-1, handmade in london by our friends at bill amberg studio. the wrap is cut in one piece. edges and individual holes for closing are cut to perfectly fit the OP–1 knobs. the leather is a byproduct of the european meat industry made from cows farmed in the eu.",
+    "Price": 169.99,
+    "PictureUrl": "images/products/ed2a6831-f404-4351-8b11-0d2b9c489a71.png",
+    "ProductTypeId": 3   
   },
   {
-    "name": "OP–Z leather sleeve",
-    "description": "leather sleeve for OP–Z, handmade in london by our friends at bill amberg studio. the durable cow hide works as a stable backing to the soft calf skin that is sculpted to fit the OP–Z perfectly. the leather is a byproduct of the european meat industry made from cows farmed in the eu.",
-    "price": 149.99,
-    "productType": {
-      "name": "Accessories",
-      "id": 3
-    },
-    "productTypeId": 3,
-    "photos": [
-      {
-        "pictureUrl": "images/products/a2cc7276-59eb-412f-937b-a22d4ca74dde.png",
-        "fileName": "a2cc7276-59eb-412f-937b-a22d4ca74dde.png",
-        "isMain": true,
-        "productId": 18,
-        "id": 21
-      }
-    ],
-    "id": 18
+    "Name": "OP–Z leather sleeve",
+    "Description": "leather sleeve for OP–Z, handmade in london by our friends at bill amberg studio. the durable cow hide works as a stable backing to the soft calf skin that is sculpted to fit the OP–Z perfectly. the leather is a byproduct of the european meat industry made from cows farmed in the eu.",
+    "Price": 149.99,
+    "PictureUrl": "images/products/a2cc7276-59eb-412f-937b-a22d4ca74dde.png",
+    "ProductTypeId": 3
   },
   {
-    "name": "OP-1 portable synthesizer",
-    "description": "leather sleeve for OP–Z, handmade in london by our friends at bill amberg studio. the durable cow hide works as a stable backing to the soft calf skin that is sculpted to fit the OP–Z perfectly. the leather is a byproduct of the european meat industry made from cows farmed in the eu.",
-    "price": 1299.99,
-    "productType": {
-      "name": "Synthesizer",
-      "id": 1
-    },
-    "productTypeId": 1,
-    "photos": [
-      {
-        "pictureUrl": "images/products/6bd2abf2-2dad-4cad-bbe1-e12d0e119b70.png",
-        "fileName": "6bd2abf2-2dad-4cad-bbe1-e12d0e119b70.png",
-        "isMain": true,
-        "productId": 19,
-        "id": 22
-      }
-    ],
-    "id": 19
+    "Name": "OP-1 portable synthesizer",
+    "Description": "leather sleeve for OP–Z, handmade in london by our friends at bill amberg studio. the durable cow hide works as a stable backing to the soft calf skin that is sculpted to fit the OP–Z perfectly. the leather is a byproduct of the european meat industry made from cows farmed in the eu.",
+    "Price": 1299.99,
+    "PictureUrl": "images/products/6bd2abf2-2dad-4cad-bbe1-e12d0e119b70.png",
+    "ProductTypeId": 1
   },
   {
-    "name": "OP-1 protective soft case",
-    "description": "made in water repellent cordura nylon and custom molded eva foam for protection. the back pocket can be used for storing cables or smaller accessories. the front patch is detachable and can be used for attaching the OP–Z protective case. the strap is adjustable and detachable.",
-    "price": 89.99,
-    "productType": {
-      "name": "Accessories",
-      "id": 3
-    },
-    "productTypeId": 3,
-    "photos": [
-      {
-        "pictureUrl": "images/products/b162d23f-b232-4bc2-a478-ba303c53b2cb.png",
-        "fileName": "b162d23f-b232-4bc2-a478-ba303c53b2cb.png",
-        "isMain": true,
-        "productId": 20,
-        "id": 23
-      }
-    ],
-    "id": 20
+    "Name": "OP-1 protective soft case",
+    "Description": "made in water repellent cordura nylon and custom molded eva foam for protection. the back pocket can be used for storing cables or smaller accessories. the front patch is detachable and can be used for attaching the OP–Z protective case. the strap is adjustable and detachable.",
+    "Price": 89.99,
+    "PictureUrl": "images/products/b162d23f-b232-4bc2-a478-ba303c53b2cb.png",
+    "ProductTypeId": 3
   },
   {
-    "name": "'1121 keychain",
-    "description": "‘1121 keychain in zinc alloy to symbol the OP-1's first release in 2011.",
-    "price": 20.99,
-    "productType": {
-      "name": "Accessories",
-      "id": 3
-    },
-    "productTypeId": 3,
-    "photos": [
-      {
-        "pictureUrl": "images/products/722bc01f-c8fc-4be0-8745-4a4565452e7a.png",
-        "fileName": "722bc01f-c8fc-4be0-8745-4a4565452e7a.png",
-        "isMain": true,
-        "productId": 21,
-        "id": 24
-      }
-    ],
-    "id": 21
+    "Name": "'1121 keychain",
+    "Description": "‘1121 keychain in zinc alloy to symbol the OP-1's first release in 2011.",
+    "Price": 20.99,
+    "PictureUrl": "images/products/722bc01f-c8fc-4be0-8745-4a4565452e7a.png",
+    "ProductTypeId": 3
   },
   {
-    "name": "OP-1 accessory kit",
-    "description": "record, edit and listen to a radio source with the fm antenna. use the knobs like a crank with the crank accessory. bender comes with a rubber band for smooth bends. brick shafts connects to lego parts.",
-    "price": 75.99,
-    "productType": {
-      "name": "Accessories",
-      "id": 3
-    },
-    "productTypeId": 3,
-    "photos": [
-      {
-        "pictureUrl": "images/products/11d01957-d844-49fa-8e8f-45a3cf7a6478.png",
-        "fileName": "11d01957-d844-49fa-8e8f-45a3cf7a6478.png",
-        "isMain": true,
-        "productId": 22,
-        "id": 25
-      }
-    ],
-    "id": 22
+    "Name": "OP-1 accessory kit",
+    "Description": "record, edit and listen to a radio source with the fm antenna. use the knobs like a crank with the crank accessory. bender comes with a rubber band for smooth bends. brick shafts connects to lego parts.",
+    "Price": 75.99,
+    "PictureUrl": "images/products/11d01957-d844-49fa-8e8f-45a3cf7a6478.png",
+    "ProductTypeId": 3
   },
   {
-    "name": "stereo splitter 750 mm",
-    "description": "3.5 mm stereo (trs) to 2 x 3.5 mm mono (ts). length: 750 mm. use this convenient cable to split a stereo signal to 2x mono (left/right)",
-    "price": 16.99,
-    "productType": {
-      "name": "Accessories",
-      "id": 3
-    },
-    "productTypeId": 3,
-    "photos": [
-      {
-        "pictureUrl": "images/products/bbcae8a0-1dea-4770-88eb-39f624100846.png",
-        "fileName": "bbcae8a0-1dea-4770-88eb-39f624100846.png",
-        "isMain": true,
-        "productId": 23,
-        "id": 26
-      }
-    ],
-    "id": 23
+    "Name": "stereo splitter 750 mm",
+    "Description": "3.5 mm stereo (trs) to 2 x 3.5 mm mono (ts). length: 750 mm. use this convenient cable to split a stereo signal to 2x mono (left/right)",
+    "Price": 16.99,
+    "PictureUrl": "images/products/bbcae8a0-1dea-4770-88eb-39f624100846.png",
+    "ProductTypeId": 3
   },
   {
-    "name": "tape t-shirt",
-    "description": "t-shirt with OP-1 tape graphics printed on the back. regular fit crewneck made in soft cotton with neatly finished hems.)",
-    "price": 50,
-    "productType": {
-      "name": "Accessories",
-      "id": 3
-    },
-    "productTypeId": 3,
-    "photos": [
-      {
-        "pictureUrl": "images/products/7a8cc330-99bc-493f-acd5-40b34d5d378b.png",
-        "fileName": "7a8cc330-99bc-493f-acd5-40b34d5d378b.png",
-        "isMain": true,
-        "productId": 24,
-        "id": 27
-      }
-    ],
-    "id": 24
+    "Name": "tape t-shirt",
+    "Description": "t-shirt with OP-1 tape graphics printed on the back. regular fit crewneck made in soft cotton with neatly finished hems.)",
+    "Price": 50,
+    "PictureUrl": "images/products/7a8cc330-99bc-493f-acd5-40b34d5d378b.png",
+    "ProductTypeId": 3
   },
   {
-    "name": "anniversary sweatshirt",
-    "description": "limited edition anniversary sweatshirt with ‘1121 printed on the back. regular fit crewneck with long sleeves and ribbed hems.",
-    "price": 100,
-    "productType": {
-      "name": "Accessories",
-      "id": 3
-    },
-    "productTypeId": 3,
-    "photos": [
-      {
-        "pictureUrl": "images/products/f6c7a859-094b-4866-a52c-3e745472166c.png",
-        "fileName": "f6c7a859-094b-4866-a52c-3e745472166c.png",
-        "isMain": true,
-        "productId": 25,
-        "id": 28
-      }
-    ],
-    "id": 25
+    "Name": "anniversary sweatshirt",
+    "Description": "limited edition anniversary sweatshirt with ‘1121 printed on the back. regular fit crewneck with long sleeves and ribbed hems.",
+    "Price": 100,
+    "PictureUrl": "images/products/f6c7a859-094b-4866-a52c-3e745472166c.png",
+    "ProductTypeId": 3
   },
   {
-    "name": "anniversary t-shirt",
-    "description": "limited edition anniversary t-shirt with ‘1121 printed on the back. regular fit crewneck made in soft cotton with neatly finished hems.",
-    "price": 50,
-    "productType": {
-      "name": "Accessories",
-      "id": 3
-    },
-    "productTypeId": 3,
-    "photos": [
-      {
-        "pictureUrl": "images/products/381e888b-e98e-404c-98c4-831255029e4e.png",
-        "fileName": "381e888b-e98e-404c-98c4-831255029e4e.png",
-        "isMain": true,
-        "productId": 26,
-        "id": 29
-      }
-    ],
-    "id": 26
+    "Name": "anniversary t-shirt",
+    "Description": "limited edition anniversary t-shirt with ‘1121 printed on the back. regular fit crewneck made in soft cotton with neatly finished hems.",
+    "Price": 50,
+    "PictureUrl": "images/products/381e888b-e98e-404c-98c4-831255029e4e.png",
+    "ProductTypeId": 3
   },
   {
-    "name": "anniversary keychain",
-    "description": "anniversary keychain in zinc alloy with the 10 logo. comes in white, orange, green and blue.",
-    "price": 25,
-    "productType": {
-      "name": "Accessories",
-      "id": 3
-    },
-    "productTypeId": 3,
-    "photos": [
-      {
-        "pictureUrl": "images/products/ee9534a1-021a-4f07-9e04-58039c02aea1.png",
-        "fileName": "ee9534a1-021a-4f07-9e04-58039c02aea1.png",
-        "isMain": true,
-        "productId": 27,
-        "id": 30
-      }
-    ],
-    "id": 27
+    "Name": "anniversary keychain",
+    "Description": "anniversary keychain in zinc alloy with the 10 logo. comes in white, orange, green and blue.",
+    "Price": 25,
+    "PictureUrl": "images/products/ee9534a1-021a-4f07-9e04-58039c02aea1.png",
+    "ProductTypeId": 3
   },
   {
-    "name": "anniversary keychain",
-    "description": "anniversary keychain in zinc alloy with the 10 logo. comes in white, orange, green and blue.",
-    "price": 25,
-    "productType": {
-      "name": "Accessories",
-      "id": 3
-    },
-    "productTypeId": 3,
-    "photos": [
-      {
-        "pictureUrl": "images/products/d07c3208-f1d7-451b-9c37-9e0fa16edc81.png",
-        "fileName": "d07c3208-f1d7-451b-9c37-9e0fa16edc81.png",
-        "isMain": true,
-        "productId": 28,
-        "id": 31
-      }
-    ],
-    "id": 28
+    "Name": "anniversary keychain",
+    "Description": "anniversary keychain in zinc alloy with the 10 logo. comes in white, orange, green and blue.",
+    "Price": 25,
+    "PictureUrl": "images/products/d07c3208-f1d7-451b-9c37-9e0fa16edc81.png",
+    "ProductTypeId": 3
   },
   {
-    "name": "anniversary keychain",
-    "description": "anniversary keychain in zinc alloy with the 10 logo. comes in white, orange, green and blue.",
-    "price": 25,
-    "productType": {
-      "name": "Accessories",
-      "id": 3
-    },
-    "productTypeId": 3,
-    "photos": [
-      {
-        "pictureUrl": "images/products/55fc20b5-deb4-4d17-8411-8a14b9b0cefa.png",
-        "fileName": "55fc20b5-deb4-4d17-8411-8a14b9b0cefa.png",
-        "isMain": true,
-        "productId": 29,
-        "id": 32
-      }
-    ],
-    "id": 29
+    "Name": "anniversary keychain",
+    "Description": "anniversary keychain in zinc alloy with the 10 logo. comes in white, orange, green and blue.",
+    "Price": 25,
+    "PictureUrl": "images/products/55fc20b5-deb4-4d17-8411-8a14b9b0cefa.png",
+    "ProductTypeId": 3
   },
   {
-    "name": "anniversary keychain",
-    "description": "anniversary keychain in zinc alloy with the 10 logo. comes in white, orange, green and blue.",
-    "price": 25,
-    "productType": {
-      "name": "Accessories",
-      "id": 3
-    },
-    "productTypeId": 3,
-    "photos": [
-      {
-        "pictureUrl": "images/products/a88ae4c9-52f6-4e25-9ee2-4b1f27d2ddf7.png",
-        "fileName": "a88ae4c9-52f6-4e25-9ee2-4b1f27d2ddf7.png",
-        "isMain": true,
-        "productId": 30,
-        "id": 33
-      }
-    ],
-    "id": 30
+    "Name": "anniversary keychain",
+    "Description": "anniversary keychain in zinc alloy with the 10 logo. comes in white, orange, green and blue.",
+    "Price": 25,
+    "PictureUrl": "images/products/a88ae4c9-52f6-4e25-9ee2-4b1f27d2ddf7.png",
+    "ProductTypeId": 3
   },
   {
-    "name": "PO-133 Street Fighter",
-    "description": "the Street Fighter pocket operator is based on the ultra popular PO–33 K.O.!, a micro sampler with 40 seconds sample memory and built-in microphone for instant sampling. this special edition comes with 16 Street Fighter sound tracks and genuine samples from the original Street Fighter arcade game by Capcom®",
-    "price": 89,
-    "productType": {
-      "name": "Synthesizer",
-      "id": 1
-    },
-    "productTypeId": 1,
-    "photos": [
-      {
-        "pictureUrl": "images/products/76fcad2f-19b9-47e8-9d0b-895b3574a463.png",
-        "fileName": "76fcad2f-19b9-47e8-9d0b-895b3574a463.png",
-        "isMain": true,
-        "productId": 31,
-        "id": 34
-      }
-    ],
-    "id": 31
+    "Name": "PO-133 Street Fighter",
+    "Description": "the Street Fighter pocket operator is based on the ultra popular PO–33 K.O.!, a micro sampler with 40 seconds sample memory and built-in microphone for instant sampling. this special edition comes with 16 Street Fighter sound tracks and genuine samples from the original Street Fighter arcade game by Capcom®",
+    "Price": 89,
+    "PictureUrl": "images/products/76fcad2f-19b9-47e8-9d0b-895b3574a463.png",
+    "ProductTypeId": 1
   },
   {
-    "name": "CA-X",
-    "description": "protect your pocket operator with a silicon pro-case. it has built-in battery protection and anti slip feet on the back. the button lights will still be visible with the case on. remove the hanger and the metal stand for a perfect fit.",
-    "price": 29,
-    "productType": {
-      "name": "Accessories",
-      "id": 3
-    },
-    "productTypeId": 3,
-    "photos": [
-      {
-        "pictureUrl": "images/products/3531ce0d-307f-4683-a43f-0360fcf820c7.png",
-        "fileName": "3531ce0d-307f-4683-a43f-0360fcf820c7.png",
-        "isMain": true,
-        "productId": 32,
-        "id": 35
-      }
-    ],
-    "id": 32
+    "Name": "CA-X",
+    "Description": "protect your pocket operator with a silicon pro-case. it has built-in battery protection and anti slip feet on the back. the button lights will still be visible with the case on. remove the hanger and the metal stand for a perfect fit.",
+    "Price": 29,
+    "PictureUrl": "images/products/3531ce0d-307f-4683-a43f-0360fcf820c7.png",
+    "ProductTypeId": 3
   },
   {
-    "name": "OB–4",
-    "description": "the incredible sounding portable hifi stereo with line-in, wireless audio, and the evolution of radio. OB–4 memorizes everything you play on an endless looping tape. rewind the radio and remix anything. comes with a folding handle that doubles as a stand. ultra power efficient with up to a week of music listening.",
-    "price": 599,
-    "productType": {
-      "name": "Audio",
-      "id": 2
-    },
-    "productTypeId": 2,
-    "photos": [
-      {
-        "pictureUrl": "images/products/78fca7fb-102d-47b3-9c7a-cf33ddaa54ed.png",
-        "fileName": "78fca7fb-102d-47b3-9c7a-cf33ddaa54ed.png",
-        "isMain": true,
-        "productId": 40,
-        "id": 48
-      }
-    ],
-    "id": 40
+    "Name": "OB–4",
+    "Description": "the incredible sounding portable hifi stereo with line-in, wireless audio, and the evolution of radio. OB–4 memorizes everything you play on an endless looping tape. rewind the radio and remix anything. comes with a folding handle that doubles as a stand. ultra power efficient with up to a week of music listening.",
+    "Price": 599,
+    "PictureUrl": "images/products/78fca7fb-102d-47b3-9c7a-cf33ddaa54ed.png",
+    "ProductTypeId": 2
   },
   {
-    "name": "OB–4",
-    "description": "the incredible sounding portable hifi stereo with line-in, wireless audio, and the evolution of radio. OB–4 memorizes everything you play on an endless looping tape. rewind the radio and remix anything. comes with a folding handle that doubles as a stand. ultra power efficient with up to a week of music listening.",
-    "price": 599,
-    "productType": {
-      "name": "Audio",
-      "id": 2
-    },
-    "productTypeId": 2,
-    "photos": [
-      {
-        "pictureUrl": "images/products/76b1495e-39b7-4adb-8d4d-836313f1d89b.png",
-        "fileName": "76b1495e-39b7-4adb-8d4d-836313f1d89b.png",
-        "isMain": true,
-        "productId": 42,
-        "id": 50
-      }
-    ],
-    "id": 42
-  }
+    "Name": "OB–4",
+    "Description": "the incredible sounding portable hifi stereo with line-in, wireless audio, and the evolution of radio. OB–4 memorizes everything you play on an endless looping tape. rewind the radio and remix anything. comes with a folding handle that doubles as a stand. ultra power efficient with up to a week of music listening.",
+    "Price": 599,
+    "PictureUrl": "images/products/76b1495e-39b7-4adb-8d4d-836313f1d89b.png",
+    "ProductTypeId": 2
+  },
 
   {
-    "name": "PO-128 Mega Man",
-    "description": "the Mega Man pocket operator is based on PO–28 robot, the playful live synthesizer and sequencer with parameter locks, glide control and punch-in effects. this special edition comes with 16 Mega Man soundtracks based on the original Mega Man video game by Capcom®",
-    "price": 89,
-    "productType": {
-      "name": "Synthesizer",
-      "id": 1
-    },
-    "productTypeId": 1,
-    "photos": [
-      {
-        "pictureUrl": "images/products/050f5d8b-cf05-4940-acfc-83c8e9e86b54.png",
-        "fileName": "050f5d8b-cf05-4940-acfc-83c8e9e86b54.png",
-        "isMain": true,
-        "productId": 33,
-        "id": 36
-      }
-    ],
-    "id": 33
+    "Name": "PO-128 Mega Man",
+    "Description": "the Mega Man pocket operator is based on PO–28 robot, the playful live synthesizer and sequencer with parameter locks, glide control and punch-in effects. this special edition comes with 16 Mega Man soundtracks based on the original Mega Man video game by Capcom®",
+    "Price": 89,
+    "PictureUrl": "images/products/050f5d8b-cf05-4940-acfc-83c8e9e86b54.png",
+    "ProductTypeId": 1
+ 
   },
   {
-    "name": "\nCA-X",
-    "description": "protect your pocket operator with a silicon pro-case. it has built-in battery protection and anti slip feet on the back. the button lights will still be visible with the case on. remove the hanger and the metal stand for a perfect fit.",
-    "price": 29,
-    "productType": {
-      "name": "Accessories",
-      "id": 3
-    },
-    "productTypeId": 3,
-    "photos": [
-      {
-        "pictureUrl": "images/products/ea5f2b81-6985-4ca6-877f-a32b6279c1b5.png",
-        "fileName": "ea5f2b81-6985-4ca6-877f-a32b6279c1b5.png",
-        "isMain": true,
-        "productId": 34,
-        "id": 37
-      }
-    ],
-    "id": 34
-  },
-  {
-    "name": "OB–4 leather bag & strap",
-    "description": "special edition, handmade in london by our friends at bill amberg studio. ultra durable cow hide is hand stitched along four edges for a perfectly tailored and acoustically transparent fit. the detachable strap with black anodized handle bar can be adjusted to several lengths. each of these first edition bags are unique and hand marked with an edition number.",
-    "price": 400,
-    "productType": {
-      "name": "Accessories",
-      "id": 3
-    },
-    "productTypeId": 3,
-    "photos": [
-      {
-        "pictureUrl": "images/products/599ffa4d-1cd2-4787-93db-d2e49452b8c7.png",
-        "fileName": "599ffa4d-1cd2-4787-93db-d2e49452b8c7.png",
-        "isMain": true,
-        "productId": 37,
-        "id": 40
-      }
-    ],
-    "id": 37
+    "Name": "\nCA-X",
+    "Description": "protect your pocket operator with a silicon pro-case. it has built-in battery protection and anti slip feet on the back. the button lights will still be visible with the case on. remove the hanger and the metal stand for a perfect fit.",
+    "Price": 29,
+    "PictureUrl": "images/products/ea5f2b81-6985-4ca6-877f-a32b6279c1b5.png",
+    "ProductTypeId": 3
   }
 ]
