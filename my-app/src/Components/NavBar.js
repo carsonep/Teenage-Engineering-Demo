@@ -51,7 +51,7 @@ function NavBar({ bgColor, textColor }) {
         >
           <button
             className={
-              "cursor-pointer mr-12 mt-2 h-auto fixed text-xl flex justify-end lg:hidden outline-none focus:outline-none " +
+              "cursor-pointer mr-12 mt-2 h-auto fixed text-xl flex justify-end lg:hidden outline-none focus:outline-none  text-white" +
               (navbarOpen ? " text-white" : "text-black")
             }
             type="button"
@@ -289,7 +289,7 @@ function NavBar({ bgColor, textColor }) {
                 height: "20%",
               }}
             >
-              <div className="hidden md:block">
+              <div className="hidden lg:block">
                 <svg
                   xmlns="http:​/​/​www.w3.org/​2000/​svg"
                   viewBox="20 0 80 40"
