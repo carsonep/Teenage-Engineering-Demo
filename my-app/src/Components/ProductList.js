@@ -30,7 +30,7 @@ function ProductList() {
   }
 
   return (
-    <div className="">
+    <div className="pb-2">
       <NavBar textColor={"#000000"} />
       <ProductCategory />
       <div

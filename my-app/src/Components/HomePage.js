@@ -1,7 +1,5 @@
 import React from "react";
 import NavBar from "./NavBar";
-
-import { Link } from "react-router-dom";
 import teChristmas from "../images/teChristmas.jpg";
 import poStreetFighter from "../images/poStreetFighter.png";
 import poRedCase from "../images/poRedCase.png";
@@ -23,11 +21,11 @@ import ob4Red from "../images/ob4Red.jpg";
 import poCapcom from "../images/poCapcom.png";
 import blackLongSleeve from "../images/blackLongSleeve.png";
 import greyBag from "../images/greyBag.png";
-import teWhiteShirt from "../images/teShirt.png";
 import modularBag from "../images/modularBag.jpg";
 import opzPoster from "../images/opzPoster.png";
 import incense from "../images/incense.png";
 import teShortSleeve from "../images/teShortSleeve.png";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -431,7 +429,8 @@ function HomePage() {
           padding: "2.5%",
         }}
       >
-        <h1 className="text-white text-lg md:text-4xl lg:text-6xl">explore more</h1>
+        <NavLink to="/store"><h1 className="text-white text-lg md:text-4xl lg:text-6xl">explore more</h1></NavLink>
+        
       </div>
 
     </div>

@@ -12,9 +12,10 @@ import rearHandleModular from "../images/rearHandleModular.png";
 
 function NowPage() {
   return (
-    <div className="" style={{ backgroundColor: "#e5e5e5", padding: "0 4.6vw" }}>
-      <NavBar textColor={"#000"} />
-      <div className="flex flex-col w-full text-center mt-8 lg:mt-16 leading-tight pb-4 lg:pb-16 ">
+    <div style={{ backgroundColor: "#e5e5e5" }}><NavBar textColor={"#000"} bgColor={"#e5e5e5"} />
+    <div className="" style={{  padding: "0 4.6vw" }}>
+      
+      <div className="flex flex-col w-full text-center mt-8 lg:mt-16 leading-tight pb-4 lg:pb-16 " >
         <h1 className="text-3xl lg:text-5xl">euro pocket rack</h1>
         <span className="text-xs lg:text-sm font-light mt-4">NOVEMBER 5, 2021</span>
         <span className="text-xs lg:text-sm font-light">POSTED BY TOBIAS VON HOFSTEN</span>
@@ -287,7 +288,7 @@ function NowPage() {
 
     
     </div><div style={{ borderBottom: "1px solid #b2b2b2" }}></div>
-    </div>
+    </div></div>
   );
 }
 

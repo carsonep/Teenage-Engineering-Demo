@@ -8,6 +8,14 @@ import {
 import ImageCarousel from "./ImageCarousel";
 import NavBar from "./NavBar";
 import "./styleComponents/ProductDetails.css";
+import rumbleModule from "../images/rumbleModule.jpg";
+import poBreakdown from "../images/poBreakdown.jpg";
+import od11 from "../images/od11.jpg";
+import orthoRed from "../images/orthoRed.jpg";
+import orthoYellow from "../images/orthoYellow.jpg";
+import orthoBlack from "../images/orthoBlack.jpg";
+import orthoWhite from "../images/orthoWhite.jpg";
+import clearBag from "../images/clearBag.jpg";
 
 function ProductDetails({ match }) {
   const {
@@ -62,7 +70,7 @@ function ProductDetails({ match }) {
         {isLoading ? (
           <LoadingSpinner />
         ) : (
-          <div>
+          <div className="pt-6">
             <h1 className="flex justify-center pb-8 md:hidden">
               {product.name}
             </h1>
@@ -84,7 +92,7 @@ function ProductDetails({ match }) {
                     >
                       {product.name}
                     </h1>
-                    <h1 className="" style={{ fontSize: "2.5vw" }}>
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl" >
                       ${product.price}
                     </h1>
                     <p className="md:hidden text-base">ready to ship</p>
@@ -116,15 +124,17 @@ function ProductDetails({ match }) {
                   {product.description}
                 </p>
                 <p
-                  className="w-4/6 md:pt-4 pb-8"
-                  style={{ fontSize: "1.21vw" }}
+                  className="w-4/6 md:pt-4 pb-8 text-xl md:text-2xl lg:text-3xl pt-4"
+                  
                 >
                   explore
                 </p>
               </div>
             </div>
+            
           </div>
         )}
+        
       </div>
     );
   }
@@ -133,6 +143,121 @@ function ProductDetails({ match }) {
     <div>
       <NavBar textColor={"#ffffff"} bgColor={"#000000"} />
       <div className="">{content}</div>
+      
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 " style={{padding: "0 4.6vw", marginTop: "5%"}}><div
+        className="w-full rounded-2xl md:rounded-none col-span-2 md:col-span-2"
+        style={{
+          backgroundImage: `url(${rumbleModule})`,
+          backgroundSize: "100%",
+          backgroundPosition: "50% 50%",
+          backgroundRepeat: "no-repeat",
+          width: "100%",
+          height: 0,
+          paddingTop: "100%",
+          backgroundColor: "#e5e5e5"
+        }}
+      ></div>
+
+<div
+        className="w-full rounded-2xl md:rounded-none col-span-2 "
+        style={{
+          backgroundImage: `url(${poBreakdown})`,
+          backgroundSize: "100%",
+          backgroundPosition: "50% 50%",
+          backgroundRepeat: "no-repeat",
+          width: "100%",
+          height: 0,
+          paddingTop: "100%",
+          backgroundColor: "#e5e5e5"
+        }}
+      ></div>
+
+
+
+<div
+        className="w-full rounded-2xl md:rounded-none col-span-1"
+        style={{
+          backgroundImage: `url(${orthoRed})`,
+          backgroundSize: "100%",
+          backgroundPosition: "50% 50%",
+          backgroundRepeat: "no-repeat",
+          width: "100%",
+          height: 0,
+          paddingTop: "100%",
+          backgroundColor: "#e5e5e5"
+        }}
+      ></div>
+
+<div
+        className="w-full rounded-2xl md:rounded-none col-span-1"
+        style={{
+          backgroundImage: `url(${orthoYellow})`,
+          backgroundSize: "100%",
+          backgroundPosition: "50% 50%",
+          backgroundRepeat: "no-repeat",
+          width: "100%",
+          height: 0,
+          paddingTop: "100%",
+          backgroundColor: "#e5e5e5"
+        }}
+      ></div>
+
+<div
+        className="w-full rounded-2xl md:rounded-none col-span-1"
+        style={{
+          backgroundImage: `url(${orthoBlack})`,
+          backgroundSize: "100%",
+          backgroundPosition: "50% 50%",
+          backgroundRepeat: "no-repeat",
+          width: "100%",
+          height: 0,
+          paddingTop: "100%",
+          backgroundColor: "#e5e5e5"
+        }}
+      ></div>
+
+<div
+        className="w-full rounded-2xl md:rounded-none col-span-1"
+        style={{
+          backgroundImage: `url(${orthoWhite})`,
+          backgroundSize: "100%",
+          backgroundPosition: "50% 50%",
+          backgroundRepeat: "no-repeat",
+          width: "100%",
+          height: 0,
+          paddingTop: "100%",
+          backgroundColor: "#e5e5e5"
+        }}
+      ></div>
+
+<div
+        className="w-full rounded-2xl md:rounded-none col-span-2"
+        style={{
+          backgroundImage: `url(${od11})`,
+          backgroundSize: "100%",
+          backgroundPosition: "50% 50%",
+          backgroundRepeat: "no-repeat",
+          width: "100%",
+          height: 0,
+          paddingTop: "100%",
+          backgroundColor: "#e5e5e5"
+        }}
+      ></div>
+
+<div
+        className="w-full rounded-2xl md:rounded-none col-span-2"
+        style={{
+          backgroundImage: `url(${clearBag})`,
+          backgroundSize: "100%",
+          backgroundPosition: "50% 50%",
+          backgroundRepeat: "no-repeat",
+          width: "100%",
+          height: 0,
+          paddingTop: "100%",
+          backgroundColor: "#e5e5e5"
+        }}
+      ></div>
+      </div>
     </div>
   );
 }
