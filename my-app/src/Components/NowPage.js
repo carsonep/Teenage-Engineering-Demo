@@ -162,6 +162,7 @@ function NowPage() {
 
       <div className="w-full flex lg:justify-center lg:mt-8">
         <iframe
+        title="video"
           width="100%"
           height="25vh"
           scrolling="no"

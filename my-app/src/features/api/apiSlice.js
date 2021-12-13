@@ -41,6 +41,11 @@ export const apiSlice = createApi({
       query: (basketId) => `/Basket?id=${basketId}`,
       providesTags: ["Cart"],
     }),
+    deleteBasket: builder.mutation({
+      query: (basketId) => ({url: `/Basket?id=${basketId}`, method: "DELETE"}),
+      // providesTags: ["Cart"],
+    }),
+
     updateBasket: builder.mutation({
       query: (userBasket) => ({
         url: "/Basket",
@@ -75,6 +80,7 @@ export const {
   useGetBasketQuery,
   useCreateUserMutation,
   useLoginUserMutation,
+  useDeleteBasketMutation,
   useUpdateBasketMutation,
   useCreateOrderMutation,
   useCreatePaymentMutation,

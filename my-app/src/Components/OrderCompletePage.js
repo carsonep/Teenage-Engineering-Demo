@@ -1,11 +1,18 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import {
+  useDeleteBasketMutation
+} from "../features/api/apiSlice";
 import NavBar from "./NavBar";
 
 function OrderCompletePage() {
+  const [deleteBasket] = useDeleteBasketMutation();
+
+
   useEffect(() => {
     localStorage.removeItem("customerBasket");
-  }, []);
+    deleteBasket("basket1");
+  }, [deleteBasket]);
 
   return (
     <div style={{ padding: "0 4.6vw", backgroundColor: "#e5e5e5" }}>
