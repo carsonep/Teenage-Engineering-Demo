@@ -196,10 +196,10 @@ function NavBar({ bgColor, textColor }) {
                       </h2>
                       <br />
 
-                      <p>instagram</p>
+                      <p><a href="https://www.instagram.com/teenageengineering/?hl=en" target="_blank" rel="noreferrer">instagram</a></p>
                       <p>
                         {" "}
-                        <Link to="/ems">ems</Link>
+                        <Link to="/now">newsletter</Link>
                       </p>
                     </div>
                   </div>

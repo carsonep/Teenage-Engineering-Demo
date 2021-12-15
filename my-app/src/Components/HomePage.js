@@ -26,6 +26,7 @@ import opzPoster from "../images/opzPoster.png";
 import incense from "../images/incense.png";
 import teShortSleeve from "../images/teShortSleeve.png";
 import { NavLink } from "react-router-dom";
+import Footer from "./Footer";
 
 function HomePage() {
   return (
@@ -420,6 +421,7 @@ function HomePage() {
           </h1>
         </NavLink>
       </div>
+      <Footer textColor={"#e5e5e5"} bgColor={"#0f0e12"} />
     </div>
   );
 }

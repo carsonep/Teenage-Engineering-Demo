@@ -33,6 +33,7 @@ import HScreen from "./Components/HScreen";
 import RScreen from "./Components/RScreen";
 import NowPage from "./Components/NowPage";
 
+
 function App() {
   return (
     <Router>
@@ -93,6 +94,7 @@ function App() {
           <Route path="/products/:id" component={ProductDetails} />
 
           <Route path="/now" component={NowPage} />
+          
 
           <Route path="/login" component={LoginScreen} />
           <Route path="/register" component={RegisterScreen} />
