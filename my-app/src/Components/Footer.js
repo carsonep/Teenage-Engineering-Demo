@@ -2,8 +2,8 @@ import React from 'react'
 
 function Footer({ bgColor, textColor }) {
     return (
-        <div style={{backgroundColor: bgColor, color: textColor}} className='pb-8'>
-            <div className="flex flex-col justify-center items-center leading-tight md:py-12 py-4">
+        <div style={{backgroundColor: bgColor, color: textColor}} className='pb-8 md:pt-8'>
+            <div className="flex flex-col justify-center items-center leading-tight md:py-12 py-4 md:hidden">
                 <h1 className='text-2xl'>free shipping over $120</h1>
                 <h1 className='text-2xl'>14 day return policy</h1>
             </div>

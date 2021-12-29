@@ -16,6 +16,7 @@ import orthoYellow from "../images/orthoYellow.jpg";
 import orthoBlack from "../images/orthoBlack.jpg";
 import orthoWhite from "../images/orthoWhite.jpg";
 import clearBag from "../images/clearBag.jpg";
+import Footer from "./Footer";
 
 function ProductDetails({ match }) {
   const {
@@ -258,6 +259,7 @@ function ProductDetails({ match }) {
         }}
       ></div>
       </div>
+      <Footer textColor={"#5e5e5e"} bgColor={"#fff"} />
     </div>
   );
 }

@@ -1110,19 +1110,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\14059\\.nuget\\packages\\": {}
+    "/Users/Carson/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\14059\\Desktop\\Projects\\Capstone\\Core\\Core.csproj",
+      "projectUniqueName": "/Users/Carson/Desktop/Development/Teenage-Engineering-Demo/Core/Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\14059\\Desktop\\Projects\\Capstone\\Core\\Core.csproj",
-      "packagesPath": "C:\\Users\\14059\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\14059\\Desktop\\Projects\\Capstone\\Core\\obj\\",
+      "projectPath": "/Users/Carson/Desktop/Development/Teenage-Engineering-Demo/Core/Core.csproj",
+      "packagesPath": "/Users/Carson/.nuget/packages/",
+      "outputPath": "/Users/Carson/Desktop/Development/Teenage-Engineering-Demo/Core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\14059\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/Carson/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -1174,7 +1174,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }

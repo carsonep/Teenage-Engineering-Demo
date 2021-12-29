@@ -1,6 +1,8 @@
 import React from "react";
 import NavBar from "./NavBar";
 import ob4PageHeader from "../images/ob4PageHeader.png";
+import Footer from "./Footer";
+
 
 function Ob4Screen() {
   return (
@@ -38,7 +40,7 @@ function Ob4Screen() {
 
         <div
           className="flex absolute justify-center leading-tight font-light z-50"
-          style={{ color: "#b2b2ab", top: "85.75%" }}
+          style={{ color: "#b2b2ab", top: "80.75%" }}
         >
           <p style={{ width: "30%", fontSize: "1.8vw", marginRight: "2.5%" }}>
             introducing OB–4, the portable high fidelity loudspeaker with two
@@ -55,6 +57,7 @@ function Ob4Screen() {
           </p>
         </div>
       </div>
+      <Footer textColor={"#a9a9a9"} bgColor={"#0f0e12"} />
     </div>
   );
 }

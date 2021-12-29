@@ -1,12 +1,10 @@
 import NavBar from "./NavBar";
 import logo from "../images/logo.png";
-
 import React, { useEffect, useState } from "react";
-
 import { useLoginUserMutation } from "../features/api/apiSlice";
-
 import LoadingSpinner from "../Components/LoadingSpinner";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 const LoginScreen = ({ location, history }) => {
   const [email, setEmail] = useState("");
@@ -88,6 +86,7 @@ const LoginScreen = ({ location, history }) => {
           </p>
         </div>
       </div>
+      <Footer textColor={"#a9a9a9"} bgColor={"#0f0e12"} />
     </div>
   );
 };

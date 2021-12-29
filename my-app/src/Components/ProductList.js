@@ -6,6 +6,7 @@ import PostExcerpt from "../Components/PostExcerpt";
 import { useGetProductsQuery } from "../features/api/apiSlice";
 import NavBar from "./NavBar";
 import ProductCategory from "./ProductCategory";
+import Footer from "./Footer";
 
 function ProductList() {
   const {
@@ -39,6 +40,7 @@ function ProductList() {
       >
         {content}
       </div>
+      <Footer textColor={"#e5e5e5"} bgColor={"#0f0e12"} />
     </div>
   );
 }

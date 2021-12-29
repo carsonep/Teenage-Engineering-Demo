@@ -9,6 +9,7 @@ import cameraDesignHero from "../images/cameraDesignHero.jpg";
 import forestOb11 from "../images/forestOb11.jpg";
 import "./styleComponents/ProductPreview.css";
 import { NavLink } from "react-router-dom";
+import Footer from "./Footer";
 
 function DesignsPreview() {
   return (
@@ -114,6 +115,7 @@ function DesignsPreview() {
           />
         </NavLink>
       </div>
+      <Footer textColor={"#a9a9a9"} bgColor={"#0f0e12"} />
     </div>
   );
 }

@@ -421,7 +421,7 @@ function HomePage() {
           </h1>
         </NavLink>
       </div>
-      <Footer textColor={"#e5e5e5"} bgColor={"#0f0e12"} />
+      <Footer textColor={"#a9a9a9"} bgColor={"#0f0e12"} />
     </div>
   );
 }

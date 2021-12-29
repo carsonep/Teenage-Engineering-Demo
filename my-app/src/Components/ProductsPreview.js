@@ -12,12 +12,14 @@ import cameraHero from "../images/cameraHero.png";
 import computer1Hero from "../images/computer1Hero.jpg";
 import "./styleComponents/ProductPreview.css";
 import { Link, NavLink } from "react-router-dom";
+import Footer from "./Footer";
 
 function ProductsPreview() {
   return (
+    <div>
     <div className="product__preview">
       <NavBar textColor={"rgb(232,143,110)"} />
-      <div className="grid grid-cols-6 gap-2 md:gap-0">
+      <div className="grid grid-cols-6 gap-2 md:gap-0 pb-8 md:pb-0">
         <Link
           to="/products/computer-1"
           style={{ textDecoration: "none" }}
@@ -176,6 +178,8 @@ function ProductsPreview() {
           </div>
         </NavLink>
       </div>
+      </div>
+      <Footer bgColor={"#e5e5e5"} textColor={"#0f0e12"} />
     </div>
   );
 }

@@ -9,6 +9,7 @@ import euroAdapter from "../images/euroAdapter.png";
 import poHolder from "../images/poHolder.png";
 import redModularHero from "../images/redModularHero.png";
 import rearHandleModular from "../images/rearHandleModular.png";
+import Footer from "./Footer";
 
 function NowPage() {
   return (
@@ -289,7 +290,8 @@ function NowPage() {
 
     
     </div><div style={{ borderBottom: "1px solid #b2b2b2" }}></div>
-    </div></div>
+    </div>
+    <Footer textColor={"#a9a9a9"} bgColor={"#0f0e12"} /></div>
   );
 }
 

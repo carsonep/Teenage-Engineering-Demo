@@ -3516,19 +3516,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\14059\\.nuget\\packages\\": {}
+    "/Users/Carson/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\14059\\Desktop\\Projects\\Capstone\\API\\API.csproj",
+      "projectUniqueName": "/Users/Carson/Desktop/Development/Teenage-Engineering-Demo/API/API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\14059\\Desktop\\Projects\\Capstone\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\14059\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\14059\\Desktop\\Projects\\Capstone\\API\\obj\\",
+      "projectPath": "/Users/Carson/Desktop/Development/Teenage-Engineering-Demo/API/API.csproj",
+      "packagesPath": "/Users/Carson/.nuget/packages/",
+      "outputPath": "/Users/Carson/Desktop/Development/Teenage-Engineering-Demo/API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\14059\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/Carson/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -3540,8 +3540,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\14059\\Desktop\\Projects\\Capstone\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\14059\\Desktop\\Projects\\Capstone\\Infrastructure\\Infrastructure.csproj"
+            "/Users/Carson/Desktop/Development/Teenage-Engineering-Demo/Infrastructure/Infrastructure.csproj": {
+              "projectPath": "/Users/Carson/Desktop/Development/Teenage-Engineering-Demo/Infrastructure/Infrastructure.csproj"
             }
           }
         }
@@ -3601,7 +3601,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }

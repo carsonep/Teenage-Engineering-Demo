@@ -6,6 +6,7 @@ import orthoHero from "../images/orthoHero.png";
 import od11Hero from "../images/od11Hero.png";
 
 import { NavLink } from "react-router-dom";
+import Footer from "./Footer";
 
 function WirelessAudioPreview() {
   return (
@@ -65,6 +66,7 @@ function WirelessAudioPreview() {
           </div>
         </NavLink>
       </div>
+      <Footer bgColor={"#a9a9a9"} textColor={"#0f0e12"} />
     </div>
   );
 }

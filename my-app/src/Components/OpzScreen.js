@@ -14,6 +14,8 @@ import rumble from "../images/rumble.png";
 import m1Headphones from "../images/m1Headphones.jpg";
 import concertLazers from "../images/concertLazers.png";
 import opzBundle from "../images/opzBundle.png";
+import Footer from "./Footer";
+
 
 function OpzScreen() {
   return (
@@ -562,6 +564,8 @@ function OpzScreen() {
           – ALESSANDRO CORTINI / NIN
         </h2>
       </div>
+      <Footer textColor={"#a9a9a9"} bgColor={"#0f0e12"} />
+
     </div>
   );
 }
