@@ -423,20 +423,20 @@ function poModularScreen() {
               className="flex justify-center  w-full h-1/2"
               src={playButton1}
             />
-            <p className="font-light pt-4" style={{ fontSize: "1.833vw" }}>
+            <p className="font-light pt-4 flex justify-center" style={{ fontSize: "1.833vw" }}>
               {" "}
-              sequence and tweak
+              powerful noise
             </p>
           </div>
           <div className="">
             <img
               alt=""
-              className="flex justify-center  w-full h-1/2"
+              className="flex justify-center w-full h-1/2"
               src={playButton1}
             />
-            <p className="font-light pt-4" style={{ fontSize: "1.833vw" }}>
+            <p className="font-light pt-4 flex justify-center" style={{ fontSize: "1.833vw" }}>
               {" "}
-              sequence and tweak
+              playful multitrack
             </p>
           </div>
         </div>
@@ -640,7 +640,7 @@ function poModularScreen() {
           <div className="flex flex-col">
             <div
               className="w-full h-full rounded-md md:rounded-lg"
-              style={{ backgroundColor: "#183f80", minHeight: "25%" }}
+              style={{ backgroundColor: "#DC6D26", minHeight: "25%" }}
             ></div>
             <span style={{ color: "#e5e5e5" }}>saw</span>
             <span>sawtooth oscillator</span>
@@ -654,7 +654,7 @@ function poModularScreen() {
           <div className="flex flex-col">
             <div
               className="w-full h-full rounded-md md:rounded-lg"
-              style={{ backgroundColor: "#183f80", minHeight: "25%" }}
+              style={{ backgroundColor: "#A71A26", minHeight: "25%" }}
             ></div>
             <span style={{ color: "#e5e5e5" }}>sine</span>
             <span>sine oscillator</span>
@@ -669,7 +669,7 @@ function poModularScreen() {
           <div className="flex flex-col">
             <div
               className="w-full h-full rounded-md md:rounded-lg"
-              style={{ backgroundColor: "#183f80", minHeight: "25%" }}
+              style={{ backgroundColor: "#421808", minHeight: "25%" }}
             ></div>
             <span style={{ color: "#e5e5e5" }}>filter</span>
             <span>low pass filter</span>
@@ -683,7 +683,7 @@ function poModularScreen() {
           <div className="flex flex-col">
             <div
               className="w-full h-full rounded-md md:rounded-lg"
-              style={{ backgroundColor: "#183f80", minHeight: "25%" }}
+              style={{ backgroundColor: "#004820", minHeight: "25%" }}
             ></div>
             <span style={{ color: "#e5e5e5" }}>env</span>
             <span>envelope</span>
@@ -697,7 +697,7 @@ function poModularScreen() {
           <div className="flex flex-col">
             <div
               className="w-full h-full rounded-md md:rounded-lg"
-              style={{ backgroundColor: "#183f80", minHeight: "25%" }}
+              style={{ backgroundColor: "#E5522F", minHeight: "25%" }}
             ></div>
             <span style={{ color: "#e5e5e5" }}>vca</span>
             <span>voltage control amplifier</span>
@@ -712,7 +712,7 @@ function poModularScreen() {
             <div
               className="w-full h-full rounded-md md:rounded-lg"
               style={{
-                backgroundColor: "#183f80",
+                backgroundColor: "#1B1E35",
                 minHeight: "25%",
                 maxHeight: "25%",
               }}
@@ -730,7 +730,7 @@ function poModularScreen() {
             <div
               className="w-full h-full rounded-md md:rounded-lg"
               style={{
-                backgroundColor: "#183f80",
+                backgroundColor: "#6A8892",
                 minHeight: "25%",
                 maxHeight: "25%",
               }}
@@ -746,7 +746,7 @@ function poModularScreen() {
           <div className="flex flex-col">
             <div
               className="w-full h-full rounded-md md:rounded-lg"
-              style={{ backgroundColor: "#183f80", minHeight: "25%" }}
+              style={{ backgroundColor: "#6A8892", minHeight: "25%" }}
             ></div>
             <span style={{ color: "#e5e5e5" }}>rand</span>
 
@@ -762,7 +762,7 @@ function poModularScreen() {
           <div className="flex flex-col">
             <div
               className="w-full h-full rounded-md md:rounded-lg"
-              style={{ backgroundColor: "#183f80", minHeight: "25%" }}
+              style={{ backgroundColor: "#51050E", minHeight: "25%" }}
             ></div>
             <span style={{ color: "#e5e5e5" }}>lfo</span>
             <span>low frequency oscillator</span>
@@ -777,7 +777,7 @@ function poModularScreen() {
           <div className="flex flex-col">
             <div
               className="w-full h-full rounded-md md:rounded-lg"
-              style={{ backgroundColor: "#183f80", minHeight: "25%" }}
+              style={{ backgroundColor: "#0F0E12", minHeight: "25%" }}
             ></div>
             <span style={{ color: "#e5e5e5" }}>speaker</span>
             <span>amplifier+speaker bellow</span>
@@ -792,9 +792,9 @@ function poModularScreen() {
 
           <div className="flex flex-col">
             <div
-              className="w-full h-full rounded-md md:rounded-lg"
-              style={{ backgroundColor: "#183f80", minHeight: "25%" }}
-            ></div>
+              className="w-full h-full rounded-md md:rounded-lg flex justify-between items-center"
+              style={{ backgroundColor: "#183F80", minHeight: "12.5%", maxHeight: "12.5%" }}
+            ><svg xmlns="http://www.w3.org/2000/svg" className="flex items-start" viewBox="0 0 810.094 611.669" id="te-0f448cab-4f41fbb6-cee8eafe"><path d="M478.307 373.444V238.798M476.066 306.12h67M297.16 306.12h67" style={{stroke: "#CC996B", strokeWidth: "5px", fill: "none"}}></path><path d="M354.49 239.755l.43 133.69 124.016-67.323z" style={{stroke: "#CC996B", strokeWidth: "5px", fill: "#CC996B"}}></path></svg><h1 style={{color: "#CC996B"}} className="text-5xl w-3/4">M-11</h1></div>
             <span style={{ color: "#e5e5e5" }}>sequencer</span>
             <span>16-step sequencer</span>
             <span style={{ fontSize: "1.333vw", marginBottom: "60%" }}>

@@ -7,6 +7,7 @@ import computer1Teardown from "../images/computer1Teardown.png";
 import computer1Dimensions from "../images/computer1Dimensions.svg";
 import computer1Grid1 from "../images/computer1Grid1.png";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 function Computer1Preview() {
   return (
@@ -331,6 +332,7 @@ function Computer1Preview() {
       >
         <h1 className=" text-white text-xl md:text-6xl">visit store.</h1>
       </div>
+      <Footer textColor={"#a9a9a9"} bgColor={"#0f0e12"} />
     </div>
   );
 }

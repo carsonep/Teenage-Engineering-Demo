@@ -1,11 +1,8 @@
 import React from "react";
 import NavBar from "./NavBar";
-
 import opz2Hero from "../images/opz2Hero.png";
 import redModularHero from "../images/redModularHero.png";
-
 import op1Hero from "../images/op1Hero.png";
-
 import oplabHero from "../images/oplabHero.jpg";
 import operatorDemo from "../images/operatorDemo.png";
 import "./styleComponents/ProductPreview.css";
@@ -72,7 +69,11 @@ function SynthesizerPreview() {
           </h1>
         </div>
       </div>
+<<<<<<< HEAD
       <Footer bgColor={"#e5e5e5"} textColor={"#000"} />
+=======
+      <Footer bgColor={"#4D4D4D"} textColor={"#a9a9a9"} />
+>>>>>>> 8f756e231f349788ae00c083ca92c0222fe30bf3
     </div>
   );
 }

@@ -1,4 +1,8 @@
 services:
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8f756e231f349788ae00c083ca92c0222fe30bf3
   redis:
     image: redis:latest
     ports:
@@ -17,6 +21,7 @@ services:
       - 8081:8081
     depends_on:
       - redis
+<<<<<<< HEAD
 
   db:
     image: postgres
@@ -35,3 +40,8 @@ services:
 
 volumes:
   redis-data:
+=======
+    
+volumes:
+  redis-data:
+>>>>>>> 8f756e231f349788ae00c083ca92c0222fe30bf3

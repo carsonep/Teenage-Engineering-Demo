@@ -6,6 +6,8 @@ import NavBar from "./NavBar";
 import logo from "../images/logo.png";
 import { NavLink } from "react-router-dom";
 // import LoadingSpinner from "../Components/LoadingSpinner";
+import Footer from "./Footer";
+
 
 const RegisterScreen = () => {
   const [displayName, setDisplayName] = useState("");
@@ -84,6 +86,7 @@ const RegisterScreen = () => {
           </p>
         </div>
       </div>
+      <Footer textColor={"#a9a9a9"} bgColor={"#0f0e12"} />
     </div>
   );
 };
