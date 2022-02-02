@@ -11,20 +11,18 @@ using Microsoft.Extensions.Logging;
 
 namespace Infrastructure.Data
 {
-     public class StoreContextSeed
+    public class StoreContextSeed
     {
         public static async Task SeedAsync(StoreContext context, ILoggerFactory loggerFactory)
         {
             try
             {
-                // var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-
-                // Console.WriteLine(path);
+                var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
                 if (!context.ProductTypes.Any())
                 {
                     var typesData =
-                        File.ReadAllText("../Infrastructure/Data/SeedData/types.json");
+                        File.ReadAllText(path + @"/Data/SeedData/types.json");
 
                     var types = JsonSerializer.Deserialize<List<ProductType>>(typesData);
 
@@ -39,7 +37,7 @@ namespace Infrastructure.Data
                 if (!context.Products.Any())
                 {
                     var productsData =
-                        File.ReadAllText("../Infrastructure/Data/SeedData/products.json");
+                        File.ReadAllText(path + @"/Data/SeedData/products.json");
 
                     var products = JsonSerializer.Deserialize<List<ProductSeedModel>>(productsData);
 
@@ -51,7 +49,7 @@ namespace Infrastructure.Data
                             Name = item.Name,
                             Description = item.Description,
                             Price = item.Price,
-                            
+
                             ProductTypeId = item.ProductTypeId
                         };
                         product.AddPhoto(item.PictureUrl, pictureFileName);
@@ -61,7 +59,7 @@ namespace Infrastructure.Data
                     await context.SaveChangesAsync();
                 }
 
-                
+
             }
             catch (Exception ex)
             {

@@ -1,0 +1,30 @@
+{
+    "deploy.reloaded": {
+        "packages": [
+            {
+                "name": "Version 1.0.0",
+                "description": "Package version 1.0.0",
+
+                "files": [
+                    "publish/**"
+                ]
+            }
+        ],
+
+        "targets": [
+            {
+                "type": "sftp",
+                "name": "Linux",
+                "description": "SFTP folder",
+
+                "host": "147.182.225.196", "port": 22,
+                "user": "root", "password": "bL+LGj76$WMB",
+
+                "dir": "/var/capstone",
+                "mappings": {
+                    "publish/**": "/"
+                }
+            }
+        ]
+    }
+}

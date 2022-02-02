@@ -7,6 +7,7 @@ import {
 import LoadingSpinner from "./LoadingSpinner";
 import { XIcon } from "@heroicons/react/solid";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 function CartScreen() {
   const { data, isFetching, isSuccess } = useGetBasketQuery("basket1");
@@ -46,7 +47,6 @@ function CartScreen() {
 
       items = JSON.stringify(items);
       localStorage.setItem("customerBasket", items);
-      console.log();
 
       await updateBasket(JSON.parse(items)).unwrap();
     } catch (err) {
@@ -70,7 +70,7 @@ function CartScreen() {
           alt=""
           className=""
           style={{ height: "180px" }}
-          src={`https://localhost:5001/${cartItem.pictureUrl}`}
+          src={`${process.env.REACT_APP_PHOTO_URL}${cartItem.pictureUrl}`}
         />
         <h1 className="mx-24">quantity: {cartItem.quantity}</h1>
         <h1 className="mr-40">${cartItem.price}</h1>
@@ -131,6 +131,7 @@ function CartScreen() {
           <span>1 year warranty and a 14 day return policy applies</span>
         </div>
       </div>
+      <Footer bgColor={"#e5e5e5"} textColor={"#0f0e12"} />
     </div>
   );
 }

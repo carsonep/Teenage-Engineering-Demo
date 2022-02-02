@@ -32,7 +32,7 @@ namespace Infrastructure.Services
 
                 var productItem = _unitOfWork.Repository<Product>().GetById(item.Id);
 
-                var itemOrdered = new ProductItemOrdered(productItem.Id, productItem.Name, item.PictureUrl);
+                var itemOrdered = new ProductItemOrdered(productItem.Id, productItem.Name, productItem.Photos.FirstOrDefault(x => x.IsMain)?.PictureUrl);
 
                 var orderItem = new OrderItem(itemOrdered, productItem.Price, item.Quantity);
                 items.Add(orderItem);

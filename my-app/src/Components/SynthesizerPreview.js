@@ -9,6 +9,7 @@ import op1Hero from "../images/op1Hero.png";
 import oplabHero from "../images/oplabHero.jpg";
 import operatorDemo from "../images/operatorDemo.png";
 import "./styleComponents/ProductPreview.css";
+import Footer from "./Footer";
 
 function SynthesizerPreview() {
   return (
@@ -71,6 +72,7 @@ function SynthesizerPreview() {
           </h1>
         </div>
       </div>
+      <Footer bgColor={"#e5e5e5"} textColor={"#000"} />
     </div>
   );
 }

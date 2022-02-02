@@ -11,13 +11,13 @@ function PostExcerpt({ product }) {
             style={{ backgroundColor: "#e5e5e5" }}
           >
             <img
-              src={`https://localhost:5001/${product.photos[0].pictureUrl}`}
+              src={`${process.env.REACT_APP_PHOTO_URL}${product.photos[0].pictureUrl}`}
               alt=""
               className="object-scale-down rounded-t-lg md:w-1/2"
               style={{ minHeight: "27.5vw" }}
             />
           </div>
-          <div class="ml-2 mr-2 flex  justify-between">
+          <div class="ml-2 mr-2 flex justify-between">
             <div className="mt-2">
               <Link to={`/products/${product.id}`}>
                 <h3 class="text-xs">{product.name}</h3>
